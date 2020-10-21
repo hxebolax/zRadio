@@ -55,7 +55,7 @@ import os.path
 pythonSources = [os.path.join("addon", "globalPlugins", "zRadio", "*.py"), os.path.join("addon", "globalPlugins", "zRadio", "lib", "*.py")]
 
 # Files that contain strings for translation. Usually your python sources
-i18nSources = pythonSources + ["buildVars.py"]
+i18nSources = ["buildVars.py"] + pythonSources
 
 # Files that will be ignored when building the nvda-addon file
 # Paths are relative to the addon directory, not to the root directory of your addon sources.

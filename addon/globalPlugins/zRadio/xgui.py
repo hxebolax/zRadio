@@ -2,6 +2,10 @@
 # -*- coding: utf-8 -*-
 
 import wx
+import addonHandler
+
+# For translation
+addonHandler.initTranslation()
 
 # Function taken from the Emoticons plug-in
 def _calculatePosition(width, height):

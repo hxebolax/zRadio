@@ -12,18 +12,20 @@ import wx
 import wx.adv
 from scriptHandler import script
 # import the necessary modules (Python)
-from .lib import xgui
+#from .lib import xgui
+from . import xgui
 from .lib import mpv
 from .chkConexion import InternetChecker
 from .variables import *
 from .pubsub import pub
 
+# For translation
 addonHandler.initTranslation()
+
 player = mpv.MPV(ytdl=True, vo=False)
 chkInternet = InternetChecker()
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
-
 	def __init__(self):
 		super(GlobalPlugin, self).__init__()
 
@@ -312,7 +314,7 @@ class MainWindows(wx.Dialog):
 				self.RadioBusquedaDLG.lb_categorias_radio.Clear()
 				for nombre_item, numero_item in zip(Radios.paises_radio_español, Radios.paises_numero_emisoras):
 					# Translators: Warning do not change the content of what is between the keys. Message with the number of stations
-					self.RadioBusquedaDLG.lb_categorias_radio.Append(_(f"{nombre_item} número de emisoras: {numero_item}"))
+					self.RadioBusquedaDLG.lb_categorias_radio.Append(_("{} número de emisoras: {}").format(nombre_item, numero_item))
 				self.RadioBusquedaDLG.lb_categorias_radio.SetSelection(0)
 			else:
 				# Translators: Searchable tag name
@@ -325,7 +327,7 @@ class MainWindows(wx.Dialog):
 				self.RadioBusquedaDLG.lb_categorias_radio.Clear()
 				for nombre_item, numero_item in zip(Radios.paises_radio_español, Radios.paises_numero_emisoras):
 					# Translators: Warning do not change the content of what is between the keys. Message with the number of stations
-					self.RadioBusquedaDLG.lb_categorias_radio.Append(_(f"{nombre_item} número de emisoras: {numero_item}"))
+					self.RadioBusquedaDLG.lb_categorias_radio.Append(_("{} número de emisoras: {}").format(nombre_item, numero_item))
 				self.RadioBusquedaDLG.lb_categorias_radio.SetSelection(0)
 
 		elif indice == 2:
@@ -337,7 +339,7 @@ class MainWindows(wx.Dialog):
 				self.RadioBusquedaDLG.lb_categorias_radio.Clear()
 				for nombre_item, numero_item in zip(Radios.nombre_idioma, Radios.cantidad_idioma):
 					# Translators: Warning do not change the content of what is between the keys. Message with the number of stations
-					self.RadioBusquedaDLG.lb_categorias_radio.Append(_(f"{nombre_item} número de emisoras: {numero_item}"))
+					self.RadioBusquedaDLG.lb_categorias_radio.Append(_("{} número de emisoras: {}").format(nombre_item, numero_item))
 				self.RadioBusquedaDLG.lb_categorias_radio.SetSelection(0)
 			else:
 				# Translators: Searchable tag name
@@ -349,7 +351,7 @@ class MainWindows(wx.Dialog):
 				self.RadioBusquedaDLG.lb_categorias_radio.Clear()
 				for nombre_item, numero_item in zip(Radios.nombre_idioma, Radios.cantidad_idioma):
 					# Translators: Warning do not change the content of what is between the keys. Message with the number of stations
-					self.RadioBusquedaDLG.lb_categorias_radio.Append(_(f"{nombre_item} número de emisoras: {numero_item}"))
+					self.RadioBusquedaDLG.lb_categorias_radio.Append(_("{} número de emisoras: {}").format(nombre_item, numero_item))
 				self.RadioBusquedaDLG.lb_categorias_radio.SetSelection(0)
 
 		elif indice == 3:
@@ -357,24 +359,23 @@ class MainWindows(wx.Dialog):
 			if self.RadioBusquedaDLG.Buscar_Categoria_RadioBTN.GetLabel() == _("&Buscar"):
 				# Translators: Searchable tag name
 				self.RadioBusquedaDLG.busqueda_categoria_radio.SetLabel(_("Buscar etiqueta:"))
-				Radios.Resultado_Tag()
+				self.RadioBusquedaDLG.texto_busqueda_categoria.Clear()
 				self.RadioBusquedaDLG.lb_categorias_radio.Clear()
-				for nombre_item, numero_item in zip(Radios.nombre_tag, Radios.cantidad_tag):
-					# Translators: Warning do not change the content of what is between the keys. Message with the number of stations
-					self.RadioBusquedaDLG.lb_categorias_radio.Append(_(f"{nombre_item} número de emisoras: {numero_item}"))
+				# Translators: Message in the search listbox, Waiting for a search
+				self.RadioBusquedaDLG.lb_categorias_radio.Append(_("Esperando una búsqueda."))
 				self.RadioBusquedaDLG.lb_categorias_radio.SetSelection(0)
+				self.RadioBusquedaDLG.ch_categorias_radio.SetFocus()
 			else:
 				# Translators: Searchable tag name
 				self.RadioBusquedaDLG.busqueda_categoria_radio.SetLabel(_("Buscar etiqueta:"))
 				# Translators: Search button name
 				self.RadioBusquedaDLG.Buscar_Categoria_RadioBTN.SetLabel(_("&Buscar"))
 				self.RadioBusquedaDLG.texto_busqueda_categoria.Clear()
-				Radios.Resultado_Tag()
 				self.RadioBusquedaDLG.lb_categorias_radio.Clear()
-				for nombre_item, numero_item in zip(Radios.nombre_tag, Radios.cantidad_tag):
-					# Translators: Warning do not change the content of what is between the keys. Message with the number of stations
-					self.RadioBusquedaDLG.lb_categorias_radio.Append(_(f"{nombre_item} número de emisoras: {numero_item}"))
+				# Translators: Message in the search listbox, Waiting for a search
+				self.RadioBusquedaDLG.lb_categorias_radio.Append(_("Esperando una búsqueda."))
 				self.RadioBusquedaDLG.lb_categorias_radio.SetSelection(0)
+				self.RadioBusquedaDLG.ch_categorias_radio.SetFocus()
 
 	def BuscarRadioGeneral(self, event):
 		global nombre_emisoras_temporal_busqueda, url_emisoras_temporal_busqueda
@@ -553,7 +554,7 @@ Haga una búsqueda más específica.""")
 					Radios.Buscar_Pais(getValue)
 					for nombre_item, numero_item in zip(Radios.resultado_pais_busqueda_nombre, Radios.resultado_pais_busqueda_numero):
 						# Translators: Warning do not change the content of what is between the keys. Message with the number of stations
-						self.RadioBusquedaDLG.lb_categorias_radio.Append(_(f"{nombre_item} número de emisoras: {numero_item}"))
+						self.RadioBusquedaDLG.lb_categorias_radio.Append(_("{} número de emisoras: {}").format(nombre_item, numero_item))
 
 					if len(Radios.resultado_pais_busqueda_nombre) == 0:
 						# Translators: Message not found results
@@ -570,7 +571,7 @@ Haga una búsqueda más específica.""")
 						self.RadioBusquedaDLG.lb_categorias_radio.Clear()
 						for nombre_item, numero_item in zip(Radios.paises_radio_español, Radios.paises_numero_emisoras):
 							# Translators: Warning do not change the content of what is between the keys. Message with the number of stations
-							self.RadioBusquedaDLG.lb_categorias_radio.Append(_(f"{nombre_item} número de emisoras: {numero_item}"))
+							self.RadioBusquedaDLG.lb_categorias_radio.Append(_("{} número de emisoras: {}").format(nombre_item, numero_item))
 						self.RadioBusquedaDLG.lb_categorias_radio.SetSelection(0)
 					else:
 						self.RadioBusquedaDLG.lb_categorias_radio.SetSelection(0)
@@ -584,7 +585,7 @@ Haga una búsqueda más específica.""")
 					Radios.Buscar_Idioma(getValue)
 					for nombre_item, numero_item in zip(Radios.busqueda_nombre_idioma, Radios.busqueda_cantidad_idioma):
 						# Translators: Warning do not change the content of what is between the keys. Message with the number of stations
-						self.RadioBusquedaDLG.lb_categorias_radio.Append(_(f"{nombre_item} número de emisoras: {numero_item}"))
+						self.RadioBusquedaDLG.lb_categorias_radio.Append(_("{} número de emisoras: {}").format(nombre_item, numero_item))
 
 					if len(Radios.busqueda_nombre_idioma) == 0:
 						# Translators: Message not found results
@@ -601,7 +602,7 @@ Haga una búsqueda más específica.""")
 						self.RadioBusquedaDLG.lb_categorias_radio.Clear()
 						for nombre_item, numero_item in zip(Radios.nombre_idioma, Radios.cantidad_idioma):
 							# Translators: Warning do not change the content of what is between the keys. Message with the number of stations
-							self.RadioBusquedaDLG.lb_categorias_radio.Append(_(f"{nombre_item} número de emisoras: {numero_item}"))
+							self.RadioBusquedaDLG.lb_categorias_radio.Append(_("{} número de emisoras: {}").format(nombre_item, numero_item))
 						self.RadioBusquedaDLG.lb_categorias_radio.SetSelection(0)
 					else:
 						self.RadioBusquedaDLG.lb_categorias_radio.SetSelection(0)
@@ -615,7 +616,7 @@ Haga una búsqueda más específica.""")
 					Radios.Buscar_Tag(getValue)
 					for nombre_item, numero_item in zip(Radios.busqueda_nombre_tag, Radios.busqueda_cantidad_tag):
 						# Translators: Warning do not change the content of what is between the keys. Message with the number of stations
-						self.RadioBusquedaDLG.lb_categorias_radio.Append(_(f"{nombre_item} número de emisoras: {numero_item}"))
+						self.RadioBusquedaDLG.lb_categorias_radio.Append(_("{} número de emisoras: {}").format(nombre_item, numero_item))
 
 					if len(Radios.busqueda_nombre_tag) == 0:
 						# Translators: Message not found results
@@ -630,9 +631,8 @@ Haga una búsqueda más específica.""")
 						self.RadioBusquedaDLG.texto_busqueda_categoria.Clear()
 						self.RadioBusquedaDLG.texto_busqueda_categoria.SetFocus()
 						self.RadioBusquedaDLG.lb_categorias_radio.Clear()
-						for nombre_item, numero_item in zip(Radios.nombre_tag, Radios.cantidad_tag):
-							# Translators: Warning do not change the content of what is between the keys. Message with the number of stations
-							self.RadioBusquedaDLG.lb_categorias_radio.Append(_(f"{nombre_item} número de emisoras: {numero_item}"))
+						# Translators: Message waiting for a search
+						self.RadioBusquedaDLG.lb_categorias_radio.Append(_("Esperando una búsqueda."))
 						self.RadioBusquedaDLG.lb_categorias_radio.SetSelection(0)
 					else:
 						self.RadioBusquedaDLG.lb_categorias_radio.SetSelection(0)
@@ -656,7 +656,7 @@ Haga una búsqueda más específica.""")
 				self.RadioBusquedaDLG.lb_categorias_radio.Clear()
 				for nombre_item, numero_item in zip(Radios.paises_radio_español, Radios.paises_numero_emisoras):
 					# Translators: Warning do not change the content of what is between the keys. Message with the number of stations
-					self.RadioBusquedaDLG.lb_categorias_radio.Append(_(f"{nombre_item} número de emisoras: {numero_item}"))
+					self.RadioBusquedaDLG.lb_categorias_radio.Append(_("{} número de emisoras: {}").format(nombre_item, numero_item))
 				self.RadioBusquedaDLG.lb_categorias_radio.SetSelection(0)
 			elif indice == 2:
 				# Translators: Search button name
@@ -666,7 +666,7 @@ Haga una búsqueda más específica.""")
 				self.RadioBusquedaDLG.lb_categorias_radio.Clear()
 				for nombre_item, numero_item in zip(Radios.nombre_idioma, Radios.cantidad_idioma):
 					# Translators: Warning do not change the content of what is between the keys. Message with the number of stations
-					self.RadioBusquedaDLG.lb_categorias_radio.Append(_(f"{nombre_item} número de emisoras: {numero_item}"))
+					self.RadioBusquedaDLG.lb_categorias_radio.Append(_("{} número de emisoras: {}").format(nombre_item, numero_item))
 				self.RadioBusquedaDLG.lb_categorias_radio.SetSelection(0)
 
 			elif indice == 3:
@@ -675,9 +675,8 @@ Haga una búsqueda más específica.""")
 				self.RadioBusquedaDLG.texto_busqueda_categoria.Clear()
 				self.RadioBusquedaDLG.texto_busqueda_categoria.SetFocus()
 				self.RadioBusquedaDLG.lb_categorias_radio.Clear()
-				for nombre_item, numero_item in zip(Radios.nombre_tag, Radios.cantidad_tag):
-					# Translators: Warning do not change the content of what is between the keys. Message with the number of stations
-					self.RadioBusquedaDLG.lb_categorias_radio.Append(_(f"{nombre_item} número de emisoras: {numero_item}"))
+				# Translators: Message waiting for a search
+				self.RadioBusquedaDLG.lb_categorias_radio.Append(_("Esperando una búsqueda."))
 				self.RadioBusquedaDLG.lb_categorias_radio.SetSelection(0)
 
 	def menuContextual(self):

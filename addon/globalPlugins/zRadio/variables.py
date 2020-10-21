@@ -13,6 +13,9 @@ except:
 import globalVars
 import addonHandler
 
+# For translation
+addonHandler.initTranslation()
+
 dir = addonHandler._getDefaultAddonPaths()
 dirDatos =os.path.join(globalVars.appArgs.configPath)
 dirLib =os.path.join(dir[0], "zRadio", "globalPlugins","zRadio", "lib")
