@@ -1,5 +1,6 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# Copyright (C) 2020 Héctor J. Benítez Corredera <xebolax@gmail.com>
+# This file is covered by the GNU General Public License.
 
 import sys
 import os
@@ -17,7 +18,7 @@ import addonHandler
 addonHandler.initTranslation()
 
 dir = addonHandler._getDefaultAddonPaths()
-dirDatos =os.path.join(globalVars.appArgs.configPath)
+dirDatos =os.path.join(globalVars.appArgs.configPath, "zRadio")
 dirLib =os.path.join(dir[0], "zRadio", "globalPlugins","zRadio", "lib")
 fileOptions = os.path.join(dirDatos, "opciones.dat")
 fileOptionsRadio = os.path.join(dirDatos, "opt_radio.dat")
