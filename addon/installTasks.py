@@ -30,5 +30,4 @@ def onInstall():
 					shutil.move(fileFavRadio, os.path.join(dirDestino, "fav_radios.dat"))
 
 
-			addon.requestRemove()
 			break
