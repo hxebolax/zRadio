@@ -53,7 +53,9 @@ Milles excuses pour le désagrément.
 
 Eh bien, lorsque le focus est mis sur la catégorie sélectionnée pour l'activer, appuyez sur la touche TAB, et nous tomberons dans un champ de recherche soit pour rechercher une station ou pour sélectionner une catégorie dans une zone de liste déroulante si nous sommes dans la catégorie Moteur de recherche.
 
-Une fois que vous avez écrit ce que vous voulez vous trouver appuyez sur le bouton Rechercher, si nous faisons Tabulation  nous trouvons la liste des stations. Lorsque nous sommes sur la liste, on peut passer à travers d'elle avec les touches fléchées, une fois sur le nom de la station, et en appuyant sur  la touche applications ou maj+f10 pour afficher les options disponibles pour la radio.
+Une fois que vous avez écrit ce que vous voulez vous trouver appuyez sur le bouton Rechercher.  Vous pouvez également appuyer sur la touche Entrée après la saisie d'une recherche sur ledit champ. Par conséquent, cette action serait la même chose que si on avait appuyé sur le bouton Rechercher.
+
+Si nous faisons Tabulation  nous trouvons la liste des stations. Lorsque nous sommes sur la liste, on peut passer à travers d'elle avec les touches fléchées, une fois sur le nom de la station, et en appuyant sur  la touche applications ou maj+f10 pour afficher les options disponibles pour la radio.
  
 Si nous continuons à tabuler et nous avons rien à jouer nous tomberons sur une barre de volume que par défaut la première fois est à 50%, si nous jouons quelque chose nous tomberons  sur les boutons qui contrôlent la lecture.
 
@@ -74,6 +76,8 @@ Sur cet écran la première chose est que nous tombons dans un champ de recherch
 Par exemple, si nous tapons onda nous retournera toutes les stations contenant ce mot, attention si nous tapons la lettre o nous retournera toutes les stations contenant la lettre o, cela peut entraîner un retard dans les résultats de recherche si nous sommes dans une très grande liste de stations et il y a beaucoup qui contiennent la lettre o.
 
 Si nous faisons Tabulation  nous avons le bouton Rechercher, lorsque nous appuyons sur ce bouton il commencera la recherche et ledit bouton va changer son nom en Nettoyer. Pour retrouver la liste  des stations nous devons appuyer sur le bouton Nettoyer.
+
+Note: Vous pouvez également appuyer sur la touche Entrée après la saisie d'une recherche sur ledit champ. Par conséquent, cette action serait la même chose que si on avait appuyé sur le bouton Rechercher.
 
 Si nous faisons une fois de plus Tabulation nous avons une liste avec les stations ou avec le résultat de  recherche en fonction de ce que nous avons fait dans la zone de recherche.
 

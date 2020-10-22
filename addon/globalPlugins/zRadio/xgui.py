@@ -89,7 +89,7 @@ class RadioGeneral():
 
 		# Translators: name of a label
 		busqueda_radio = wx.StaticText(self.frame, wx.ID_ANY, label=_("Busqueda emisoras:"))
-		self.texto_busqueda_radio = wx.TextCtrl(self.frame, wx.ID_ANY)
+		self.texto_busqueda_radio = wx.TextCtrl(self.frame, wx.ID_ANY, style = wx.TE_PROCESS_ENTER)
 		# Translators: Search button name
 		self.Buscar_radioBTN = wx.Button(self.frame, wx.ID_ANY, _("&Buscar"))
 		# Translators: name of a label
@@ -119,7 +119,7 @@ class RadioFavoritos():
 
 		# Translators: name of a label
 		busqueda_radio_favoritos = wx.StaticText(self.frame, wx.ID_ANY, label=_("Busqueda emisoras favoritas:"))
-		self.texto_busqueda_radio_favoritos = wx.TextCtrl(self.frame, wx.ID_ANY)
+		self.texto_busqueda_radio_favoritos = wx.TextCtrl(self.frame, wx.ID_ANY, style = wx.TE_PROCESS_ENTER)
 		# Translators: Search button name
 		self.Buscar_radioBTN_favoritos = wx.Button(self.frame, wx.ID_ANY, _("&Buscar"))
 		# Translators: name of a label
@@ -154,7 +154,7 @@ class RadioBusqueda():
 
 		# Translators: name of a label
 		self.busqueda_categoria_radio = wx.StaticText(self.frame, wx.ID_ANY, label=_("Búsqueda general de radios:"))
-		self.texto_busqueda_categoria = wx.TextCtrl(self.frame, wx.ID_ANY)
+		self.texto_busqueda_categoria = wx.TextCtrl(self.frame, wx.ID_ANY, style = wx.TE_PROCESS_ENTER)
 		# Translators: Search button name
 		self.Buscar_Categoria_RadioBTN = wx.Button(self.frame, wx.ID_ANY, _("&Buscar"))
 

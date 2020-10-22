@@ -49,7 +49,9 @@ Una vez abierta la interface consta de una lista en árbol que tiene 3 categorí
 
 Bien cuando el foco este en las categoría seleccionada para activarla pulsamos la tecla TAB, y caeremos en un campo  de busqueda, ya sea  para buscar una emisora o para seleccionar una categoría en un cuadro combinado si  estamos en la categoría Buscador.
 
-Una vez que hayas escrito lo que deseas encontrar  pulsa el botón Buscar, si tabulamos encontraremos  el listado de emisoras. Cuando estemos en la lista podemos movernos por ella con las flechas,  Una vez sobre el nombre de las emisora,y pulsando la tecla aplicaciones o shift+f10 para mostrar las opciones disponibles para la radio.
+Una vez que hayas escrito lo que deseas encontrar  pulsa el botón Buscar. También se puede pulsar la tecla Intro después  de haber introducido una búsqueda en dicho campo. Por lo tanto, esta  acción vendría a ser la misma que si hubieramos pulsado el botón Buscar.
+
+Si tabulamos encontraremos  el listado de emisoras. Cuando estemos en la lista podemos movernos por ella con las flechas,  Una vez sobre el nombre de las emisora,y pulsando la tecla aplicaciones o shift+f10 para mostrar las opciones disponibles para la radio.
 
 Si volvemos a tabular y no tenemos nada en reproducción caeremos en una barra de volumen que por defecto la primera vez esta al 50%, si estamos reproduciendo algo caeremos en los botones que controlan la reproducción.
 
@@ -70,6 +72,8 @@ En esta pantalla lo primero que caeremos es en un campo de búsqueda donde podre
 Por ejemplo si ponemos onda nos devolverá todas las emisoras que contengan esa palabra, cuidado si ponemos solo la letra o nos devolverá todas las emisoras que contengan la letra o, esto puede causar un retardo en la búsqueda de resultados si estamos en una lista muy grande de emisoras y hay muchas que contengan la letra o.
 
 Si tabulamos tendremos el botón Buscar el cual si lo pulsamos empezara la búsqueda y dicho botón cambiara su nombre a Limpiar. Para volver a tener el listado de emisoras tendremos que pulsar el botón limpiar.
+
+Nota: También se puede pulsar la tecla Intro después  de haber introducido una búsqueda en dicho campo. Por lo tanto, esta  acción vendría a ser la misma que si hubieramos pulsado el botón Buscar.
 
 Si volvemos a tabular tendremos un Listado de emisoras o el resultado de la búsqueda dependiendo de lo que hubiésemos echo en el cuadro de búsqueda.
 

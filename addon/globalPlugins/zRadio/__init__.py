@@ -210,12 +210,14 @@ class MainWindows(wx.Dialog):
 		self.RadioGeneralDLG.listbox_radio.Append(gen_nombre_radios)
 		self.RadioGeneralDLG.listbox_radio.SetSelection(0)
 		self.RadioGeneralDLG.Buscar_radioBTN.Bind(wx.EVT_BUTTON, self.BuscarRadioGeneral)
+		self.RadioGeneralDLG.texto_busqueda_radio.Bind(wx.EVT_TEXT_ENTER, self.BuscarRadioGeneral)
 		self.RadioGeneralDLG.listbox_radio.Bind(wx.EVT_CONTEXT_MENU,self.menuContextualLanzador)
 		self.menuContextual()
 
 #
 		self.RadioFavoritosDLG = xgui.RadioFavoritos(self.RadioDLG.page_2)
 		self.RadioFavoritosDLG.Buscar_radioBTN_favoritos.Bind(wx.EVT_BUTTON, self.BuscarRadioFavoritos)
+		self.RadioFavoritosDLG.texto_busqueda_radio_favoritos.Bind(wx.EVT_TEXT_ENTER, self.BuscarRadioFavoritos)
 		self.RadioFavoritosDLG.listbox_radio_favoritos.Bind(wx.EVT_CONTEXT_MENU,self.menuContextualLanzador)
 		self.menuContextual()
 
@@ -225,6 +227,7 @@ class MainWindows(wx.Dialog):
 		self.RadioBusquedaDLG.ch_categorias_radio.SetSelection(0)
 		self.RadioBusquedaDLG.ch_categorias_radio.Bind(wx.EVT_CHOICE, self.SelectorCategoriaRadioBusqueda)
 		self.RadioBusquedaDLG.Buscar_Categoria_RadioBTN.Bind(wx.EVT_BUTTON, self.BuscarCategoriaRadio)
+		self.RadioBusquedaDLG.texto_busqueda_categoria.Bind(wx.EVT_TEXT_ENTER, self.BuscarCategoriaRadio)
 		self.RadioBusquedaDLG.lb_categorias_radio.Bind(wx.EVT_CONTEXT_MENU,self.menuContextualLanzador)
 		self.menuContextual()
 
