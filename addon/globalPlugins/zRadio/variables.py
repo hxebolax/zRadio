@@ -114,6 +114,7 @@ urlReproducir = "" # La dirección a reproducir
 control1 = False
 controlON = False
 controlSilenciar = False
+controleditor = False
 
 ### Radio
 Opciones.Cargar_Opciones_Radio()

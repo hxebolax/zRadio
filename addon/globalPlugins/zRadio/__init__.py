@@ -11,8 +11,8 @@ import ui
 import wx
 import wx.adv
 from scriptHandler import script
+from tones import beep
 # import the necessary modules (Python)
-#from .lib import xgui
 from . import xgui
 from .lib import mpv
 from .chkConexion import InternetChecker
@@ -183,6 +183,161 @@ Inténtelo más tarde.""")
 			# Translators: Information message with the name of the station loaded in memory
 			ui.message(_("Emisora en memoria: %s") % nombreTitulo)
 
+	# Translators: Description for Input Gestures dialog for zRadio
+	@script(gesture=None, description= _("Reproducir emisora rápidamente 1"), category= "zRadio")
+	def script_Rapida1(self, gesture):
+		global nombreTitulo, urlReproducir, controlON
+		try:
+			temp1 = fav_nombre_radios[0]
+			temp2 = fav_url_radios[0]
+			if chkInternet.test_internet(temp2) == False:
+				# Translators: Error information message when loading the station
+				xguiMsg = \
+_("""No se puedo cargar la emisora.
+
+Asegúrese de que tiene conexión a internet.
+
+Otros motivos pueden ser que la emisora tenga problemas en estos momentos.
+
+Inténtelo más tarde.""")
+				ui.message(xguiMsg)
+			else:
+				nombreTitulo = fav_nombre_radios[0]
+				urlReproducir = fav_url_radios[0]
+				if not self._MainWindows:
+					controlON = True
+					player.volume = volumenGeneral
+					player.play(urlReproducir)
+				else:
+					wx.CallAfter(pub.sendMessage, "EmisorasRapidas")
+		except IndexError:
+			# Translators: Information message
+			ui.message(_("No tiene ninguna emisora en Favoritos en la posición 1"))
+
+	# Translators: Description for Input Gestures dialog for zRadio
+	@script(gesture=None, description= _("Reproducir emisora rápidamente 2"), category= "zRadio")
+	def script_Rapida2(self, gesture):
+		global nombreTitulo, urlReproducir, controlON
+		try:
+			temp1 = fav_nombre_radios[1]
+			temp2 = fav_url_radios[1]
+			if chkInternet.test_internet(temp2) == False:
+				# Translators: Error information message when loading the station
+				xguiMsg = \
+_("""No se puedo cargar la emisora.
+
+Asegúrese de que tiene conexión a internet.
+
+Otros motivos pueden ser que la emisora tenga problemas en estos momentos.
+
+Inténtelo más tarde.""")
+				ui.message(xguiMsg)
+			else:
+				nombreTitulo = fav_nombre_radios[1]
+				urlReproducir = fav_url_radios[1]
+				if not self._MainWindows:
+					controlON = True
+					player.volume = volumenGeneral
+					player.play(urlReproducir)
+				else:
+					wx.CallAfter(pub.sendMessage, "EmisorasRapidas")
+		except IndexError:
+			# Translators: Information message
+			ui.message(_("No tiene ninguna emisora en Favoritos en la posición 2"))
+
+	# Translators: Description for Input Gestures dialog for zRadio
+	@script(gesture=None, description= _("Reproducir emisora rápidamente 3"), category= "zRadio")
+	def script_Rapida3(self, gesture):
+		global nombreTitulo, urlReproducir, controlON
+		try:
+			temp1 = fav_nombre_radios[2]
+			temp2 = fav_url_radios[2]
+			if chkInternet.test_internet(temp2) == False:
+				# Translators: Error information message when loading the station
+				xguiMsg = \
+_("""No se puedo cargar la emisora.
+
+Asegúrese de que tiene conexión a internet.
+
+Otros motivos pueden ser que la emisora tenga problemas en estos momentos.
+
+Inténtelo más tarde.""")
+				ui.message(xguiMsg)
+			else:
+				nombreTitulo = fav_nombre_radios[2]
+				urlReproducir = fav_url_radios[2]
+				if not self._MainWindows:
+					controlON = True
+					player.volume = volumenGeneral
+					player.play(urlReproducir)
+				else:
+					wx.CallAfter(pub.sendMessage, "EmisorasRapidas")
+		except IndexError:
+			# Translators: Information message
+			ui.message(_("No tiene ninguna emisora en Favoritos en la posición 3"))
+
+	# Translators: Description for Input Gestures dialog for zRadio
+	@script(gesture=None, description= _("Reproducir emisora rápidamente 4"), category= "zRadio")
+	def script_Rapida4(self, gesture):
+		global nombreTitulo, urlReproducir, controlON
+		try:
+			temp1 = fav_nombre_radios[3]
+			temp2 = fav_url_radios[3]
+			if chkInternet.test_internet(temp2) == False:
+				# Translators: Error information message when loading the station
+				xguiMsg = \
+_("""No se puedo cargar la emisora.
+
+Asegúrese de que tiene conexión a internet.
+
+Otros motivos pueden ser que la emisora tenga problemas en estos momentos.
+
+Inténtelo más tarde.""")
+				ui.message(xguiMsg)
+			else:
+				nombreTitulo = fav_nombre_radios[3]
+				urlReproducir = fav_url_radios[3]
+				if not self._MainWindows:
+					controlON = True
+					player.volume = volumenGeneral
+					player.play(urlReproducir)
+				else:
+					wx.CallAfter(pub.sendMessage, "EmisorasRapidas")
+		except IndexError:
+			# Translators: Information message
+			ui.message(_("No tiene ninguna emisora en Favoritos en la posición 4"))
+
+	# Translators: Description for Input Gestures dialog for zRadio
+	@script(gesture=None, description= _("Reproducir emisora rápidamente 5"), category= "zRadio")
+	def script_Rapida5(self, gesture):
+		global nombreTitulo, urlReproducir, controlON
+		try:
+			temp1 = fav_nombre_radios[4]
+			temp2 = fav_url_radios[4]
+			if chkInternet.test_internet(temp2) == False:
+				# Translators: Error information message when loading the station
+				xguiMsg = \
+_("""No se puedo cargar la emisora.
+
+Asegúrese de que tiene conexión a internet.
+
+Otros motivos pueden ser que la emisora tenga problemas en estos momentos.
+
+Inténtelo más tarde.""")
+				ui.message(xguiMsg)
+			else:
+				nombreTitulo = fav_nombre_radios[4]
+				urlReproducir = fav_url_radios[4]
+				if not self._MainWindows:
+					controlON = True
+					player.volume = volumenGeneral
+					player.play(urlReproducir)
+				else:
+					wx.CallAfter(pub.sendMessage, "EmisorasRapidas")
+		except IndexError:
+			# Translators: Information message
+			ui.message(_("No tiene ninguna emisora en Favoritos en la posición 5"))
+
 class MainWindows(wx.Dialog):
 	def __init__(self, parent):
 		WIDTH = 800
@@ -204,6 +359,8 @@ class MainWindows(wx.Dialog):
 		self.RadioDLG.SilenciarBTN.Bind(wx.EVT_BUTTON, self.SilenciarBoton)
 		self.Bind(wx.EVT_CHAR_HOOK, self.onTeclasRapidas)
 		self.Bind(wx.EVT_BUTTON, self.onClose, id=wx.ID_CANCEL)
+		self.RadioDLG.AccionBTN.Bind(wx.EVT_BUTTON,self.mostrar_menu_accion)
+		self.menu_accion()
 
 #
 		self.RadioGeneralDLG = xgui.RadioGeneral(self.RadioDLG.page_1)
@@ -218,6 +375,7 @@ class MainWindows(wx.Dialog):
 		self.RadioFavoritosDLG = xgui.RadioFavoritos(self.RadioDLG.page_2)
 		self.RadioFavoritosDLG.Buscar_radioBTN_favoritos.Bind(wx.EVT_BUTTON, self.BuscarRadioFavoritos)
 		self.RadioFavoritosDLG.texto_busqueda_radio_favoritos.Bind(wx.EVT_TEXT_ENTER, self.BuscarRadioFavoritos)
+		self.RadioFavoritosDLG.listbox_radio_favoritos.Bind(wx.EVT_KEY_UP, self.onTeclasFavoritos)
 		self.RadioFavoritosDLG.listbox_radio_favoritos.Bind(wx.EVT_CONTEXT_MENU,self.menuContextualLanzador)
 		self.menuContextual()
 
@@ -236,6 +394,7 @@ class MainWindows(wx.Dialog):
 		pub.subscribe(self.DetenerBoton, "Detener")
 		pub.subscribe(self.RecargarBoton, "Recargar")
 		pub.subscribe(self.SilenciarBoton, "Silenciar")
+		pub.subscribe(self.ComprobarUrl_Rapidos, "EmisorasRapidas")
 
 		if controlON == True:
 			self.onBotonesReproductor()
@@ -258,12 +417,14 @@ class MainWindows(wx.Dialog):
 					self.RadioGeneralDLG.listbox_radio.Clear()
 					self.RadioGeneralDLG.listbox_radio.Append(gen_nombre_radios)
 					self.RadioGeneralDLG.listbox_radio.SetSelection(0)
+					self.RadioDLG.AccionBTN.Disable()
 			else:
 				# Translators: Search button name
 				if self.RadioGeneralDLG.Buscar_radioBTN.GetLabel() == _(_("&Buscar")):
 					self.RadioGeneralDLG.listbox_radio.Clear()
 					self.RadioGeneralDLG.listbox_radio.Append(gen_nombre_radios)
 					self.RadioGeneralDLG.listbox_radio.SetSelection(0)
+					self.RadioDLG.AccionBTN.Disable()
 			event.Skip()
 
 		elif indice == 1:
@@ -272,12 +433,18 @@ class MainWindows(wx.Dialog):
 				# Translators: Message in listbox favorites, no favorites
 				self.RadioFavoritosDLG.listbox_radio_favoritos.Append(_("No hay favoritos."))
 				self.RadioFavoritosDLG.listbox_radio_favoritos.SetSelection(0)
+				self.RadioDLG.AccionBTN.Enable()
 			else:
 				# Translators: Search button name
 				if self.RadioFavoritosDLG.Buscar_radioBTN_favoritos.GetLabel() == _(_("&Buscar")):
 					self.RadioFavoritosDLG.listbox_radio_favoritos.Clear()
 					self.RadioFavoritosDLG.listbox_radio_favoritos.Append(fav_nombre_radios)
 					self.RadioFavoritosDLG.listbox_radio_favoritos.SetSelection(0)
+					self.RadioDLG.AccionBTN.Enable()
+			event.Skip()
+
+		elif indice == 2:
+			self.RadioDLG.AccionBTN.Disable()
 			event.Skip()
 
 	def SelectorCategoriaRadioBusqueda(self, event):
@@ -682,6 +849,83 @@ Haga una búsqueda más específica.""")
 				self.RadioBusquedaDLG.lb_categorias_radio.Append(_("Esperando una búsqueda."))
 				self.RadioBusquedaDLG.lb_categorias_radio.SetSelection(0)
 
+	def menu_accion(self):
+		self.menuaccion = wx.Menu()
+
+		# Translators: context menu item
+		self.newfav = self.menuaccion.Append(wx.ID_ANY, _("&Nueva emisora"))
+		self.Bind(wx.EVT_MENU, self.NuevoFavorito, self.newfav)
+		# Translators: context menu item
+		self.editfav = self.menuaccion.Append(wx.ID_ANY, _("&Editar emisora"))
+		self.Bind(wx.EVT_MENU, self.EditarFavorito, self.editfav)
+		# Translators: context menu item
+		self.delFav = self.menuaccion.Append(wx.ID_ANY, _("&Quitar de favoritos"))
+		self.Bind(wx.EVT_MENU, self.BorrarFavorito, self.delFav)
+
+	def mostrar_menu_accion(self,event):
+		position = self.RadioDLG.AccionBTN.GetPosition()
+		self.PopupMenu(self.menuaccion,position)
+		pass
+
+	def NuevoFavorito(self, event):
+		global controleditor
+		# Translators: title of dialog
+		dlg = DialogoNewEdit(_("Añadir nueva emisora"))
+		dlg.ShowModal()
+		if controleditor == True:
+			controleditor = False
+			Opciones.Guardar_Buffers(fileFavRadio, fav_nombre_radios, fav_url_radios)
+			Opciones.Cargar_Buffer_Favoritos_Radio()
+			if len(fav_nombre_radios) == 0:
+				# Translators: Search button name
+				self.RadioFavoritosDLG.Buscar_radioBTN_favoritos.SetLabel(_("&Buscar"))
+				self.RadioFavoritosDLG.texto_busqueda_radio_favoritos.Clear()
+				self.RadioFavoritosDLG.listbox_radio_favoritos.Clear()
+				# Translators: Message no favorites
+				self.RadioFavoritosDLG.listbox_radio_favoritos.Append(_("No hay favoritos."))
+				self.RadioFavoritosDLG.listbox_radio_favoritos.SetSelection(0)
+			else:
+				# Translators: Search button name
+				self.RadioFavoritosDLG.Buscar_radioBTN_favoritos.SetLabel(_("&Buscar"))
+				self.RadioFavoritosDLG.texto_busqueda_radio_favoritos.Clear()
+				self.RadioFavoritosDLG.listbox_radio_favoritos.Clear()
+				self.RadioFavoritosDLG.listbox_radio_favoritos.Append(fav_nombre_radios)
+				self.RadioFavoritosDLG.listbox_radio_favoritos.SetSelection(0)
+		self.RadioFavoritosDLG.listbox_radio_favoritos.SetFocus()
+
+	def EditarFavorito(self, event):
+		global controleditor
+		indice = self.RadioFavoritosDLG.listbox_radio_favoritos.GetSelection()
+		# Translators: title of dialog
+		dlg = DialogoNewEdit(_("Editar emisora"), fav_nombre_radios[indice], fav_url_radios[indice], indice)
+		dlg.ShowModal()
+		if controleditor == True:
+			controleditor = False
+			Opciones.Guardar_Buffers(fileFavRadio, fav_nombre_radios, fav_url_radios)
+			Opciones.Cargar_Buffer_Favoritos_Radio()
+			if len(fav_nombre_radios) == 0:
+				# Translators: Search button name
+				self.RadioFavoritosDLG.Buscar_radioBTN_favoritos.SetLabel(_("&Buscar"))
+				self.RadioFavoritosDLG.texto_busqueda_radio_favoritos.Clear()
+				self.RadioFavoritosDLG.listbox_radio_favoritos.Clear()
+				# Translators: Message no favorites
+				self.RadioFavoritosDLG.listbox_radio_favoritos.Append(_("No hay favoritos."))
+				self.RadioFavoritosDLG.listbox_radio_favoritos.SetSelection(0)
+			else:
+				# Translators: Search button name
+				self.RadioFavoritosDLG.Buscar_radioBTN_favoritos.SetLabel(_("&Buscar"))
+				self.RadioFavoritosDLG.texto_busqueda_radio_favoritos.Clear()
+				self.RadioFavoritosDLG.listbox_radio_favoritos.Clear()
+				self.RadioFavoritosDLG.listbox_radio_favoritos.Append(fav_nombre_radios)
+				self.RadioFavoritosDLG.listbox_radio_favoritos.SetSelection(0)
+		self.RadioFavoritosDLG.listbox_radio_favoritos.SetFocus()
+
+	def BorrarFavorito(self, event):
+		if self.RadioFavoritosDLG.listbox_radio_favoritos.GetString(self.RadioFavoritosDLG.listbox_radio_favoritos.GetSelection()) == _("No hay favoritos."):
+			pass
+		else:
+			self.Quitar_Favoritos(None)
+
 	def menuContextual(self):
 		self.contextual_busqueda_radio1 = wx.Menu()
 		# Translators: context menu item
@@ -1024,6 +1268,36 @@ Inténtelo más tarde.""")
 			player.play(urlReproducir)
 			self.RadioDLG.DetenerBTN.SetFocus()
 
+	def ComprobarUrl_Rapidos(self):
+		global controlON
+
+		if chkInternet.test_internet(urlReproducir) == False:
+			# Translators: Error information message when loading the station
+			xguiMsg = \
+_("""No se puedo cargar la emisora.
+
+Asegúrese de que tiene conexión a internet.
+
+Otros motivos pueden ser que la emisora tenga problemas en estos momentos.
+
+Inténtelo más tarde.""")
+			xgui.Mensaje(xguiMsg,
+				# Translators: Message window title: Error
+				_("Error"), 0)
+			indice = self.RadioDLG.TreeBook.GetSelection() # me da el indice de la pestaña
+			if indice == 0:
+				self.RadioGeneralDLG.listbox_radio.SetFocus()
+			elif indice == 1:
+				self.RadioFavoritosDLG.listbox_radio_favoritos.SetFocus()
+			elif indice == 2:
+				self.RadioBusquedaDLG.lb_categorias_radio.SetFocus()
+		else:
+			controlON = True
+			self.onBotonesReproductor()
+			player.volume = volumenGeneral
+			player.play(urlReproducir)
+			self.RadioDLG.DetenerBTN.SetFocus()
+
 	def BajarVol(self):
 		global volumenGeneral
 		vol1 = volumenGeneral - 1
@@ -1123,9 +1397,119 @@ Inténtelo más tarde.""")
 				self.RadioDLG.SilenciarBTN.SetLabel(_("&Silenciar"))
 				controlSilenciar = False
 
+	def onTeclasFavoritos(self, event):
+		if (event.AltDown(), event.GetKeyCode()) == (True, 315):
+			self.moveup(None)
+			event.Skip()
+		if (event.AltDown(), event.GetKeyCode()) == (True, 317):
+			self.movedown(None)
+			event.Skip()
+
+	def moveup(self, event):
+		global fav_nombre_radios, fav_url_radios
+		indice = self.RadioFavoritosDLG.listbox_radio_favoritos.GetSelection()
+		totalLista = len(fav_nombre_radios) - 1
+		if totalLista == -1:
+			pass
+		else:
+			if indice == 0:
+				beep(100,150)
+			else:
+				fav_nombre_radios.insert(indice - 1, fav_nombre_radios.pop(indice))
+				fav_url_radios.insert(indice - 1, fav_url_radios.pop(indice))
+				self.RadioFavoritosDLG.listbox_radio_favoritos.Clear()
+				self.RadioFavoritosDLG.listbox_radio_favoritos.Append(fav_nombre_radios)
+				self.RadioFavoritosDLG.listbox_radio_favoritos.SetSelection(indice - 1)
+				Opciones.Guardar_Buffers(fileFavRadio, fav_nombre_radios, fav_url_radios)
+
+	def movedown(self, event):
+		global fav_nombre_radios, fav_url_radios
+		indice = self.RadioFavoritosDLG.listbox_radio_favoritos.GetSelection()
+		totalLista = len(fav_nombre_radios) - 1
+		if totalLista == -1:
+			pass
+		else:
+			if indice == totalLista:
+				beep(200,150)
+			else:
+				fav_nombre_radios.insert(indice + 1, fav_nombre_radios.pop(indice))
+				fav_url_radios.insert(indice + 1, fav_url_radios.pop(indice))
+				self.RadioFavoritosDLG.listbox_radio_favoritos.Clear()
+				self.RadioFavoritosDLG.listbox_radio_favoritos.Append(fav_nombre_radios)
+				self.RadioFavoritosDLG.listbox_radio_favoritos.SetSelection(indice + 1)
+				Opciones.Guardar_Buffers(fileFavRadio, fav_nombre_radios, fav_url_radios)
+
 	def onClose(self, event):
 		Opciones.Guardar_Buffers(fileFavRadio, fav_nombre_radios, fav_url_radios)
 		lista_opciones = [volumenGeneral]
 		Opciones.Guardar_Opciones(lista_opciones)
 		self.Destroy()
 		gui.mainFrame.postPopup()
+
+class DialogoNewEdit(wx.Dialog):
+	def __init__(self, titulo, nombre = None, url = None, valor = None):
+		WIDTH = 600
+		HEIGHT = 200
+		pos = xgui._calculatePosition(WIDTH, HEIGHT)
+
+		super(DialogoNewEdit, self).__init__(None, -1, title=titulo, pos = pos, size = (WIDTH, HEIGHT))
+
+		self.Panel = wx.Panel(self)
+
+#
+		self.DialogoN_E = xgui.DialogoNuevoEditar(self.Panel)
+		self.DialogoN_E.AceptarBTN.Bind(wx.EVT_BUTTON, self.AceptarBoton)
+		self.DialogoN_E.CancelarBTN.Bind(wx.EVT_BUTTON, self.CancelarBoton)
+		self.Bind(wx.EVT_CLOSE, self.CancelarBoton)
+		self.Bind(wx.EVT_CHAR_HOOK, self.onEscape)
+
+		self.valor = valor
+
+		if nombre == None:
+			pass
+		else:
+			self.DialogoN_E.texto_emisora.SetValue(nombre)
+			self.DialogoN_E.texto_url.SetValue(url)
+
+	def AceptarBoton(self, event):
+		global controleditor
+		if self.DialogoN_E.texto_emisora.GetValue() == "":
+			# Translators: error message, you cannot leave the field
+			xguiMsg = \
+_("""No puede dejar el campo Nombre de la emisora en blanco.
+Asegúrese de introducir un nombre correcto.""")
+			xgui.Mensaje(xguiMsg,
+				# Translators: Message window title: Error
+				_("Error"), 0)
+			self.DialogoN_E.texto_emisora.SetFocus()
+		else:
+			if self.DialogoN_E.texto_url.GetValue() == "":
+				# Translators: error message, you cannot leave the field
+				xguiMsg = \
+_("""No puede dejar el campo de la URL de la emisora en blanco.
+Asegúrese de introducir una dirección correcta.""")
+				xgui.Mensaje(xguiMsg,
+					# Translators: Message window title: Error
+					_("Error"), 0)
+				self.DialogoN_E.texto_url.SetFocus()
+			else:
+				if self.valor == None:
+					controleditor = True
+					fav_nombre_radios.append(self.DialogoN_E.texto_emisora.GetValue())
+					fav_url_radios.append(self.DialogoN_E.texto_url.GetValue())
+				else:
+					controleditor = True
+					del fav_nombre_radios[self.valor]
+					del fav_url_radios[self.valor]
+					fav_nombre_radios.append(self.DialogoN_E.texto_emisora.GetValue())
+					fav_url_radios.append(self.DialogoN_E.texto_url.GetValue())
+				self.Destroy()
+
+	def CancelarBoton(self, event):
+		self.Destroy()
+
+	def onEscape(self, event):
+		if event.GetKeyCode() == 27: # Pulsamos ESC y cerramos la ventana
+			self.Destroy()
+		else:
+			event.Skip()

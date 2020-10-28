@@ -194,3 +194,78 @@ zRadio fournit les commandes suivantes pour permettre à l'utilisateur d'ajouter
 ## Traducteurs et contributeurs:
 
 * Français: Rémy Ruiz
+
+# Journal des changements.
+## Version 0.3.
+
+* Ajoutée   la possibilité de trier les stations dans les favoris.
+
+Cette nouvelle option est pour les favoris et nous pouvons déplacer la station qui a le focus vers le haut ou vers le bas avec Alt + Flèche haut ou bas.
+
+Lors de l'arriver tantôt vers la partie supérieure comme vers la partie inférieure de la liste se jouera un son pour nous avertir que nous sommes au début ou à la fin de la liste.
+
+Le son est différent afin d'identifier bien où nous sommes.
+
+* Ajoutée   la possibilité d'ajouter, modifier et retirer des favoris.
+
+Lorsque nous sommes dans la catégorie Favoris s'affichera un nouveau bouton appelé Action avec la touche rapide Alt + a.
+
+Ce bouton apparaît uniquement lorsque nous sommes dans la catégorie Favoris.
+
+On peut appeler le bouton de n'importe où de l'interface et se compose d'un menu qui sera affiché avec les options suivantes:
+
+* Nouvelle station: Nous allons ouvrir une boîte de dialogue pour entrer une station personnelle.
+
+* Modifier la station: Modifiera la station qui a le focus dans Favoris.
+
+* Retirer des favoris: Ceci supprimera  la station qui a le focus. Ce n'est pas réversible.
+
+La boîte de dialogue tantôt pour Nouvelle station comme pour Modifier la station, est la même pour les deux options.
+
+ladite boîte de dialogue comprend deux champs d'édition pour le nom de la station et l'adresse  URL de la station.
+
+Ces champs sont obligatoires et ne peuvent pas être vide.
+
+Dans la liste des favoris, vous pouvez avoir des stations avec le même nom, mais il est recommandé d'avoir des noms différents pour notre meilleure compréhension.
+
+Nous avons aussi deux boutons, OK et Annuler.
+
+Si nous faisons OK, les changements seront enregistrées en fonction de ce que nous faisons soit  Nouvelle station ou Modifier la station.
+
+Si nous faisons Annuler, toutes les données seront perdues et rien ne sera enregistré.
+
+De plus, nous pouvons fermer la boîte de dialogue en appuyant sur Alt + F4 ou Échap dans ces deux actions se perdra ce que nous avons fait.
+
+* Ajoutée la possibilité des stations rapides.
+
+Cette nouvelle option nous permettra de commencer à jouer rapidement une station.
+
+Bien maintenant nous pouvons avoir 5 stations rapides, ces stations seront celles que nous avons mis dans les favoris dans les 5 premières positions.
+
+Pour cette nouvelle option ils ont été ajoutés 5 nouveaux gestes de commandes que nous allons devoir configurer  en allant dans le menu NVDA / Préférences / Gestes de commandes... / zRadio.
+
+Bien, les nouveaux gestes de commandes sont appelés Jouer la station rapidement et suivie d'une numérotation de 1 à 5.
+
+Bien, chaque geste de comande que nous configurons correspondra à la station que Nous avons dans Favoris.
+
+Si nous configurons Jouer la station rapidement 1 et dans Favoris nous avons  Radio de tests, lorsque  nous appuyons de n'importe où soit avec la fenêtre ouverte  de zRadio ou avec la fenêtre fermée, la combinaison de touches que nous avons attribuées à cette commande commencera à jouer cette station.
+
+Cela est valable que pour les 5 premières stations dans Favoris toujours tant que nous avons attribué  un geste de commande pour chaque favori. Cette option ainsi que la précédente documentée afin de pouvoir trier les stations se complètent afin de pouvoir  avoir 5 stations préférées pour un accès rapide.
+
+## Version 0.2.
+
+* Ajout de la traduction française.
+
+* Documentation corrigée.
+
+* Résolu le retard dans Moteur de recherche / Recherche par étiquette.
+
+Maintenant, il ne se bloquera plus l'interface. Sette zone a été restructurée en supprimant les résultats par défaut et ne les montrant  lors de la recherche.
+
+* Ajoutée la possibilité d'appuyer sur Entrée dans les champs de recherche.
+
+* Correction de bugs dans le code.
+
+## Version 0.1.
+
+* Version initiale.

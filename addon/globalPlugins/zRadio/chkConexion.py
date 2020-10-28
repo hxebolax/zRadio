@@ -14,7 +14,7 @@ class InternetChecker(object):
 	def test_internet(self, url):
 		try:
 			data = urlopen(url, timeout=5)
-		except URLError:
+		except: # URLError:
 			return False
 
 		host = data.fp.raw._sock.getpeername()

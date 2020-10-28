@@ -183,4 +183,3 @@ class Raspado_Radios():
 		return [k for k,v in flat_dict.items()]
 	def values_only(flat_dict):
 		return [v for k,v in flat_dict.items()]
-

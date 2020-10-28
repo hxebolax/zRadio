@@ -51,7 +51,8 @@ class RadioPrincipal():
 		self.volumenBarra = wx.Slider(self.frame, wx.ID_ANY, 0, 0, 100, size=(100, -1))
 
 ########## Botones generales
-		self.AccionBTN = wx.Button(self.frame, wx.ID_ANY, "&Acción")
+		# Translators: Action button name
+		self.AccionBTN = wx.Button(self.frame, wx.ID_ANY, _("&Acción"))
 		self.AccionBTN.Disable()
 		self.HerramientasBTN = wx.Button(self.frame, wx.ID_ANY, "&Herramientas")
 		self.HerramientasBTN.Disable()
@@ -181,6 +182,42 @@ class RadioBusqueda():
 
 		sizeV.Add(listado_categoria_listbox_radio, 0, wx.EXPAND)
 		sizeV.Add(self.lb_categorias_radio, 1, wx.EXPAND)
+
+		self.frame.SetSizer(sizeV)
+
+class DialogoNuevoEditar():
+	def __init__(self, frame):
+
+		self.frame = frame
+
+		# Translators: label name for station name
+		label_emisora = wx.StaticText(self.frame, wx.ID_ANY, label=_("Nombre de la emisora:"))
+		self.texto_emisora = wx.TextCtrl(self.frame, wx.ID_ANY)
+ 
+		# Translators: label name for station url
+		label_url = wx.StaticText(self.frame, wx.ID_ANY, label=_("Dirección URL de la emisora:"))
+		self.texto_url = wx.TextCtrl(self.frame, wx.ID_ANY)
+
+		# Translators: acept button name
+		self.AceptarBTN = wx.Button(self.frame, wx.ID_ANY, _("&Aceptar"))
+		# Translators: Cancel button name
+		self.CancelarBTN = wx.Button(self.frame, wx.ID_ANY, _("&Cancelar"))
+
+		sizeV = wx.BoxSizer(wx.VERTICAL)
+		sizeV1 = wx.BoxSizer(wx.VERTICAL)
+		sizeH = wx.BoxSizer(wx.HORIZONTAL)
+
+		sizeV1.Add(label_emisora, wx.ID_ANY, wx.EXPAND | wx.ALL)
+		sizeV1.Add(self.texto_emisora, wx.ID_ANY, wx.EXPAND | wx.ALL)
+
+		sizeV1.Add(label_url, wx.ID_ANY, wx.EXPAND | wx.ALL)
+		sizeV1.Add(self.texto_url, wx.ID_ANY, wx.EXPAND | wx.ALL)
+
+		sizeH.Add(self.AceptarBTN, 2, wx.CENTER, 5)
+		sizeH.Add(self.CancelarBTN, 2, wx.CENTER, 5)
+
+		sizeV.Add(sizeV1, 1, wx.EXPAND | wx.ALL, 10)
+		sizeV.Add(sizeH, 0, wx.EXPAND | wx.ALL, 10)
 
 		self.frame.SetSizer(sizeV)
 
