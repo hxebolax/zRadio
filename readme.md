@@ -204,7 +204,7 @@ El sonido es diferente para identificar bien donde estamos.
 
 * Agregada la posibilidad de añadir, editar y borrar emisoras en Favoritos.
 
-Cuando estemos en la categoría Favoritos se mostrara un nuevo botón llamado Acción con la tecla aceleradora Alt + a.
+Cuando estemos en la categoría Favoritos se mostrara un nuevo botón llamado Acción con la tecla de acceso directo Alt + a.
 
 Este botón solo aparecerá cuando estemos en la categoría Favoritos.
 
@@ -218,7 +218,7 @@ Podremos llamar al botón desde cualquier parte de la interface y consta de un m
 
 El cuadro de dialogo tanto para Nueva emisora como para Editar emisora, es el mismo para las dos opciones.
 
-Dicho cuadro consta de dos campos de edición, para el nombre de la emisora y para la dirección url de la emisora.
+Dicho cuadro consta de dos campos de edición, para el nombre de la emisora y para la dirección URL de la emisora.
 
 Estos campos son obligatorios y no pueden quedar en blanco.
 
@@ -226,7 +226,7 @@ En la lista de Favoritos se pueden tener emisoras con el mismo nombre, pero se r
 
 Tenemos también dos botones, Aceptar y Cancelar. 
 
-Si aceptamos se guardaran los cambios dependiendo de lo que estemos haciendo ya sea nueva emisora o editar emisora.
+Si aceptamos se guardaran los cambios dependiendo de lo que estemos haciendo ya sea Nueva emisora o Editar emisora.
 
 Si cancelamos se perderán todos los datos y no se guardara nada.
 
@@ -236,21 +236,21 @@ Además podemos cerrar el dialogo presionando Alt + F4 o Escape en estas dos acc
 
 Esta nueva opción nos permitirá empezar la reproducción de una emisora rápidamente.
 
-Bien ahora podremos tener 5 emisoras rápidas, dichas emisoras serán las que tengamos puestas en favoritos en las 5 primeras posiciones.
+Bien ahora podremos tener 5 emisoras rápidas, dichas emisoras serán las que tengamos puestas en Favoritos en las 5 primeras posiciones.
 
-Para esta nueva opción se agregaron 5 nuevos Gestos de entrada que tendremos que configurar en NVDA / Preferencias / Gestos de entrada… / zRadio.
+Para esta nueva opción se agregaron 5 nuevos Gestos de entrada que tendremos que configurar yendo al menú de NVDA / Preferencias / Gestos de entrada... / zRadio.
 
 Bien los nuevos gestos se llaman Reproducir emisora rápidamente y seguido de una numeración del 1 al 5.
 
 Bien cada gesto que configuremos corresponderá a la emisora que tengamos en favoritos.
 
-Si configuramos Reproducir emisora rápidamente 1 y en favoritos tenemos Radio de pruebas, cuando pulsemos en cualquier parte ya sea con la ventana abierta de zRadio o con la ventana cerrada la combinación que hayamos asignado de teclas empezara a reproducir dicha emisora.
+Si configuramos Reproducir emisora rápidamente 1 y en Favoritos tenemos Radio de pruebas, cuando pulsemos en cualquier parte ya sea con la ventana abierta de zRadio o con la ventana cerrada la combinación de teclas que hayamos asignado a esta órden empezara a reproducir dicha emisora.
 
 Esto es válido para las 5 emisoras primeras de Favoritos siempre y cuando hayamos asignado un gesto de entrada para cada favorito. Esta opción junto con la anterior documentada de poder ordenar las emisoras se complementan para poder tener 5 emisoras preferidas de rápido acceso.
 
 ## Versión 0.2.
 
-* Agregado idioma Frances.
+* Agregado idioma Francés.
 
 * Corregida documentación.
 
@@ -258,10 +258,10 @@ Esto es válido para las 5 emisoras primeras de Favoritos siempre y cuando hayam
 
 Ahora ya no se colgara la interface. Se ha reestructurado dicho área quitando los resultados por defecto y mostrando solo cuando se busque.
 
-* Se agrego la posibilidad de pulsar intro en los campos de búsqueda.
+* Se agrego la posibilidad de pulsar Intro en los campos de búsqueda.
 
 * Corregidos errores del código.
 
-##Versión 0.1.
+## Versión 0.1.
 
 * Versión inicial.
