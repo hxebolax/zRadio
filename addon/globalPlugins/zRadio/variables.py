@@ -13,7 +13,7 @@ except:
 	pass
 import globalVars
 import addonHandler
-
+from .reproductor import *
 # For translation
 addonHandler.initTranslation()
 
@@ -23,7 +23,6 @@ dirLib =os.path.join(dir[0], "zRadio", "globalPlugins","zRadio", "lib")
 fileOptions = os.path.join(dirDatos, "opciones.dat")
 fileOptionsRadio = os.path.join(dirDatos, "opt_radio.dat")
 fileFavRadio = os.path.join(dirDatos, "fav_radios.dat")
-fileCountry = os.path.join(dirLib, "paises.dat")
 
 class Guardar_Cargar():
 	def __init__(self):
@@ -95,6 +94,7 @@ try:
 	Radios = Raspado_Radios()
 except:
 	pass
+player = MPVClass()
 ### Listas
 listaCategoriasBusquedaRadios = [
 	# Translators: Options for the search category combobox

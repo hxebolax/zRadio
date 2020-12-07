@@ -14,7 +14,6 @@ from scriptHandler import script
 from tones import beep
 # import the necessary modules (Python)
 from . import xgui
-from .lib import mpv
 from .chkConexion import InternetChecker
 from .variables import *
 from .pubsub import pub
@@ -22,7 +21,6 @@ from .pubsub import pub
 # For translation
 addonHandler.initTranslation()
 
-player = mpv.MPV(ytdl=True, vo=False)
 chkInternet = InternetChecker()
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
@@ -82,7 +80,7 @@ Asegurese de que tiene todo correcto.""")
 			if not self._MainWindows:
 				vol1 = volumenGeneral - 1
 				volumenGeneral = vol1
-				player.volume = volumenGeneral
+				player.volumen(volumenGeneral)
 			else:
 				wx.CallAfter(pub.sendMessage, "VolumenMenos")
 
@@ -97,7 +95,7 @@ Asegurese de que tiene todo correcto.""")
 			if not self._MainWindows:
 				vol1 = volumenGeneral + 1
 				volumenGeneral = vol1
-				player.volume = volumenGeneral
+				player.volumen(volumenGeneral)
 			else:
 				wx.CallAfter(pub.sendMessage, "VolumenMas")
 
@@ -110,8 +108,8 @@ Asegurese de que tiene todo correcto.""")
 			ui.message(_("No hay nada reproduciéndose"))
 		else:
 			if not self._MainWindows:
-				player.mute = False
-				player.command('stop')
+				player.mute(False)
+				player.stop()
 				controlON = False
 				controlSilenciar = False
 				nombreTitulo = ""
@@ -145,12 +143,13 @@ Inténtelo más tarde.""")
 					controlSilenciar = False
 					nombreTitulo = ""
 					urlReproducir = ""
-					player.mute = False
-					player.command('stop')
+					player.mute(False)
+					player.stop()
 				else:
-					controlSilenciar = False
-					player.mute = False
-					player.volume = volumenGeneral
+					if controlSilenciar == True:
+						controlSilenciar = False
+						player.mute(False)
+					player.volumen(volumenGeneral)
 					player.play(urlReproducir)
 			else:
 				wx.CallAfter(pub.sendMessage, "Recargar", event=None)
@@ -165,10 +164,10 @@ Inténtelo más tarde.""")
 		else:
 			if not self._MainWindows:
 				if controlSilenciar == False:
-					player.mute = True
+					player.mute(True)
 					controlSilenciar = True
 				else:
-					player.mute = False
+					player.mute(False)
 					controlSilenciar = False
 			else:
 				wx.CallAfter(pub.sendMessage, "Silenciar", event=None)
@@ -183,13 +182,25 @@ Inténtelo más tarde.""")
 			# Translators: Information message with the name of the station loaded in memory
 			ui.message(_("Emisora en memoria: %s") % nombreTitulo)
 
-	# Translators: Description for Input Gestures dialog for zRadio
-	@script(gesture=None, description= _("Reproducir emisora rápidamente 1"), category= "zRadio")
-	def script_Rapida1(self, gesture):
-		global nombreTitulo, urlReproducir, controlON
+
+	def runAction(self, valor):
+		global nombreTitulo, urlReproducir, controlON, controlSilenciar
 		try:
-			temp1 = fav_nombre_radios[0]
-			temp2 = fav_url_radios[0]
+			if valor == 1:
+				temp1 = fav_nombre_radios[0]
+				temp2 = fav_url_radios[0]
+			elif valor == 2:
+				temp1 = fav_nombre_radios[1]
+				temp2 = fav_url_radios[1]
+			elif valor == 3:
+				temp1 = fav_nombre_radios[2]
+				temp2 = fav_url_radios[2]
+			elif valor == 4:
+				temp1 = fav_nombre_radios[3]
+				temp2 = fav_url_radios[3]
+			elif valor == 5:
+				temp1 = fav_nombre_radios[4]
+				temp2 = fav_url_radios[4]
 			if chkInternet.test_internet(temp2) == False:
 				# Translators: Error information message when loading the station
 				xguiMsg = \
@@ -202,141 +213,76 @@ Otros motivos pueden ser que la emisora tenga problemas en estos momentos.
 Inténtelo más tarde.""")
 				ui.message(xguiMsg)
 			else:
-				nombreTitulo = fav_nombre_radios[0]
-				urlReproducir = fav_url_radios[0]
+				if valor == 1:
+					nombreTitulo = fav_nombre_radios[0]
+					urlReproducir = fav_url_radios[0]
+				elif valor == 2:
+					nombreTitulo = fav_nombre_radios[1]
+					urlReproducir = fav_url_radios[1]
+				elif valor == 3:
+					nombreTitulo = fav_nombre_radios[2]
+					urlReproducir = fav_url_radios[2]
+				elif valor == 4:
+					nombreTitulo = fav_nombre_radios[3]
+					urlReproducir = fav_url_radios[3]
+				elif valor == 5:
+					nombreTitulo = fav_nombre_radios[4]
+					urlReproducir = fav_url_radios[4]
 				if not self._MainWindows:
-					controlON = True
-					player.volume = volumenGeneral
-					player.play(urlReproducir)
+					if controlON == True:
+						if controlSilenciar == True:
+							controlSilenciar = False
+							player.mute(False)
+						player.volumen(volumenGeneral)
+						player.play(urlReproducir)
+					else:
+						controlON = True
+						player.inicio()
+						player.volumen(volumenGeneral)
+						player.play(urlReproducir)
 				else:
 					wx.CallAfter(pub.sendMessage, "EmisorasRapidas")
 		except IndexError:
-			# Translators: Information message
-			ui.message(_("No tiene ninguna emisora en Favoritos en la posición 1"))
+			if valor == 1:
+				# Translators: Information message
+				ui.message(_("No tiene ninguna emisora en Favoritos en la posición 1"))
+			elif valor == 2:
+				# Translators: Information message
+				ui.message(_("No tiene ninguna emisora en Favoritos en la posición 2"))
+			elif valor == 3:
+				# Translators: Information message
+				ui.message(_("No tiene ninguna emisora en Favoritos en la posición 3"))
+			elif valor == 4:
+				# Translators: Information message
+				ui.message(_("No tiene ninguna emisora en Favoritos en la posición 4"))
+			elif valor == 5:
+				# Translators: Information message
+				ui.message(_("No tiene ninguna emisora en Favoritos en la posición 5"))
+
+	# Translators: Description for Input Gestures dialog for zRadio
+	@script(gesture=None, description= _("Reproducir emisora rápidamente 1"), category= "zRadio")
+	def script_Rapida1(self, gesture):
+		self.runAction(1)
 
 	# Translators: Description for Input Gestures dialog for zRadio
 	@script(gesture=None, description= _("Reproducir emisora rápidamente 2"), category= "zRadio")
 	def script_Rapida2(self, gesture):
-		global nombreTitulo, urlReproducir, controlON
-		try:
-			temp1 = fav_nombre_radios[1]
-			temp2 = fav_url_radios[1]
-			if chkInternet.test_internet(temp2) == False:
-				# Translators: Error information message when loading the station
-				xguiMsg = \
-_("""No se puedo cargar la emisora.
-
-Asegúrese de que tiene conexión a internet.
-
-Otros motivos pueden ser que la emisora tenga problemas en estos momentos.
-
-Inténtelo más tarde.""")
-				ui.message(xguiMsg)
-			else:
-				nombreTitulo = fav_nombre_radios[1]
-				urlReproducir = fav_url_radios[1]
-				if not self._MainWindows:
-					controlON = True
-					player.volume = volumenGeneral
-					player.play(urlReproducir)
-				else:
-					wx.CallAfter(pub.sendMessage, "EmisorasRapidas")
-		except IndexError:
-			# Translators: Information message
-			ui.message(_("No tiene ninguna emisora en Favoritos en la posición 2"))
+		self.runAction(2)
 
 	# Translators: Description for Input Gestures dialog for zRadio
 	@script(gesture=None, description= _("Reproducir emisora rápidamente 3"), category= "zRadio")
 	def script_Rapida3(self, gesture):
-		global nombreTitulo, urlReproducir, controlON
-		try:
-			temp1 = fav_nombre_radios[2]
-			temp2 = fav_url_radios[2]
-			if chkInternet.test_internet(temp2) == False:
-				# Translators: Error information message when loading the station
-				xguiMsg = \
-_("""No se puedo cargar la emisora.
-
-Asegúrese de que tiene conexión a internet.
-
-Otros motivos pueden ser que la emisora tenga problemas en estos momentos.
-
-Inténtelo más tarde.""")
-				ui.message(xguiMsg)
-			else:
-				nombreTitulo = fav_nombre_radios[2]
-				urlReproducir = fav_url_radios[2]
-				if not self._MainWindows:
-					controlON = True
-					player.volume = volumenGeneral
-					player.play(urlReproducir)
-				else:
-					wx.CallAfter(pub.sendMessage, "EmisorasRapidas")
-		except IndexError:
-			# Translators: Information message
-			ui.message(_("No tiene ninguna emisora en Favoritos en la posición 3"))
+		self.runAction(3)
 
 	# Translators: Description for Input Gestures dialog for zRadio
 	@script(gesture=None, description= _("Reproducir emisora rápidamente 4"), category= "zRadio")
 	def script_Rapida4(self, gesture):
-		global nombreTitulo, urlReproducir, controlON
-		try:
-			temp1 = fav_nombre_radios[3]
-			temp2 = fav_url_radios[3]
-			if chkInternet.test_internet(temp2) == False:
-				# Translators: Error information message when loading the station
-				xguiMsg = \
-_("""No se puedo cargar la emisora.
-
-Asegúrese de que tiene conexión a internet.
-
-Otros motivos pueden ser que la emisora tenga problemas en estos momentos.
-
-Inténtelo más tarde.""")
-				ui.message(xguiMsg)
-			else:
-				nombreTitulo = fav_nombre_radios[3]
-				urlReproducir = fav_url_radios[3]
-				if not self._MainWindows:
-					controlON = True
-					player.volume = volumenGeneral
-					player.play(urlReproducir)
-				else:
-					wx.CallAfter(pub.sendMessage, "EmisorasRapidas")
-		except IndexError:
-			# Translators: Information message
-			ui.message(_("No tiene ninguna emisora en Favoritos en la posición 4"))
+		self.runAction(4)
 
 	# Translators: Description for Input Gestures dialog for zRadio
 	@script(gesture=None, description= _("Reproducir emisora rápidamente 5"), category= "zRadio")
 	def script_Rapida5(self, gesture):
-		global nombreTitulo, urlReproducir, controlON
-		try:
-			temp1 = fav_nombre_radios[4]
-			temp2 = fav_url_radios[4]
-			if chkInternet.test_internet(temp2) == False:
-				# Translators: Error information message when loading the station
-				xguiMsg = \
-_("""No se puedo cargar la emisora.
-
-Asegúrese de que tiene conexión a internet.
-
-Otros motivos pueden ser que la emisora tenga problemas en estos momentos.
-
-Inténtelo más tarde.""")
-				ui.message(xguiMsg)
-			else:
-				nombreTitulo = fav_nombre_radios[4]
-				urlReproducir = fav_url_radios[4]
-				if not self._MainWindows:
-					controlON = True
-					player.volume = volumenGeneral
-					player.play(urlReproducir)
-				else:
-					wx.CallAfter(pub.sendMessage, "EmisorasRapidas")
-		except IndexError:
-			# Translators: Information message
-			ui.message(_("No tiene ninguna emisora en Favoritos en la posición 5"))
+		self.runAction(5)
 
 class MainWindows(wx.Dialog):
 	def __init__(self, parent):
@@ -479,7 +425,7 @@ class MainWindows(wx.Dialog):
 			if self.RadioBusquedaDLG.Buscar_Categoria_RadioBTN.GetLabel() == _("&Buscar"):
 				# Translators: Searchable tag name
 				self.RadioBusquedaDLG.busqueda_categoria_radio.SetLabel(_("Buscar pais:"))
-				Radios.Paises_Español(fileCountry)
+				Radios.Paises_Español()
 				Radios.Paises_Cantidad_Emisoras()
 				self.RadioBusquedaDLG.lb_categorias_radio.Clear()
 				for nombre_item, numero_item in zip(Radios.paises_radio_español, Radios.paises_numero_emisoras):
@@ -492,7 +438,7 @@ class MainWindows(wx.Dialog):
 				# Translators: Search button name
 				self.RadioBusquedaDLG.Buscar_Categoria_RadioBTN.SetLabel(_("&Buscar"))
 				self.RadioBusquedaDLG.texto_busqueda_categoria.Clear()
-				Radios.Paises_Español(fileCountry)
+				Radios.Paises_Español()
 				Radios.Paises_Cantidad_Emisoras()
 				self.RadioBusquedaDLG.lb_categorias_radio.Clear()
 				for nombre_item, numero_item in zip(Radios.paises_radio_español, Radios.paises_numero_emisoras):
@@ -1235,10 +1181,10 @@ Haga una búsqueda más específica.""")
 	def 	on_set_volume(self, event):
 		global volumenGeneral
 		volumenGeneral = self.RadioDLG.volumenBarra.GetValue()
-		player.volume = volumenGeneral
+		player.volumen(volumenGeneral)
 
 	def ComprobarUrl(self, nombre, url):
-		global nombreTitulo, urlReproducir, controlON
+		global nombreTitulo, urlReproducir, controlON, controlSilenciar
 		if chkInternet.test_internet(url) == False:
 			# Translators: Error information message when loading the station
 			xguiMsg = \
@@ -1262,14 +1208,25 @@ Inténtelo más tarde.""")
 		else:
 			nombreTitulo = nombre
 			urlReproducir = url
-			controlON = True
-			self.onBotonesReproductor()
-			player.volume = volumenGeneral
-			player.play(urlReproducir)
-			self.RadioDLG.DetenerBTN.SetFocus()
+			if controlON == True:
+				if controlSilenciar == True:
+					controlSilenciar = False
+					# Translators: Silence button name
+					self.RadioDLG.SilenciarBTN.SetLabel(_("&Silenciar"))
+					player.mute(False)
+				player.volumen(volumenGeneral)
+				player.play(urlReproducir)
+				self.RadioDLG.DetenerBTN.SetFocus()
+			else:
+				controlON = True
+				self.onBotonesReproductor()
+				player.inicio()
+				player.volumen(volumenGeneral)
+				player.play(urlReproducir)
+				self.RadioDLG.DetenerBTN.SetFocus()
 
 	def ComprobarUrl_Rapidos(self):
-		global controlON
+		global controlON, controlSilenciar
 
 		if chkInternet.test_internet(urlReproducir) == False:
 			# Translators: Error information message when loading the station
@@ -1292,24 +1249,35 @@ Inténtelo más tarde.""")
 			elif indice == 2:
 				self.RadioBusquedaDLG.lb_categorias_radio.SetFocus()
 		else:
-			controlON = True
-			self.onBotonesReproductor()
-			player.volume = volumenGeneral
-			player.play(urlReproducir)
-			self.RadioDLG.DetenerBTN.SetFocus()
+			if controlON == True:
+				if controlSilenciar == True:
+					controlSilenciar = False
+					# Translators: Silence button name
+					self.RadioDLG.SilenciarBTN.SetLabel(_("&Silenciar"))
+					player.mute(False)
+				player.volumen(volumenGeneral)
+				player.play(urlReproducir)
+				self.RadioDLG.DetenerBTN.SetFocus()
+			else:
+				controlON = True
+				self.onBotonesReproductor()
+				player.inicio()
+				player.volumen(volumenGeneral)
+				player.play(urlReproducir)
+				self.RadioDLG.DetenerBTN.SetFocus()
 
 	def BajarVol(self):
 		global volumenGeneral
 		vol1 = volumenGeneral - 1
 		volumenGeneral = vol1
-		player.volume = volumenGeneral
+		player.volumen(volumenGeneral)
 		self.RadioDLG.volumenBarra.SetValue(volumenGeneral)
 
 	def SubirVol(self):
 		global volumenGeneral
 		vol1 = volumenGeneral + 1
 		volumenGeneral = vol1
-		player.volume = volumenGeneral
+		player.volumen(volumenGeneral)
 		self.RadioDLG.volumenBarra.SetValue(volumenGeneral)
 
 	def onBotonesReproductor(self):
@@ -1326,8 +1294,8 @@ Inténtelo más tarde.""")
 
 	def DetenerBoton(self, event):
 		global controlON, controlSilenciar, nombreTitulo, urlReproducir
-		player.mute = False
-		player.command('stop')
+		player.mute(False)
+		player.stop()
 		self.offBotonesReproductor()
 		controlON = False
 		controlSilenciar = False
@@ -1363,8 +1331,8 @@ Inténtelo más tarde.""")
 			self.offBotonesReproductor()
 			# Translators: Silence button name
 			self.RadioDLG.SilenciarBTN.SetLabel(_("&Silenciar"))
-			player.mute = False
-			player.command('stop')
+			player.mute(False)
+			player.stop()
 			indice = self.RadioDLG.TreeBook.GetSelection() # me da el indice de la pestaña
 			if indice == 0:
 				self.RadioGeneralDLG.listbox_radio.SetFocus()
@@ -1377,8 +1345,10 @@ Inténtelo más tarde.""")
 			self.onBotonesReproductor()
 			# Translators: Silence button name
 			self.RadioDLG.SilenciarBTN.SetLabel(_("&Silenciar"))
-			player.mute = False
-			player.volume = volumenGeneral
+			if controlSilenciar == True:
+				controlSilenciar = False
+				player.mute(False)
+			player.volumen(volumenGeneral)
 			player.play(urlReproducir)
 			self.RadioDLG.DetenerBTN.SetFocus()
 
@@ -1387,12 +1357,12 @@ Inténtelo más tarde.""")
 		if controlON == True:
 			# Translators: Silence button name
 			if self.RadioDLG.SilenciarBTN.GetLabel() == _("&Silenciar"):
-				player.mute = True
+				player.mute(True)
 				# Translators: Change button name to Remove Mute
 				self.RadioDLG.SilenciarBTN.SetLabel(_("Quitar &Silencio"))
 				controlSilenciar = True
 			else:
-				player.mute = False
+				player.mute(False)
 				# Translators: Silence button name
 				self.RadioDLG.SilenciarBTN.SetLabel(_("&Silenciar"))
 				controlSilenciar = False
