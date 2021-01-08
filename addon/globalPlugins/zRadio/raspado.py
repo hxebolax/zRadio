@@ -16,11 +16,19 @@ if idioma[:2] == "es":
 	diccionario = dict_español
 elif idioma[:2] == "fr":
 	diccionario = dict_frances
+elif idioma[:2] == "en":
+	diccionario = dict_ingles
+elif idioma == "pt_PT":
+	diccionario = dict_portugues
+elif idioma == "pt_BR":
+	diccionario = dict_portugues_brasil
+elif idioma[:2] == "pt":
+	diccionario = dict_portugues
 else:
 	diccionario = dict_español
 
 class Raspado_Radios():
-	def __init__(self):
+	def __init__(self, cache = False):
 
 		self.nombre_radios_pais = []
 		self.url_radios_pais = []
@@ -46,14 +54,16 @@ class Raspado_Radios():
 		self.paises_numero_emisoras = []
 		self.paises_numero_total_emisoras = ""
 
-		self.rb = RadioBrowser()
-		self.datos_pais = self.rb.countries()
+		self.cache = cache
+		if self.cache == False:
+			self.rb = RadioBrowser()
+			self.datos_pais = self.rb.countries()
 
 	def Paises_Español(self):
 		claves = Raspado_Radios.keys_only(diccionario)
 		valores = Raspado_Radios.values_only(diccionario)
 
-		for i in range(len(self.datos_pais)):
+		for i in range(0, len(self.datos_pais)):
 			self.paises_radio_abreviado.append(self.datos_pais[i]["name"])
 
 		for i in self.paises_radio_abreviado:

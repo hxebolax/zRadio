@@ -5,9 +5,13 @@ Este complemento surge del aburrimiento y de las ganas de experimentar con NVDA.
 
 zRadio es un complemento muy pesado, aproximadamente 120 mb una vez está instalado.
 
+Esto es el caso si aun usas las versiones 0.1, 0.2 y 0.3 del complemento zRadio, aunque invitamos a los usuarios de zRadio  a que descarguen la nueva versión 0.4 ya que  reduce su tamaño y mejora el rendimiento del complemento zRadio. Por favor consulta la sección  "Registro de cambios" para la versión 0.4 que se encuentra  más abajo, para más detalles.
+
 Se recomienda usar zRadio en equipos que no sean de trabajo y en equipos con un hardware aceptable.
 
 En algunos equipos con pocos recursos puede ralentizar NVDA por lo que es recomendable desinstalar el complemento.
+
+Esto es el caso si aun usas las versiones 0.1, 0.2 y 0.3 del complemento zRadio, aunque invitamos a los usuarios de zRadio  a que descarguen la nueva versión 0.4 ya que  reduce su tamaño y mejora el rendimiento del complemento zRadio. Por favor consulta la sección  "Registro de cambios" para la versión 0.4 que se encuentra  más abajo, para más detalles.
 
 Como digo es un experimento y como tal hay que tenerlo, quien instale el complemento es el responsable de la ralentización que el complemento puede causar al igual que el uso que haga de dicho complemento.
 
@@ -26,6 +30,16 @@ El complemento solo guarda 3 archivos en el directorio zRadio que encontramos en
 * opt_radio.dat
 
 * fav_radios.dat
+
+Esto es el caso si aun usas las versiones 0.1, 0.2 y 0.3 del complemento zRadio, aunque invitamos a los usuarios de zRadio  a que descarguen la nueva versión 0.4. Al instalar  esta nueva versión se instalará  los dos nuevos archivos llamados:
+
+* cache.dat
+
+* radio_cache.dat
+
+Ahora El complemento solo guardará  5 archivos en el directorio zRadio que encontramos en el directorio de configuración de NVDA si se usa esta nueva versión 0.4 del complemento zRadio.
+
+Por favor consulta la sección  "Registro de cambios" para la versión 0.4 que se encuentra  más abajo, para más detalles.
 
 Para aquellos programadores que saben mucho, no me riñáis por el código tan burdo y tan atropellado y por no poner comentarios y hacer todo lo que no tiene que hacer un programador si quiere  ser ordenado.
 
@@ -84,6 +98,16 @@ En esta pantalla podremos agregar aquellas emisoras que deseemos tener a mano r�
 El área de trabajo es exactamente igual que la pantalla General por lo que no la volveré a describir.
 
 Comentar que por el listado tanto de emisoras como de resultados de una búsqueda podemos movernos rápidamente pulsando una letra, lo que nos llevara si hay a la primera emisora que tenga esa letra en el principio de su nombre.
+
+En la interfaz de zRadio para la nueva versión 0.3 acabo de agregar nuevas características tales como:
+
+* Ordenar las emisoras en favoritos.
+
+* Añadir, editar y borrar emisoras en Favoritos.
+
+* Ahora tienes la posibilidad de lanzar específicamente  5 emisoras rápidas mediante un gesto de entrada asociado con cada orden llamada "Reproducir emisora rápidamente y seguido de una numeración del 1 al 5" desde el diálogo Gestos de entrada de NVDA y buscar zRadio.
+
+Por favor consulta la sección  "Registro de cambios" para la versión 0.3 que se encuentra  más abajo, para obtener detalles sobre el uso de las nuevas características.
 
 ## Pantalla Buscador
 
@@ -190,8 +214,32 @@ zRadio proporciona las siguientes órdenes para que el usuario pueda añadir un 
 ## Traductores y colaboradores:
 
 * Francés: Rémy Ruiz
+* Portugués: Ângelo Miguel Abrantes
+* Inglés: slanovani
 
 # Registro de cambios.
+## Versión 0.4.
+
+* Optimizado el código reduciendo su tamaño a más de la mitad.
+
+Se ha optimizado el código para que ahora la instalación sea un 60% más reducida. Esto afecta a que el rendimiento es mejor.
+
+* Agregado un pequeño cache que ayuda a acelerar el inicio del complemento.
+
+A veces una minoría de arranques, el lector de pantalla NVDA puede llegar a tardar un poco en arrancar, esto es problema de la comunicación del complemento con el servidor.
+
+Antes en la versión 0.3 siempre tardaba mucho en arrancar, con el cache que puse en el complemento eso ahora pasara muy pocas veces.
+
+Bien el archivo cache.dat se actualiza cada vez que reiniciemos NVDA ya que es el que contiene el contador de las veces que tiene que llevar el número de arranques y cuando llega a 5 a la sexta vez el archivo radio_cache.dat también se actualizara.
+
+Los archivos cache.dat y radio_cache.dat se guardan en el directorio zRadio que encontramos en el directorio de configuración de NVDA.
+
+* Se tradujo los diccionarios de los países para que cuando seleccionemos el idioma de NVDA "Predeterminado para el usuario" bajo  la categoría "General" del cuadro de diálogo "Opciones de NVDA", ya sea el idioma  "Francés, fr", "Portugués (Portugal, Brasil), pt_PT / pt_BR" o "Inglés en", que actualmente son los tres idiomas soportados por el complemento zRadio, además del idioma español, los nombres de los países se muestren correctamente en el caso de una búsqueda por países.
+
+De forma predeterminada zRadio está configurado para utilizar l idioma "Español, es", pero si has  elegido "Predeterminado para el usuario"  y tu idioma aún no está traducido tendrás siempre la interfaz del complemento en español.
+
+* Se agrego traducción al Portugués (Portugal / Brasil) y al Inglés.
+
 ## Versión 0.3.
 
 * Agregado el poder ordenar las emisoras en favoritos.

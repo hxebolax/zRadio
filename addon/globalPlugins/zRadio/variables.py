@@ -90,10 +90,38 @@ class Guardar_Cargar():
 
 ### Variables Raspado
 Opciones = Guardar_Cargar()
-try:
-	Radios = Raspado_Radios()
-except:
-	pass
+
+def CargarObjeto(nombre ):
+	with open(nombre, 'rb') as f:
+		return pickle.load(f)
+
+def GuardarObjeto(objeto, nombre):
+	with open(nombre, 'wb') as f:
+		pickle.dump(objeto, f, pickle.HIGHEST_PROTOCOL)
+
+cacheSettings = os.path.join(dirDatos, "cache.dat")
+cache = os.path.join(dirDatos, "radio_cache.dat")
+if os.path.isfile(cacheSettings):
+	numero = CargarObjeto(cacheSettings) + 1
+	if numero == 6:
+		numero = 0
+		GuardarObjeto(numero, cacheSettings)
+	else:
+		GuardarObjeto(numero, cacheSettings)
+else:
+	numero = 0
+	GuardarObjeto(numero, cacheSettings)
+
+if numero == 5:
+	Radios = Raspado_Radios(False)
+	GuardarObjeto(Radios, cache)
+else:
+	if os.path.isfile(cache):
+		Radios = CargarObjeto(cache)
+	else:
+		Radios = Raspado_Radios(False)
+		GuardarObjeto(Radios, cache)
+
 player = MPVClass()
 ### Listas
 listaCategoriasBusquedaRadios = [
