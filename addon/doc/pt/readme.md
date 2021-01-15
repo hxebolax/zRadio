@@ -202,8 +202,13 @@ O zRadio fornece as seguintes possibilidades para o utilizador definir um comand
 * Francês: Rémy Ruiz
 * Português: Ângelo Miguel Abrantes
 * Inglês: slanovani
-
+* italiano: Simone Dal Maso
+* Árabe:Wafiq Taher
 # registo de alterações.
+## Versão 0.4a.
+
+* Adicionada tradução italiano, Árabe
+
 ## Versão 0.4.
 
 * Otimizado o código reduzindo o seu tamanho para menos de metade.

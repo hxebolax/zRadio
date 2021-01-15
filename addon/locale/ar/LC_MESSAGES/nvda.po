@@ -1,0 +1,605 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: zRadio 0.3\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
+"POT-Creation-Date: 2020-12-24 07:11+0200\n"
+"PO-Revision-Date: 2021-01-03 10:56+0200\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.12\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Last-Translator: \n"
+"Language: ar\n"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information found in Add-ons Manager.
+#. Translators: zRadio window title
+#: buildVars.py:23 addon\globalPlugins\zRadio\__init__.py:348
+msgid "zRadio para NVDA"
+msgstr "برنامج الراديو zللnvda"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+#: buildVars.py:26
+msgid "Reproductor de Radios Online para NVDA"
+msgstr "مشغل راديو على الإنترنت لـ NVDA"
+
+#. Translators: Name of the item in the tools menu
+#: addon\globalPlugins\zRadio\__init__.py:40
+msgid "&zRadio para NVDA"
+msgstr "&راديو z للnvda"
+
+#. Translators: Error message for not having internet
+#: addon\globalPlugins\zRadio\__init__.py:54
+msgid ""
+"zRadio necesita internet para ser ejecutado.\n"
+"Asegurese de que tiene todo correcto."
+msgstr ""
+"يحتاج zRadio إلى الإنترنت للتشغيل. \\ n\n"
+"تأكد من صحة كل شيء."
+
+#. Translators: Message window title: Error
+#: addon\globalPlugins\zRadio\__init__.py:58
+#: addon\globalPlugins\zRadio\__init__.py:143
+#: addon\globalPlugins\zRadio\__init__.py:565
+#: addon\globalPlugins\zRadio\__init__.py:575
+#: addon\globalPlugins\zRadio\__init__.py:596
+#: addon\globalPlugins\zRadio\__init__.py:632
+#: addon\globalPlugins\zRadio\__init__.py:653
+#: addon\globalPlugins\zRadio\__init__.py:687
+#: addon\globalPlugins\zRadio\__init__.py:706
+#: addon\globalPlugins\zRadio\__init__.py:736
+#: addon\globalPlugins\zRadio\__init__.py:767
+#: addon\globalPlugins\zRadio\__init__.py:798
+#: addon\globalPlugins\zRadio\__init__.py:1254
+#: addon\globalPlugins\zRadio\__init__.py:1286
+#: addon\globalPlugins\zRadio\__init__.py:1358
+#: addon\globalPlugins\zRadio\__init__.py:1483
+#: addon\globalPlugins\zRadio\__init__.py:1493
+msgid "Error"
+msgstr "خطأ"
+
+#. Translators: Description for Input Gestures dialog for zRadio
+#: addon\globalPlugins\zRadio\__init__.py:70
+msgid "Muestra la ventana principal de zRadio"
+msgstr "يعرض نافذة zRadio الرئيسية"
+
+#. Translators: Description for Input Gestures dialog for zRadio
+#: addon\globalPlugins\zRadio\__init__.py:75
+msgid "Bajar volumen"
+msgstr "خفض الصوت"
+
+#. Translators: Volume warning message -
+#: addon\globalPlugins\zRadio\__init__.py:80
+msgid "No se puede bajar más el volumen ya se encuentra al 0%"
+msgstr "لا يمكنك خفض مستوى الصوت بعد الآن ، فهو بالفعل عند 0٪"
+
+#. Translators: Description for Input Gestures dialog for zRadio
+#: addon\globalPlugins\zRadio\__init__.py:90
+msgid "Subir volumen"
+msgstr "رفع الصوت"
+
+#. Translators: Volume warning message +
+#: addon\globalPlugins\zRadio\__init__.py:95
+msgid "No se puede subir más el volumen ya se encuentra al 100%"
+msgstr "لا يمكنك رفع مستوى الصوت أكثر من 100٪"
+
+#. Translators: Description for Input Gestures dialog for zRadio
+#: addon\globalPlugins\zRadio\__init__.py:105
+msgid "Detener reproducción"
+msgstr "أوقف التشغيل"
+
+#. Translators: Information message
+#: addon\globalPlugins\zRadio\__init__.py:110
+msgid "No hay nada reproduciéndose"
+msgstr "لا توجد قناة تعمل لإيقافها"
+
+#. Translators: Description for Input Gestures dialog for zRadio
+#: addon\globalPlugins\zRadio\__init__.py:123
+msgid "Recargar reproducción"
+msgstr "إعادة تحميل التشغيل"
+
+#. Translators: Information message
+#: addon\globalPlugins\zRadio\__init__.py:128
+msgid "No hay nada para recargar"
+msgstr "لا يوجد شيء لإعادة التحميل"
+
+#. Translators: Error information message when loading the station
+#: addon\globalPlugins\zRadio\__init__.py:134
+#: addon\globalPlugins\zRadio\__init__.py:196
+#: addon\globalPlugins\zRadio\__init__.py:227
+#: addon\globalPlugins\zRadio\__init__.py:258
+#: addon\globalPlugins\zRadio\__init__.py:289
+#: addon\globalPlugins\zRadio\__init__.py:320
+#: addon\globalPlugins\zRadio\__init__.py:1245
+#: addon\globalPlugins\zRadio\__init__.py:1277
+#: addon\globalPlugins\zRadio\__init__.py:1349
+msgid ""
+"No se puedo cargar la emisora.\n"
+"\n"
+"Asegúrese de que tiene conexión a internet.\n"
+"\n"
+"Otros motivos pueden ser que la emisora tenga problemas en estos momentos.\n"
+"\n"
+"Inténtelo más tarde."
+msgstr ""
+"لا يمكن تحميل المحطة. \\ N\n"
+"\\ ن\n"
+"تأكد من أن لديك اتصال بالإنترنت. \\ N\n"
+"\\ ن\n"
+"قد تكون الأسباب الأخرى أن المحطة تواجه مشاكل في الوقت الحالي. \\ N\n"
+"\\ ن\n"
+"الرجاء معاودة المحاولة في وقت لاحق."
+
+#. Translators: Description for Input Gestures dialog for zRadio
+#: addon\globalPlugins\zRadio\__init__.py:159
+msgid "Poner y quitar silencio"
+msgstr "كتم وإلغاء الكتم"
+
+#. Translators: Information message
+#: addon\globalPlugins\zRadio\__init__.py:164
+msgid "No hay nada para silenciar"
+msgstr "لا يوجد شيء للكتم"
+
+#. Translators: Description for Input Gestures dialog for zRadio
+#: addon\globalPlugins\zRadio\__init__.py:177
+msgid "Saber emisora en reproducción"
+msgstr "تعرف على المحطة قيد التشغيل"
+
+#. Translators: Information message with the name of the station loaded in memory
+#: addon\globalPlugins\zRadio\__init__.py:184
+#, python-format
+msgid "Emisora en memoria: %s"
+msgstr "المحطة التي تعمل هي: %s"
+
+#. Translators: Description for Input Gestures dialog for zRadio
+#: addon\globalPlugins\zRadio\__init__.py:187
+msgid "Reproducir emisora rápidamente 1"
+msgstr "تشغيل المحطة بسرعة 1"
+
+#. Translators: Information message
+#: addon\globalPlugins\zRadio\__init__.py:215
+msgid "No tiene ninguna emisora en Favoritos en la posición 1"
+msgstr "ليس لديك أي محطة في المفضلة في الموضع 1"
+
+#. Translators: Description for Input Gestures dialog for zRadio
+#: addon\globalPlugins\zRadio\__init__.py:218
+msgid "Reproducir emisora rápidamente 2"
+msgstr "تشغيل المحطة بسرعة 2"
+
+#. Translators: Information message
+#: addon\globalPlugins\zRadio\__init__.py:246
+msgid "No tiene ninguna emisora en Favoritos en la posición 2"
+msgstr "ليس لديك أي محطة في المفضلة في الموضع 2"
+
+#. Translators: Description for Input Gestures dialog for zRadio
+#: addon\globalPlugins\zRadio\__init__.py:249
+msgid "Reproducir emisora rápidamente 3"
+msgstr "تشغيل المحطة بسرعة 3"
+
+#. Translators: Information message
+#: addon\globalPlugins\zRadio\__init__.py:277
+msgid "No tiene ninguna emisora en Favoritos en la posición 3"
+msgstr "ليس لديك أي محطة في المفضلة في الموضع 3"
+
+#. Translators: Description for Input Gestures dialog for zRadio
+#: addon\globalPlugins\zRadio\__init__.py:280
+msgid "Reproducir emisora rápidamente 4"
+msgstr "تشغيل المحطة بسرعة 4"
+
+#. Translators: Information message
+#: addon\globalPlugins\zRadio\__init__.py:308
+msgid "No tiene ninguna emisora en Favoritos en la posición 4"
+msgstr "ليس لديك أي محطة في المفضلة في الموضع 4"
+
+#. Translators: Description for Input Gestures dialog for zRadio
+#: addon\globalPlugins\zRadio\__init__.py:311
+msgid "Reproducir emisora rápidamente 5"
+msgstr "تشغيل المحطة بسرعة 5"
+
+#. Translators: Information message
+#: addon\globalPlugins\zRadio\__init__.py:339
+msgid "No tiene ninguna emisora en Favoritos en la posición 5"
+msgstr "لا يحتوي على أي محطة في المفضلة في الموضع 5"
+
+#. Translators: Change button name to Remove Mute
+#: addon\globalPlugins\zRadio\__init__.py:404
+#: addon\globalPlugins\zRadio\__init__.py:1392
+msgid "Quitar &Silencio"
+msgstr "إزالة & كتم الصوت"
+
+#. Translators: Search button name
+#. me da el indice de la seleccion
+#. Translators: Search button name
+#: addon\globalPlugins\zRadio\__init__.py:423
+#: addon\globalPlugins\zRadio\__init__.py:439
+#: addon\globalPlugins\zRadio\__init__.py:456
+#: addon\globalPlugins\zRadio\__init__.py:469
+#: addon\globalPlugins\zRadio\__init__.py:479
+#: addon\globalPlugins\zRadio\__init__.py:493
+#: addon\globalPlugins\zRadio\__init__.py:505
+#: addon\globalPlugins\zRadio\__init__.py:518
+#: addon\globalPlugins\zRadio\__init__.py:529
+#: addon\globalPlugins\zRadio\__init__.py:542
+#: addon\globalPlugins\zRadio\__init__.py:557
+#: addon\globalPlugins\zRadio\__init__.py:598
+#: addon\globalPlugins\zRadio\__init__.py:613
+#: addon\globalPlugins\zRadio\__init__.py:625
+#: addon\globalPlugins\zRadio\__init__.py:655
+#: addon\globalPlugins\zRadio\__init__.py:669
+#: addon\globalPlugins\zRadio\__init__.py:680
+#: addon\globalPlugins\zRadio\__init__.py:708
+#: addon\globalPlugins\zRadio\__init__.py:738
+#: addon\globalPlugins\zRadio\__init__.py:769
+#: addon\globalPlugins\zRadio\__init__.py:800
+#: addon\globalPlugins\zRadio\__init__.py:814
+#: addon\globalPlugins\zRadio\__init__.py:823
+#: addon\globalPlugins\zRadio\__init__.py:833
+#: addon\globalPlugins\zRadio\__init__.py:844
+#: addon\globalPlugins\zRadio\__init__.py:881
+#: addon\globalPlugins\zRadio\__init__.py:889
+#: addon\globalPlugins\zRadio\__init__.py:908
+#: addon\globalPlugins\zRadio\__init__.py:916
+#: addon\globalPlugins\zRadio\__init__.py:989
+#: addon\globalPlugins\zRadio\__init__.py:1026
+#: addon\globalPlugins\zRadio\__init__.py:1037
+#: addon\globalPlugins\zRadio\__init__.py:1059
+#: addon\globalPlugins\zRadio\__init__.py:1107
+#: addon\globalPlugins\zRadio\__init__.py:1133
+#: addon\globalPlugins\zRadio\__init__.py:1174
+#: addon\globalPlugins\zRadio\__init__.py:1195
+#: addon\globalPlugins\zRadio\__init__.py:1216
+#: addon\globalPlugins\zRadio\xgui.py:95 addon\globalPlugins\zRadio\xgui.py:125
+#: addon\globalPlugins\zRadio\xgui.py:160
+msgid "&Buscar"
+msgstr "&بحث"
+
+#. Translators: Message in listbox favorites, no favorites
+#. Translators: Message no favorites
+#: addon\globalPlugins\zRadio\__init__.py:434
+#: addon\globalPlugins\zRadio\__init__.py:885
+#: addon\globalPlugins\zRadio\__init__.py:912
+#: addon\globalPlugins\zRadio\__init__.py:924
+#: addon\globalPlugins\zRadio\__init__.py:985
+#: addon\globalPlugins\zRadio\__init__.py:1093
+msgid "No hay favoritos."
+msgstr "لا توجد مفضلات."
+
+#. Translators: Searchable tag name
+#: addon\globalPlugins\zRadio\__init__.py:458
+#: addon\globalPlugins\zRadio\__init__.py:467
+msgid "Búsqueda general:"
+msgstr "البحث العام:"
+
+#. Translators: Message in the search listbox, Waiting for a search
+#. Translators: Message waiting for a search
+#: addon\globalPlugins\zRadio\__init__.py:462
+#: addon\globalPlugins\zRadio\__init__.py:473
+#: addon\globalPlugins\zRadio\__init__.py:535
+#: addon\globalPlugins\zRadio\__init__.py:546
+#: addon\globalPlugins\zRadio\__init__.py:713
+#: addon\globalPlugins\zRadio\__init__.py:805
+#: addon\globalPlugins\zRadio\__init__.py:819
+#: addon\globalPlugins\zRadio\__init__.py:849
+#: addon\globalPlugins\zRadio\xgui.py:163
+msgid "Esperando una búsqueda."
+msgstr "في انتظار البحث."
+
+#. Translators: Searchable tag name
+#: addon\globalPlugins\zRadio\__init__.py:481
+#: addon\globalPlugins\zRadio\__init__.py:491
+msgid "Buscar pais:"
+msgstr "البحث عن البلد :"
+
+#. Translators: Warning do not change the content of what is between the keys. Message with the number of stations
+#: addon\globalPlugins\zRadio\__init__.py:487
+#: addon\globalPlugins\zRadio\__init__.py:500
+#: addon\globalPlugins\zRadio\__init__.py:512
+#: addon\globalPlugins\zRadio\__init__.py:524
+#: addon\globalPlugins\zRadio\__init__.py:727
+#: addon\globalPlugins\zRadio\__init__.py:744
+#: addon\globalPlugins\zRadio\__init__.py:758
+#: addon\globalPlugins\zRadio\__init__.py:775
+#: addon\globalPlugins\zRadio\__init__.py:789
+#: addon\globalPlugins\zRadio\__init__.py:829
+#: addon\globalPlugins\zRadio\__init__.py:839
+msgid "{} número de emisoras: {}"
+msgstr "{} عدد المحطات: {}"
+
+#. Translators: Searchable tag name
+#: addon\globalPlugins\zRadio\__init__.py:507
+#: addon\globalPlugins\zRadio\__init__.py:516
+msgid "Buscar idioma:"
+msgstr "لغة البحث:"
+
+#. Translators: Searchable tag name
+#: addon\globalPlugins\zRadio\__init__.py:531
+#: addon\globalPlugins\zRadio\__init__.py:540
+msgid "Buscar etiqueta:"
+msgstr "علامة البحث:"
+
+#. Translators: Message there are no stations
+#. Translators: Message without stations
+#: addon\globalPlugins\zRadio\__init__.py:559
+#: addon\globalPlugins\zRadio\__init__.py:974
+#: addon\globalPlugins\zRadio\variables.py:124
+#: addon\globalPlugins\zRadio\variables.py:146
+msgid "Sin emisoras."
+msgstr "لا توجد محطات."
+
+#. Translators: Message there are no stations
+#: addon\globalPlugins\zRadio\__init__.py:562
+msgid "No hay emisoras para buscar."
+msgstr "لا توجد محطات للبحث."
+
+#. Translators: Blank search message
+#: addon\globalPlugins\zRadio\__init__.py:572
+#: addon\globalPlugins\zRadio\__init__.py:629
+#: addon\globalPlugins\zRadio\__init__.py:684
+msgid ""
+"El campo de búsqueda esta vacío, escriba algo antes para poder realizar la "
+"búsqueda."
+msgstr "حقل البحث فارغ ، اكتب شيئًا من قبل لتتمكن من إجراء البحث."
+
+#. Translators: Message not found results
+#: addon\globalPlugins\zRadio\__init__.py:592
+#: addon\globalPlugins\zRadio\__init__.py:649
+#: addon\globalPlugins\zRadio\__init__.py:702
+#: addon\globalPlugins\zRadio\__init__.py:732
+#: addon\globalPlugins\zRadio\__init__.py:763
+#: addon\globalPlugins\zRadio\__init__.py:794
+msgid ""
+"No se encontraron resultados.\n"
+"Haga una búsqueda más específica."
+msgstr ""
+"لم يتم العثور على نتائج. \\ N\n"
+"قم ببحث أكثر تحديدًا."
+
+#. Translators: Clean button name
+#: addon\globalPlugins\zRadio\__init__.py:603
+#: addon\globalPlugins\zRadio\__init__.py:660
+#: addon\globalPlugins\zRadio\__init__.py:692
+#: addon\globalPlugins\zRadio\__init__.py:721
+#: addon\globalPlugins\zRadio\__init__.py:752
+#: addon\globalPlugins\zRadio\__init__.py:783
+msgid "&Limpiar"
+msgstr "&محو البحث"
+
+#. Translators: context menu item
+#: addon\globalPlugins\zRadio\__init__.py:856
+msgid "&Nueva emisora"
+msgstr "&محطة جديدة"
+
+#. Translators: context menu item
+#: addon\globalPlugins\zRadio\__init__.py:859
+msgid "&Editar emisora"
+msgstr "&تحرير المحطة"
+
+#. Translators: context menu item
+#: addon\globalPlugins\zRadio\__init__.py:862
+msgid "&Quitar de favoritos"
+msgstr "إ&زالة من المفضلة"
+
+#. Translators: title of dialog
+#: addon\globalPlugins\zRadio\__init__.py:873
+msgid "Añadir nueva emisora"
+msgstr "أضف محطة جديدة"
+
+#. Translators: title of dialog
+#: addon\globalPlugins\zRadio\__init__.py:900
+msgid "Editar emisora"
+msgstr "تحرير المحطة"
+
+#. Translators: context menu item
+#: addon\globalPlugins\zRadio\__init__.py:932
+#: addon\globalPlugins\zRadio\__init__.py:948
+#: addon\globalPlugins\zRadio\__init__.py:959
+msgid "Reproducir"
+msgstr "تشغيل"
+
+#. Translators: context menu item
+#: addon\globalPlugins\zRadio\__init__.py:935
+msgid "Agregar a favoritos"
+msgstr "اضافة الى المفضلة"
+
+#. Translators: context menu item
+#: addon\globalPlugins\zRadio\__init__.py:938
+#: addon\globalPlugins\zRadio\__init__.py:954
+#: addon\globalPlugins\zRadio\__init__.py:962
+msgid "Copiar URL"
+msgstr "إنسخ الرابط"
+
+#. Translators: context menu item
+#: addon\globalPlugins\zRadio\__init__.py:943
+msgid "Poner por defecto en General"
+msgstr "تعيين الافتراضي إلى عام"
+
+#. Translators: context menu item
+#: addon\globalPlugins\zRadio\__init__.py:951
+msgid "Quitar de favoritos"
+msgstr "إزالة من المفضلة"
+
+#. Translators: Title of the notification
+#: addon\globalPlugins\zRadio\__init__.py:1067
+#: addon\globalPlugins\zRadio\__init__.py:1079
+#: addon\globalPlugins\zRadio\__init__.py:1114
+#: addon\globalPlugins\zRadio\__init__.py:1124
+#: addon\globalPlugins\zRadio\__init__.py:1139
+#: addon\globalPlugins\zRadio\__init__.py:1149
+#: addon\globalPlugins\zRadio\__init__.py:1162
+msgid "Información"
+msgstr "معلومات"
+
+#. Translators: Notification message
+#: addon\globalPlugins\zRadio\__init__.py:1069
+#: addon\globalPlugins\zRadio\__init__.py:1081
+msgid "Se agrego la emisora {} a favoritos."
+msgstr "تمت إضافة المحطة {} إلى المفضلة."
+
+#. Translators: Notification message
+#: addon\globalPlugins\zRadio\__init__.py:1116
+#: addon\globalPlugins\zRadio\__init__.py:1126
+#: addon\globalPlugins\zRadio\__init__.py:1141
+#: addon\globalPlugins\zRadio\__init__.py:1151
+#: addon\globalPlugins\zRadio\__init__.py:1164
+msgid ""
+"Se a copiado la URL de la emisora {} al portapapeles. Ya puede compartirla."
+msgstr "تم نسخ عنوان رابط اللمحطة {} إلى الحافظة. يمكنك الآن مشاركتها."
+
+#. Translators: Silence button name
+#: addon\globalPlugins\zRadio\__init__.py:1324
+#: addon\globalPlugins\zRadio\__init__.py:1365
+#: addon\globalPlugins\zRadio\__init__.py:1379
+#: addon\globalPlugins\zRadio\__init__.py:1389
+#: addon\globalPlugins\zRadio\__init__.py:1397
+#: addon\globalPlugins\zRadio\xgui.py:49
+msgid "&Silenciar"
+msgstr "ال&كتم"
+
+#. Translators: error message, you cannot leave the field
+#: addon\globalPlugins\zRadio\__init__.py:1479
+msgid ""
+"No puede dejar el campo Nombre de la emisora en blanco.\n"
+"Asegúrese de introducir un nombre correcto."
+msgstr ""
+"لا يمكنك ترك حقل \"اسم المحطة\" فارغًا. \\ N\n"
+"تأكد من إدخال الاسم الصحيح."
+
+#. Translators: error message, you cannot leave the field
+#: addon\globalPlugins\zRadio\__init__.py:1489
+msgid ""
+"No puede dejar el campo de la URL de la emisora en blanco.\n"
+"Asegúrese de introducir una dirección correcta."
+msgstr ""
+"لا يمكنك ترك حقل URL للمحطة فارغًا. \\ N\n"
+"تأكد من إدخال العنوان الصحيح."
+
+#. Translators: Options for the search category combobox
+#: addon\globalPlugins\zRadio\variables.py:101
+msgid "Búsqueda general de radios"
+msgstr "البحث العام في الراديو"
+
+#. Translators: Options for the search category combobox
+#: addon\globalPlugins\zRadio\variables.py:103
+msgid "Búsqueda por países"
+msgstr "البحث عن طريق البلدان"
+
+#. Translators: Options for the search category combobox
+#: addon\globalPlugins\zRadio\variables.py:105
+msgid "Búsqueda por idioma"
+msgstr "البحث عن طريق اللغة"
+
+#. Translators: Options for the search category combobox
+#: addon\globalPlugins\zRadio\variables.py:107
+msgid "Búsqueda por etiqueta"
+msgstr "البحث بالعلامة"
+
+#. Translators: Main category name
+#: addon\globalPlugins\zRadio\xgui.py:35
+msgid "General"
+msgstr "عام"
+
+#. Translators: Main category name
+#: addon\globalPlugins\zRadio\xgui.py:37
+msgid "Favoritos"
+msgstr "المفضلة"
+
+#. Translators: Main category name
+#: addon\globalPlugins\zRadio\xgui.py:39
+msgid "Buscador"
+msgstr "البحث"
+
+#. ######### Botones Multimedia
+#. Translators: Stop button name
+#: addon\globalPlugins\zRadio\xgui.py:43
+msgid "&Detener"
+msgstr "&قف"
+
+#. Translators: Reload button name
+#: addon\globalPlugins\zRadio\xgui.py:46
+msgid "&Recargar"
+msgstr "&تحديث"
+
+#. ######### Botones generales
+#. Translators: Action button name
+#: addon\globalPlugins\zRadio\xgui.py:55
+msgid "&Acción"
+msgstr "&خيارات"
+
+#. Translators: Exit button name
+#: addon\globalPlugins\zRadio\xgui.py:62
+msgid "Salir Alt + F4"
+msgstr "الخروج Alt + F4"
+
+#. Translators: name of a label
+#: addon\globalPlugins\zRadio\xgui.py:92
+msgid "Busqueda emisoras:"
+msgstr "البحث عن المحطة:"
+
+#. Translators: name of a label
+#: addon\globalPlugins\zRadio\xgui.py:97
+msgid "Listado de emisoras:"
+msgstr "قائمة المحطات:"
+
+#. Translators: name of a label
+#: addon\globalPlugins\zRadio\xgui.py:122
+msgid "Busqueda emisoras favoritas:"
+msgstr "ابحث عن المحطات المفضلة:"
+
+#. Translators: name of a label
+#: addon\globalPlugins\zRadio\xgui.py:127
+msgid "Listado de emisoras favoritas:"
+msgstr "قائمة المحطات المفضلة:"
+
+#. Translators: name of a label
+#: addon\globalPlugins\zRadio\xgui.py:152
+msgid "Seleccione una categoría:"
+msgstr "اختر تصنيف:"
+
+#. Translators: name of a label
+#: addon\globalPlugins\zRadio\xgui.py:157
+msgid "Búsqueda general de radios:"
+msgstr "البحث العام عن أجهزة الراديو:"
+
+#. Translators: name of a label
+#: addon\globalPlugins\zRadio\xgui.py:165
+msgid "Resultado:"
+msgstr "النتيجة:"
+
+#. Translators: label name for station name
+#: addon\globalPlugins\zRadio\xgui.py:194
+msgid "Nombre de la emisora:"
+msgstr "اسم المحطة:"
+
+#. Translators: label name for station url
+#: addon\globalPlugins\zRadio\xgui.py:198
+msgid "Dirección URL de la emisora:"
+msgstr "رابط المحطة:"
+
+#. Translators: acept button name
+#. Translators: Acept button name
+#: addon\globalPlugins\zRadio\xgui.py:202
+#: addon\globalPlugins\zRadio\xgui.py:235
+msgid "&Aceptar"
+msgstr "&قبول"
+
+#. Translators: Cancel button name
+#: addon\globalPlugins\zRadio\xgui.py:204
+msgid "&Cancelar"
+msgstr "إل&غاء"
+
+msgid "{nombre_item} número de emisoras: {numero_item}"
+msgstr "{name_item} عدد المحطات: {number_item}"
+
+msgid "zRadio"
+msgstr "zRadio"

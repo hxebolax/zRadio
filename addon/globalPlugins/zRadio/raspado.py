@@ -18,6 +18,10 @@ elif idioma[:2] == "fr":
 	diccionario = dict_frances
 elif idioma[:2] == "en":
 	diccionario = dict_ingles
+elif idioma[:2] == "it":
+	diccionario = dict_italiano
+elif idioma[:2] == "ar":
+	diccionario = dict_arabe
 elif idioma == "pt_PT":
 	diccionario = dict_portugues
 elif idioma == "pt_BR":

@@ -216,8 +216,14 @@ zRadio fournit les commandes suivantes pour permettre à l'utilisateur d'ajouter
 * Français: Rémy Ruiz
 * Portugais: Ângelo Miguel Abrantes
 * Anglais: slanovani
+* Italien: Simone Dal Maso
+* Arabe: Wafiq Taher
 
 # Journal des changements.
+## Version 0.4a.
+
+* Ajout de la traduction Italien, Arabe 
+
 ## Version 0.4.
 
 * Optimisé le code en réduisant sa taille à plus de la moitié.
