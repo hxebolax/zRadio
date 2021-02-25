@@ -2,12 +2,16 @@
 # Copyright (C) 2020 Héctor J. Benítez Corredera <xebolax@gmail.com>
 # This file is covered by the GNU General Public License.
 
+import globalVars
 import languageHandler
 import pickle
 import json
+import datetime
+from datetime import timedelta
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from pyradios import RadioBrowser
+from requests_cache import CachedSession
 from diccionarios import *
 
 
@@ -32,7 +36,7 @@ else:
 	diccionario = dict_español
 
 class Raspado_Radios():
-	def __init__(self, cache = False):
+	def __init__(self):
 
 		self.nombre_radios_pais = []
 		self.url_radios_pais = []
@@ -58,10 +62,13 @@ class Raspado_Radios():
 		self.paises_numero_emisoras = []
 		self.paises_numero_total_emisoras = ""
 
-		self.cache = cache
-		if self.cache == False:
-			self.rb = RadioBrowser()
-			self.datos_pais = self.rb.countries()
+		expire_after = timedelta(days=3)
+		session = CachedSession(
+			cache_name=os.path.join(globalVars.appArgs.configPath, "zRadio", "cache"),
+			backend='sqlite',
+			expire_after=expire_after)
+		self.rb = RadioBrowser(session=session)
+		self.datos_pais = self.rb.countries()
 
 	def Paises_Español(self):
 		claves = Raspado_Radios.keys_only(diccionario)
