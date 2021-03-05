@@ -314,6 +314,7 @@ class MainWindows(wx.Dialog):
 		self.RadioGeneralDLG.listbox_radio.SetSelection(0)
 		self.RadioGeneralDLG.Buscar_radioBTN.Bind(wx.EVT_BUTTON, self.BuscarRadioGeneral)
 		self.RadioGeneralDLG.texto_busqueda_radio.Bind(wx.EVT_TEXT_ENTER, self.BuscarRadioGeneral)
+		self.RadioGeneralDLG.listbox_radio.Bind(wx.EVT_KEY_UP, self.onTeclasGeneral)
 		self.RadioGeneralDLG.listbox_radio.Bind(wx.EVT_CONTEXT_MENU,self.menuContextualLanzador)
 		self.menuContextual()
 
@@ -332,6 +333,7 @@ class MainWindows(wx.Dialog):
 		self.RadioBusquedaDLG.ch_categorias_radio.Bind(wx.EVT_CHOICE, self.SelectorCategoriaRadioBusqueda)
 		self.RadioBusquedaDLG.Buscar_Categoria_RadioBTN.Bind(wx.EVT_BUTTON, self.BuscarCategoriaRadio)
 		self.RadioBusquedaDLG.texto_busqueda_categoria.Bind(wx.EVT_TEXT_ENTER, self.BuscarCategoriaRadio)
+		self.RadioBusquedaDLG.lb_categorias_radio.Bind(wx.EVT_KEY_UP, self.onTeclasBuscador)
 		self.RadioBusquedaDLG.lb_categorias_radio.Bind(wx.EVT_CONTEXT_MENU,self.menuContextualLanzador)
 		self.menuContextual()
 
@@ -1367,7 +1369,26 @@ Inténtelo más tarde.""")
 				self.RadioDLG.SilenciarBTN.SetLabel(_("&Silenciar"))
 				controlSilenciar = False
 
+	def onTeclasGeneral(self, event):
+		if self.RadioGeneralDLG.listbox_radio.GetSelection() == -1:
+			pass
+		else:
+			if self.RadioGeneralDLG.listbox_radio.GetString(self.RadioGeneralDLG.listbox_radio.GetSelection()) == _("Sin emisoras."):
+				pass
+			else:
+				if event.GetKeyCode() ==32:
+					self.Reproducir_Radio(None)
+
 	def onTeclasFavoritos(self, event):
+		if self.RadioFavoritosDLG.listbox_radio_favoritos.GetSelection() == -1:
+			pass
+		else:
+			if self.RadioFavoritosDLG.listbox_radio_favoritos.GetString(self.RadioFavoritosDLG.listbox_radio_favoritos.GetSelection()) == _("No hay favoritos."):
+				pass
+			else:
+				if event.GetKeyCode() ==32:
+					self.Reproducir_Radio(None)
+
 		if (event.AltDown(), event.GetKeyCode()) == (True, 315):
 			self.moveup(None)
 			event.Skip()
@@ -1408,6 +1429,20 @@ Inténtelo más tarde.""")
 				self.RadioFavoritosDLG.listbox_radio_favoritos.Append(fav_nombre_radios)
 				self.RadioFavoritosDLG.listbox_radio_favoritos.SetSelection(indice + 1)
 				Opciones.Guardar_Buffers(fileFavRadio, fav_nombre_radios, fav_url_radios)
+
+	def onTeclasBuscador(self, event):
+		indice_choice = self.RadioBusquedaDLG.ch_categorias_radio.GetSelection() # me da el indice de la seleccion
+		indice = self.RadioDLG.TreeBook.GetSelection()
+
+		if indice == 2:
+			if self.RadioBusquedaDLG.lb_categorias_radio.GetSelection() == -1:
+				event.Skip()
+			# Translators: Message waiting for a search
+			elif self.RadioBusquedaDLG.lb_categorias_radio.GetString(self.RadioBusquedaDLG.lb_categorias_radio.GetSelection()) == "Esperando una búsqueda.":
+				event.Skip()
+			elif indice_choice == 0:
+				if event.GetKeyCode() ==32:
+					self.Reproducir_Radio(None)
 
 	def onClose(self, event):
 		Opciones.Guardar_Buffers(fileFavRadio, fav_nombre_radios, fav_url_radios)

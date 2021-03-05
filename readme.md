@@ -41,7 +41,7 @@ Ahora El complemento solo guardará  5 archivos en el directorio zRadio que enco
 
 Por favor consulta la sección  "Registro de cambios" para la versión 0.4 que se encuentra  más abajo, para más detalles.
 
-En la versión 0.5 se sustituyen los archivos cache.dat y radio_cache.dat por cache .sqlite.
+En la versión 0.5 se sustituyen los archivos cache.dat y radio_cache.dat por cache.sqlite.
 
 Para aquellos programadores que saben mucho, no me riñáis por el código tan burdo y tan atropellado y por no poner comentarios y hacer todo lo que no tiene que hacer un programador si quiere  ser ordenado.
 
@@ -220,7 +220,16 @@ zRadio proporciona las siguientes órdenes para que el usuario pueda añadir un 
 * Inglés: slanovani
 * Italiano: Simone Dal Maso
 * Árabe: Wafiq Taher
+
 # Registro de cambios.
+## Versión 0.6.
+
+* Agregada la posibilidad de reproducir una emisora al pulsar la barra espaciadora.
+
+Esta nueva posibilidad estará en las tres pantallas que podemos tener emisoras, en General, Favoritos y en Buscador en la categoría Búsqueda general de radios.
+
+En cualquiera de estas 3 secciones cuando el foco este en una emisora si pulsamos espacio empezara la reproducción cambiando el foco al botón Detener.
+
 ## Versión 0.5.
 
 * Agregado nuevo manejo de cache.
@@ -229,9 +238,9 @@ Ahora se usa la cache predefinida de la librería en vez de la creada para alige
 
 Al usar la cache predefinida la carga del complemento es muchísimo más rápida. Puede que alguna vez por conexión al servidor se nos ralentice pero ahora el 95% de veces el complemento debe de cargar como si fuese un complemento más sin demorar a nuestro NVDA.
 
-
 ## Versión 0.4a.
 * Agregados idiomas Italiano y Árabe
+
 ## Versión 0.4.
 * Optimizado el código reduciendo su tamaño a más de la mitad.
 

@@ -7,10 +7,6 @@ import os
 from .pathlib import Path
 import pickle
 import ctypes
-try:
-	from .raspado import *
-except:
-	pass
 import globalVars
 import addonHandler
 from .reproductor import *
@@ -93,8 +89,16 @@ if os.path.isfile(os.path.join(dirDatos, "cache.dat")):
 	os.remove(os.path.join(dirDatos, "cache.dat"))
 if os.path.isfile(os.path.join(dirDatos, "radio_cache.dat")):
 	os.remove(os.path.join(dirDatos, "radio_cache.dat"))
+if os.path.isdir(dirDatos):
+	pass
+else:
+	os.mkdir(dirDatos)
 
 Opciones = Guardar_Cargar()
+try:
+	from .raspado import *
+except:
+	pass
 Radios = Raspado_Radios()
 player = MPVClass()
 ### Listas

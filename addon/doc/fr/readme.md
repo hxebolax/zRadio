@@ -41,6 +41,8 @@ Maintenant, l'extension  uniquement enregistrera 5 fichiers dans le répertoire 
 
 Veuillez consulter la section "Journal des changements" pour la version 0.4 ci-dessous, pour plus de détails.
 
+Dans la version 0.5, les fichiers cache.dat et radio_cache.dat sont remplacés par cache.sqlite.
+
 Pour les programmeurs qui savent beaucoup, ne me disputez pas pour le code  tant grossier et tant précipité et de ne pas mettre de commentaires et faire tout ce qui ne doit  pas faire un programmeur si souhaite  être ordonné.
 
 Ma façon de programmer est dans ma tête et je ne sais pas comment expliquer tout le code que j'ai dans ma tête et qui émerge soudain, et j'ai essayé de suivre les directives lesquelles  toujours je brise parce qu'il est pas toujours productif dans ma façon d'écrire.
@@ -220,9 +222,17 @@ zRadio fournit les commandes suivantes pour permettre à l'utilisateur d'ajouter
 * Arabe: Wafiq Taher
 
 # Journal des changements.
+## Version 0.5.
+
+* Ajout d'une nouvelle gestion de cache.
+
+Maintenant, le cache prédéfini de la bibliothèque est utilisé à la place de celle créée pour alléger la charge.
+
+Lorsque vous utilisez le cache prédéfini, la charge de l'extension est beaucoup plus rapide. Peut-être que quelque fois par connexion au serveur il se ralentit mais maintenant à 95%, l'extension doit charger comme s'il s'agissait d'une autre extension sans Retarder notre NVDA.
+
 ## Version 0.4a.
 
-* Ajout de la traduction Italien, Arabe 
+	* Ajout de la traduction Italien et Arabe
 
 ## Version 0.4.
 

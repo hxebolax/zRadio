@@ -3,18 +3,18 @@
 # This file is covered by the GNU General Public License.
 
 import addonHandler
+import config
 import globalVars
-import gui
-import wx
 import shutil
 import os
 addonHandler.initTranslation()
 
+dirOrigen =os.path.join(globalVars.appArgs.configPath)
+dirDestino =os.path.join(globalVars.appArgs.configPath, "zRadio")
+
 def onInstall():
 	for addon in addonHandler.getAvailableAddons():
 		if addon.manifest['name'] == "zRadio":
-			dirOrigen =os.path.join(globalVars.appArgs.configPath)
-			dirDestino =os.path.join(globalVars.appArgs.configPath, "zRadio")
 			fileOptions = os.path.join(dirOrigen, "opciones.dat")
 			fileOptionsRadio = os.path.join(dirOrigen, "opt_radio.dat")
 			fileFavRadio = os.path.join(dirOrigen, "fav_radios.dat")
@@ -29,5 +29,12 @@ def onInstall():
 				if os.path.isfile(fileFavRadio):
 					shutil.move(fileFavRadio, os.path.join(dirDestino, "fav_radios.dat"))
 
-
 			break
+
+def onUninstall():
+	for addon in addonHandler.getAvailableAddons():
+		if addon.manifest['name'] == "zRadio":
+			try:
+				shutil.rmtree(dirDestino)
+			except:
+				pass
