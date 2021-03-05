@@ -177,6 +177,8 @@ Si nos fijamos estas 3 categorías tienen un número el cual corresponden a cuan
 
 Decir que a veces si elegimos una por ejemplo que tiene 9 emisoras y cuando vamos a la pantalla General solo cargan 8 es porque la que falta no esta bien el enlace.
 
+Igualmente en aquellas pantallas en las que podamos enfocar una emisora si pulsamos espacio podremos empezar su reproducción.
+
 ### Teclas rápidas:
 
 Realmente cada botón tiene su tecla rápida por lo que al estar explicados con anterioridad no voy a ponerlas, nuestro NVDA nos dará los atajos cuando caigamos en ellos.
@@ -222,13 +224,15 @@ zRadio proporciona las siguientes órdenes para que el usuario pueda añadir un 
 * Árabe: Wafiq Taher
 
 # Registro de cambios.
-## Versión 0.6.
+## Versión 0.5.1.
 
 * Agregada la posibilidad de reproducir una emisora al pulsar la barra espaciadora.
 
 Esta nueva posibilidad estará en las tres pantallas que podemos tener emisoras, en General, Favoritos y en Buscador en la categoría Búsqueda general de radios.
 
 En cualquiera de estas 3 secciones cuando el foco este en una emisora si pulsamos espacio empezara la reproducción cambiando el foco al botón Detener.
+
+* Arreglado un error grave para los nuevos usuarios que instalasen el complemento por primera vez.
 
 ## Versión 0.5.
 

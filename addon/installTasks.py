@@ -3,7 +3,6 @@
 # This file is covered by the GNU General Public License.
 
 import addonHandler
-import config
 import globalVars
 import shutil
 import os
@@ -30,11 +29,3 @@ def onInstall():
 					shutil.move(fileFavRadio, os.path.join(dirDestino, "fav_radios.dat"))
 
 			break
-
-def onUninstall():
-	for addon in addonHandler.getAvailableAddons():
-		if addon.manifest['name'] == "zRadio":
-			try:
-				shutil.rmtree(dirDestino)
-			except:
-				pass
