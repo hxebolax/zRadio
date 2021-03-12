@@ -16,7 +16,10 @@ registry = {
 
 import os.path
 import sys
-sys.path.insert(0, os.path.join(os.path.abspath(os.path.dirname(__file__)), 'modules'))
+if sys.version[2] == "7":
+	sys.path.insert(0, os.path.join(os.path.abspath(os.path.dirname(__file__)), 'modules', '3.7'))
+else:
+	sys.path.insert(0, os.path.join(os.path.abspath(os.path.dirname(__file__)), 'modules', '3.8'))
 
 _backend_dependencies = {
     'sqlite': 'sqlite3',

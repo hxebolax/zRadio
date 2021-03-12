@@ -222,6 +222,28 @@ zRadio fournit les commandes suivantes pour permettre à l'utilisateur d'ajouter
 * Arabe: Wafiq Taher
 
 # Journal des changements.
+## Version 0.5.2.
+
+* Résolu la charge lente lors du démarrage de NVDA.
+
+Résolu les retards qui avait NVDA lors du démarrage à cause de zRadio. Maintenant, le démarrage de NVDA sera immédiat.
+
+* Ajoutée la compatibilité avec le projet Walrus.
+
+La prise en charge des nouvelles versions de NVDA a été ajoutée, exactement afin d'être utiliser avec la nouvel alpha et l'extension est prête pour la sortie de NVDA 2021.1.
+
+Pour le moment, l'extension continuera d'être compatible à partir de  la version 2019.3 et plus.
+
+## Version 0.5.1.
+
+* Ajoutée la possibilité de jouer une stations  en appuyant sur la barre d'espace.
+
+Cette nouvelle possibilité sera sur les trois écrans où nous avons  des stations, dans Général, Favoris et dans Moteur de recherche dans la catégorie Recherche générale de radios.
+
+Dans l'une de ces 3 sections lorsque le focus est mis sur une station si nous appuyions sur la barre d'espace commencera la lecture en changeant le focus sur le bouton Arrêter.
+
+* Correction d'une erreur grave pour les nouveaux utilisateurs qui installent l'extension pour la première fois.
+
 ## Version 0.5.
 
 * Ajout d'une nouvelle gestion de cache.
@@ -231,11 +253,9 @@ Maintenant, le cache prédéfini de la bibliothèque est utilisé à la place de
 Lorsque vous utilisez le cache prédéfini, la charge de l'extension est beaucoup plus rapide. Peut-être que quelque fois par connexion au serveur il se ralentit mais maintenant à 95%, l'extension doit charger comme s'il s'agissait d'une autre extension sans Retarder notre NVDA.
 
 ## Version 0.4a.
-
-	* Ajout de la traduction Italien et Arabe
+* Ajout de la traduction Italien et Arabe
 
 ## Version 0.4.
-
 * Optimisé le code en réduisant sa taille à plus de la moitié.
 
 Le code a été optimisé de manière à ce que l'installation soit réduite à 60%. Cela affecte que la performance est meilleure.

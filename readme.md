@@ -224,6 +224,17 @@ zRadio proporciona las siguientes órdenes para que el usuario pueda añadir un 
 * Árabe: Wafiq Taher
 
 # Registro de cambios.
+## Versión 0.5.2.
+
+* Solucionado la carga lenta al iniciar NVDA.
+
+Se soluciono los retrasos que tenía NVDA al arrancar por culpa de zRadio. Ahora el arranque de NVDA será inmediato.
+
+* Agregada compatibilidad con proyecto Walrus.
+
+Se agrego la compatibilidad para nuevas versiones de NVDA, exactamente para poder ser usado con las nuevas Alpha y el complemento queda preparado para cuando salga NVDA 2021.1.
+
+De momento el complemento seguirá siendo compatible desde la versión 2019.3 en adelante.
 ## Versión 0.5.1.
 
 * Agregada la posibilidad de reproducir una emisora al pulsar la barra espaciadora.

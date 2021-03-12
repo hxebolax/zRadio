@@ -12,11 +12,16 @@ import wx
 import wx.adv
 from scriptHandler import script
 from tones import beep
+from threading import Thread
 # import the necessary modules (Python)
 from . import xgui
 from .chkConexion import InternetChecker
 from .variables import *
 from .pubsub import pub
+try:
+	from .raspado import *
+except:
+	pass
 
 # For translation
 addonHandler.initTranslation()
@@ -31,6 +36,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 		if globalVars.appArgs.secure:
 			return
+
 
 		# Creation of our menu.
 		self.toolsMenu = gui.mainFrame.sysTrayIcon.toolsMenu
@@ -55,6 +61,8 @@ Asegurese de que tiene todo correcto.""")
 				# Translators: Message window title: Error
 				_("Error"), 0)
 			return
+
+		self.launchOpciones()
 
 # Calling the main window of the plug-in
 		if not self._MainWindows:
@@ -182,9 +190,39 @@ Inténtelo más tarde.""")
 			# Translators: Information message with the name of the station loaded in memory
 			ui.message(_("Emisora en memoria: %s") % nombreTitulo)
 
+	def launchOpciones(self):
+		global Radios, gen_nombre_radios, gen_url_radios, fav_nombre_radios, fav_url_radios, PestañaGeneralRadioOpciones
+		if Radios == None:
+			Radios = Raspado_Radios()
+### Radio
+			Opciones.Cargar_Opciones_Radio()
+			PestañaGeneralRadioOpciones = Opciones.PestañaGeneralRadioOpciones
+			if PestañaGeneralRadioOpciones[0] == "":
+				# Translators: Message without stations
+				gen_nombre_radios = [_("Sin emisoras.")]
+				gen_url_radios = []
+			elif  PestañaGeneralRadioOpciones[0] == "Pais":
+				Radios.Resultado_Paises(PestañaGeneralRadioOpciones[1])
+				gen_nombre_radios = Radios.nombre_radios_pais
+				gen_url_radios = Radios.url_radios_pais
+			elif  PestañaGeneralRadioOpciones[0] == "Idioma":
+				Radios.Resultado_Idioma_Global(PestañaGeneralRadioOpciones[1])
+				gen_nombre_radios = Radios.nombre_radios_pais
+				gen_url_radios = Radios.url_radios_pais
+			elif  PestañaGeneralRadioOpciones[0] == "Etiqueta":
+				Radios.Resultado_Tag_Global(PestañaGeneralRadioOpciones[1])
+				gen_nombre_radios = Radios.nombre_radios_pais
+				gen_url_radios = Radios.url_radios_pais
+
+			Opciones.Cargar_Buffer_Favoritos_Radio()
+			fav_nombre_radios = Opciones.fav_nombre_radios
+			fav_url_radios = Opciones.fav_url_radios
 
 	def runAction(self, valor):
 		global nombreTitulo, urlReproducir, controlON, controlSilenciar
+
+		self.launchOpciones()
+
 		try:
 			if valor == 1:
 				temp1 = fav_nombre_radios[0]
@@ -283,6 +321,7 @@ Inténtelo más tarde.""")
 	@script(gesture=None, description= _("Reproducir emisora rápidamente 5"), category= "zRadio")
 	def script_Rapida5(self, gesture):
 		self.runAction(5)
+
 
 class MainWindows(wx.Dialog):
 	def __init__(self, parent):

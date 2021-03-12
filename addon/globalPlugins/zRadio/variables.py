@@ -95,11 +95,7 @@ else:
 	os.mkdir(dirDatos)
 
 Opciones = Guardar_Cargar()
-try:
-	from .raspado import *
-except:
-	pass
-Radios = Raspado_Radios()
+Radios = None
 player = MPVClass()
 ### Listas
 listaCategoriasBusquedaRadios = [
@@ -122,30 +118,11 @@ controlON = False
 controlSilenciar = False
 controleditor = False
 
-### Radio
-Opciones.Cargar_Opciones_Radio()
-PestañaGeneralRadioOpciones = Opciones.PestañaGeneralRadioOpciones
-if PestañaGeneralRadioOpciones[0] == "":
-	# Translators: Message without stations
-	gen_nombre_radios = [_("Sin emisoras.")]
-	gen_url_radios = []
-elif  PestañaGeneralRadioOpciones[0] == "Pais":
-	Radios.Resultado_Paises(PestañaGeneralRadioOpciones[1])
-	gen_nombre_radios = Radios.nombre_radios_pais
-	gen_url_radios = Radios.url_radios_pais
-elif  PestañaGeneralRadioOpciones[0] == "Idioma":
-	Radios.Resultado_Idioma_Global(PestañaGeneralRadioOpciones[1])
-	gen_nombre_radios = Radios.nombre_radios_pais
-	gen_url_radios = Radios.url_radios_pais
-elif  PestañaGeneralRadioOpciones[0] == "Etiqueta":
-	Radios.Resultado_Tag_Global(PestañaGeneralRadioOpciones[1])
-	gen_nombre_radios = Radios.nombre_radios_pais
-	gen_url_radios = Radios.url_radios_pais
-
-
-Opciones.Cargar_Buffer_Favoritos_Radio()
-fav_nombre_radios = Opciones.fav_nombre_radios
-fav_url_radios = Opciones.fav_url_radios
+PestañaGeneralRadioOpciones = None
+gen_nombre_radios = []
+gen_url_radios = []
+fav_nombre_radios = []
+fav_url_radios = []
 temporal_nombre_radio_favoritos = []
 temporal_url_radio_favoritos = []
 # Translators: Message without stations
