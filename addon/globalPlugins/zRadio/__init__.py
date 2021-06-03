@@ -137,7 +137,7 @@ Asegurese de que tiene todo correcto.""")
 				if chkInternet.test_internet(urlReproducir) == False:
 					# Translators: Error information message when loading the station
 					xguiMsg = \
-_("""No se puedo cargar la emisora.
+_("""No se pudo cargar la emisora.
 
 Asegúrese de que tiene conexión a internet.
 
@@ -242,7 +242,7 @@ Inténtelo más tarde.""")
 			if chkInternet.test_internet(temp2) == False:
 				# Translators: Error information message when loading the station
 				xguiMsg = \
-_("""No se puedo cargar la emisora.
+_("""No se pudo cargar la emisora.
 
 Asegúrese de que tiene conexión a internet.
 
@@ -1229,7 +1229,7 @@ Haga una búsqueda más específica.""")
 		if chkInternet.test_internet(url) == False:
 			# Translators: Error information message when loading the station
 			xguiMsg = \
-_("""No se puedo cargar la emisora.
+_("""No se pudo cargar la emisora.
 
 Asegúrese de que tiene conexión a internet.
 
@@ -1272,7 +1272,7 @@ Inténtelo más tarde.""")
 		if chkInternet.test_internet(urlReproducir) == False:
 			# Translators: Error information message when loading the station
 			xguiMsg = \
-_("""No se puedo cargar la emisora.
+_("""No se pudo cargar la emisora.
 
 Asegúrese de que tiene conexión a internet.
 
@@ -1355,7 +1355,7 @@ Inténtelo más tarde.""")
 		if chkInternet.test_internet(urlReproducir) == False:
 			# Translators: Error information message when loading the station
 			xguiMsg = \
-_("""No se puedo cargar la emisora.
+_("""No se pudo cargar la emisora.
 
 Asegúrese de que tiene conexión a internet.
 

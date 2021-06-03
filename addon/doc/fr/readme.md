@@ -232,7 +232,7 @@ Résolu les retards qui avait NVDA lors du démarrage à cause de zRadio. Mainte
 
 La prise en charge des nouvelles versions de NVDA a été ajoutée, exactement afin d'être utiliser avec la nouvel alpha et l'extension est prête pour la sortie de NVDA 2021.1.
 
-Pour le moment, l'extension continuera d'être compatible à partir de  la version 2019.3 et plus.
+Pour le moment, l'extension continuera d'être compatible à partir de la version 2019.3 et plus.
 
 ## Version 0.5.1.
 
