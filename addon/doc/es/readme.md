@@ -222,8 +222,6 @@ zRadio proporciona las siguientes órdenes para que el usuario pueda añadir un 
 * Inglés: slanovani
 * Italiano: Simone Dal Maso
 * Árabe: Wafiq Taher
-* danés: Daniel Gartmann
-* Turco: : umut korkmaz
 
 # Registro de cambios.
 ## Versión 0.5.2.

@@ -1,0 +1,505 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the 'zRadio' package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 'zRadio' '0.5.3'\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-05 00:05+0300\n"
+"PO-Revision-Date: 2021-11-05 00:05+0300\n"
+"Last-Translator: Umut KORKMAZ <umutkork@gmail.com>\n"
+"Language-Team: Umut KORKMAZ <umutkork@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en_US\n"
+"X-Poedit-Language: Turkish\n"
+"X-Poedit-Country: TURKEY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: C:\\Users\\ITU\\AppData\\Roaming\\nvda\\addons\\zRadio\\globalPlugins\n"
+"X-Poedit-SearchPath-1: C:\\Users\\ITU\\AppData\\Roaming\\nvda\\addons\\zRadio\\__pycache__\n"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/variables.py:103
+msgid "Búsqueda general de radios"
+msgstr "Genel istasyon ara"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/variables.py:105
+msgid "Búsqueda por países"
+msgstr "Ülkeye göre ara"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/variables.py:107
+msgid "Búsqueda por idioma"
+msgstr "Dile göre ara"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/variables.py:109
+msgid "Búsqueda por etiqueta"
+msgstr "Etikete göre ara"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/variables.py:129
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:202
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:546
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:961
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1415
+msgid "Sin emisoras."
+msgstr "İstasyon yok."
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/xgui.py:35
+msgid "General"
+msgstr "Genel"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/xgui.py:37
+msgid "Favoritos"
+msgstr "Favoriler"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/xgui.py:39
+msgid "Buscador"
+msgstr "Arama motoru"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/xgui.py:43
+msgid "&Detener"
+msgstr "&Durdur"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/xgui.py:46
+msgid "&Recargar"
+msgstr "&Tekrar yükle"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/xgui.py:49
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1256
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1297
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1333
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1374
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1388
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1400
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1408
+msgid "&Silenciar"
+msgstr "&Sesi kapat"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/xgui.py:55
+msgid "&Acción"
+msgstr "&Eylem"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/xgui.py:62
+msgid "Salir Alt + F4"
+msgstr "çıkış Alt + F4"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/xgui.py:92
+msgid "Busqueda emisoras:"
+msgstr "İstasyon ara:"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/xgui.py:95
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/xgui.py:125
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/xgui.py:160
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:410
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:426
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:443
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:456
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:466
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:480
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:492
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:505
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:516
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:529
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:544
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:585
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:600
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:612
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:642
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:656
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:667
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:695
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:725
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:756
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:787
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:801
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:810
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:820
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:831
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:868
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:876
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:895
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:903
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:976
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1013
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1024
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1046
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1094
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1120
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1161
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1182
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1203
+msgid "&Buscar"
+msgstr "&Ara"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/xgui.py:97
+msgid "Listado de emisoras:"
+msgstr "İstasyon listesi:"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/xgui.py:122
+msgid "Busqueda emisoras favoritas:"
+msgstr "Favorileri ara:"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/xgui.py:127
+msgid "Listado de emisoras favoritas:"
+msgstr "Favoriler listesi:"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/xgui.py:152
+msgid "Seleccione una categoría:"
+msgstr "Bir kategori seç:"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/xgui.py:157
+msgid "Búsqueda general de radios:"
+msgstr "Genel radyo arama:"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/xgui.py:163
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:449
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:460
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:522
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:533
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:700
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:792
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:806
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:836
+msgid "Esperando una búsqueda."
+msgstr "Arama bekliyorum."
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/xgui.py:165
+msgid "Resultado:"
+msgstr "Sonuç:"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/xgui.py:194
+msgid "Nombre de la emisora:"
+msgstr "İstasyon Adı:"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/xgui.py:198
+msgid "Dirección URL de la emisora:"
+msgstr "İstasyon URL'si:"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/xgui.py:202
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/xgui.py:235
+msgid "&Aceptar"
+msgstr "&Tamam"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/xgui.py:204
+msgid "&Cancelar"
+msgstr "İpta&l"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:44
+msgid "&zRadio para NVDA"
+msgstr "NVDA için &zRadio"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:58
+msgid ""
+"zRadio necesita internet para ser ejecutado.\n"
+"Asegurese de que tiene todo correcto."
+msgstr ""
+"zRadio'nun çalışması için internet bağlantısı gerekir.\n"
+"Her şeyin yolunda olduğundan emin ol."
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:62
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:149
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:552
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:562
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:583
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:619
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:640
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:674
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:693
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:723
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:754
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:785
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1241
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1284
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1367
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1527
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1537
+msgid "Error"
+msgstr "Hata"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:76
+msgid "Muestra la ventana principal de zRadio"
+msgstr "zRadio'nun ana penceresini göster"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:81
+msgid "Bajar volumen"
+msgstr "Sesi azalt"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:86
+msgid "No se puede bajar más el volumen ya se encuentra al 0%"
+msgstr "Ses daha fazla azaltılamaz, zaten %0'da"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:96
+msgid "Subir volumen"
+msgstr "Sesi arttır"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:101
+msgid "No se puede subir más el volumen ya se encuentra al 100%"
+msgstr "Ses daha fazla arttılamaz, zaten %100"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:111
+msgid "Detener reproducción"
+msgstr "Oynatmayı durdur"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:116
+msgid "No hay nada reproduciéndose"
+msgstr "hiçbir şey çalmıyor"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:129
+msgid "Recargar reproducción"
+msgstr "Oynatmayı Yeniden Yükle"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:134
+msgid "No hay nada para recargar"
+msgstr "Yeniden yüklenecek bir şey yok"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:140
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:245
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1232
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1275
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1358
+msgid ""
+"No se pudo cargar la emisora.\n"
+"\n"
+"Asegúrese de que tiene conexión a internet.\n"
+"\n"
+"Otros motivos pueden ser que la emisora tenga problemas en estos momentos.\n"
+"\n"
+"Inténtelo más tarde."
+msgstr ""
+"İstasyon yüklenemedi.\n"
+"\n"
+"İnternet bağlantınız olduğundan emin olun.\n"
+"\n"
+"Diğer nedenler, istasyonun şu anda sorun yaşıyor olması olabilir.\n"
+"\n"
+"Lütfen daha sonra tekrar deneyiniz."
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:166
+msgid "Poner y quitar silencio"
+msgstr "Sesi kapat veAç"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:171
+msgid "No hay nada para silenciar"
+msgstr "Sessize alınacak bir şey yok"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:184
+msgid "Saber emisora en reproducción"
+msgstr "Oynatılan istasyon Bilgisi"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:191
+#, python-format
+msgid "Emisora en memoria: %s"
+msgstr "Hafızadaki istasyon: %s"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:286
+msgid "No tiene ninguna emisora en Favoritos en la posición 1"
+msgstr "1 konumunda favori istasyon yok"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:289
+msgid "No tiene ninguna emisora en Favoritos en la posición 2"
+msgstr "2. konumda favori istasyon yok"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:292
+msgid "No tiene ninguna emisora en Favoritos en la posición 3"
+msgstr "3. konumda favori istasyon yok"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:295
+msgid "No tiene ninguna emisora en Favoritos en la posición 4"
+msgstr "4. konumda favori istasyon yok"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:298
+msgid "No tiene ninguna emisora en Favoritos en la posición 5"
+msgstr "5. konumda favori istasyon yok"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:301
+msgid "Reproducir emisora rápidamente 1"
+msgstr "Hızlı istasyon 1'i oynat"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:306
+msgid "Reproducir emisora rápidamente 2"
+msgstr "Hızlı istasyon 2'yi oynat"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:311
+msgid "Reproducir emisora rápidamente 3"
+msgstr "Hızlı istasyon 3'ü oynat"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:316
+msgid "Reproducir emisora rápidamente 4"
+msgstr "Hızlı istasyon 4'ü oynat"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:321
+msgid "Reproducir emisora rápidamente 5"
+msgstr "Hızlı istasyon 5'i oynat"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:333
+msgid "zRadio para NVDA"
+msgstr "NVDA için zRadio"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:391
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1403
+msgid "Quitar &Silencio"
+msgstr "Sesi aç"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:421
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:872
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:899
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:911
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:972
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1080
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1425
+msgid "No hay favoritos."
+msgstr "Favori yok."
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:445
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:454
+msgid "Búsqueda general:"
+msgstr "Genel arama:"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:468
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:478
+msgid "Buscar pais:"
+msgstr "Ülkeye göre ara:"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:474
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:487
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:499
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:511
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:714
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:731
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:745
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:762
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:776
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:816
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:826
+msgid "{} número de emisoras: {}"
+msgstr "{} istasyon sayısı: {}"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:494
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:503
+msgid "Buscar idioma:"
+msgstr "Dile göre ara:"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:518
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:527
+msgid "Buscar etiqueta:"
+msgstr "Etikete göre ara:"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:549
+msgid "No hay emisoras para buscar."
+msgstr "Aranacak istasyon yok."
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:559
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:616
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:671
+msgid "El campo de búsqueda esta vacío, escriba algo antes para poder realizar la búsqueda."
+msgstr "Arama alanı boş. Arama yapabilmek için önce yazın."
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:579
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:636
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:689
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:719
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:750
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:781
+msgid ""
+"No se encontraron resultados.\n"
+"Haga una búsqueda más específica."
+msgstr "Sonuç bulunamadı. Daha spesifik bir şey arayın."
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:590
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:647
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:679
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:708
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:739
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:770
+msgid "&Limpiar"
+msgstr "&Temizle"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:843
+msgid "&Nueva emisora"
+msgstr "Ye&ni istasyon"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:846
+msgid "&Editar emisora"
+msgstr "İstasyonu düz&enle"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:849
+msgid "&Quitar de favoritos"
+msgstr "&Favorilerden Kaldır"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:860
+msgid "Añadir nueva emisora"
+msgstr "Yeni istasyon ekle"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:887
+msgid "Editar emisora"
+msgstr "İstasyonu düzenle"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:919
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:935
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:946
+msgid "Reproducir"
+msgstr "Oynat"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:922
+msgid "Agregar a favoritos"
+msgstr "Favorilere ekle"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:925
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:941
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:949
+msgid "Copiar URL"
+msgstr "Url'yi kopyala"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:930
+msgid "Poner por defecto en General"
+msgstr "Genel içerisinde varsayılan olarak ayarla"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:938
+msgid "Quitar de favoritos"
+msgstr "Favorilerden kaldır"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1054
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1066
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1101
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1111
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1126
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1136
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1149
+msgid "Información"
+msgstr "Bilgi"
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1056
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1068
+msgid "Se agrego la emisora {} a favoritos."
+msgstr "favorilere {} İstasyon eklendi."
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1103
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1113
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1128
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1138
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1151
+msgid "Se a copiado la URL de la emisora {} al portapapeles. Ya puede compartirla."
+msgstr "{} İstasyonunun URL'si panoya kopyalandı. Artık paylaşabilirsiniz."
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1523
+msgid ""
+"No puede dejar el campo Nombre de la emisora en blanco.\n"
+"Asegúrese de introducir un nombre correcto."
+msgstr ""
+"İstasyon adı alanı boş bırakılamaz.\n"
+"Doğru bir ad girdiğinizden emin olun."
+
+#: C:\Users\ITU\AppData\Roaming\nvda\addons\zRadio\globalPlugins/zRadio/__init__.py:1533
+msgid ""
+"No puede dejar el campo de la URL de la emisora en blanco.\n"
+"Asegúrese de introducir una dirección correcta."
+msgstr ""
+"İstasyon URL alanı boş bırakılamaz.\n"
+"Doğru bir adres girdiğinizden emin olun."
+
+#~ msgid "Reproductor de Radios Online para NVDA"
+#~ msgstr "NVDA için çevrimiçi radyo oynatıcı"

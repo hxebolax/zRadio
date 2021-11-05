@@ -1,0 +1,604 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the 'zRadio' package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 'zRadio' '0.5.3'\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
+"POT-Creation-Date: 2021-07-29 21:04+0200\n"
+"PO-Revision-Date: 2021-08-01 18:09+0200\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Last-Translator: Daniel Gartmann <dg@danielgartmann.dk>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: da_DK\n"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information found in Add-ons Manager.
+#. Translators: zRadio window title
+#: buildVars.py:23 addon\globalPlugins\zRadio\__init__.py:333
+msgid "zRadio para NVDA"
+msgstr "zRadio til NVDA"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+#: buildVars.py:26
+msgid "Reproductor de Radios Online para NVDA"
+msgstr "Online radioafspiller til NVDA"
+
+#. Translators: Name of the item in the tools menu
+#: addon\globalPlugins\zRadio\__init__.py:44
+msgid "&zRadio para NVDA"
+msgstr "&zRadio til NVDA"
+
+#. Translators: Error message for not having internet
+#: addon\globalPlugins\zRadio\__init__.py:58
+msgid ""
+"zRadio necesita internet para ser ejecutado.\n"
+"Asegurese de que tiene todo correcto."
+msgstr ""
+"zRadio kræver forbindelse til internettet for at køre.\n"
+"Vær sikker på, at alt virker."
+
+#. Translators: Message window title: Error
+#: addon\globalPlugins\zRadio\__init__.py:62
+#: addon\globalPlugins\zRadio\__init__.py:149
+#: addon\globalPlugins\zRadio\__init__.py:552
+#: addon\globalPlugins\zRadio\__init__.py:562
+#: addon\globalPlugins\zRadio\__init__.py:583
+#: addon\globalPlugins\zRadio\__init__.py:619
+#: addon\globalPlugins\zRadio\__init__.py:640
+#: addon\globalPlugins\zRadio\__init__.py:674
+#: addon\globalPlugins\zRadio\__init__.py:693
+#: addon\globalPlugins\zRadio\__init__.py:723
+#: addon\globalPlugins\zRadio\__init__.py:754
+#: addon\globalPlugins\zRadio\__init__.py:785
+#: addon\globalPlugins\zRadio\__init__.py:1241
+#: addon\globalPlugins\zRadio\__init__.py:1284
+#: addon\globalPlugins\zRadio\__init__.py:1367
+#: addon\globalPlugins\zRadio\__init__.py:1527
+#: addon\globalPlugins\zRadio\__init__.py:1537
+msgid "Error"
+msgstr "Fejl"
+
+#. Translators: Description for Input Gestures dialog for zRadio
+#: addon\globalPlugins\zRadio\__init__.py:76
+msgid "Muestra la ventana principal de zRadio"
+msgstr "Vis hovedvinduet i zRadio"
+
+#. Translators: Description for Input Gestures dialog for zRadio
+#: addon\globalPlugins\zRadio\__init__.py:81
+msgid "Bajar volumen"
+msgstr "Skru ned for lyden"
+
+#. Translators: Volume warning message -
+#: addon\globalPlugins\zRadio\__init__.py:86
+msgid "No se puede bajar más el volumen ya se encuentra al 0%"
+msgstr ""
+"Der kan ikke skrues længere ned for lydstyrken, da den allerede står på 0%"
+
+#. Translators: Description for Input Gestures dialog for zRadio
+#: addon\globalPlugins\zRadio\__init__.py:96
+msgid "Subir volumen"
+msgstr "Skru op for lyden"
+
+#. Translators: Volume warning message +
+#: addon\globalPlugins\zRadio\__init__.py:101
+msgid "No se puede subir más el volumen ya se encuentra al 100%"
+msgstr ""
+"Der kan ikke skrues længere op for lydstyrken, da den allerede står på 100%"
+
+#. Translators: Description for Input Gestures dialog for zRadio
+#: addon\globalPlugins\zRadio\__init__.py:111
+msgid "Detener reproducción"
+msgstr "Stop afspilning"
+
+#. Translators: Information message
+#: addon\globalPlugins\zRadio\__init__.py:116
+msgid "No hay nada reproduciéndose"
+msgstr "Ingen afspilning i gang"
+
+#. Translators: Description for Input Gestures dialog for zRadio
+#: addon\globalPlugins\zRadio\__init__.py:129
+msgid "Recargar reproducción"
+msgstr "Genindlæs afspilning"
+
+#. Translators: Information message
+#: addon\globalPlugins\zRadio\__init__.py:134
+msgid "No hay nada para recargar"
+msgstr "Intet at genindlæse"
+
+#. Translators: Error information message when loading the station
+#: addon\globalPlugins\zRadio\__init__.py:140
+#: addon\globalPlugins\zRadio\__init__.py:245
+#: addon\globalPlugins\zRadio\__init__.py:1232
+#: addon\globalPlugins\zRadio\__init__.py:1275
+#: addon\globalPlugins\zRadio\__init__.py:1358
+msgid ""
+"No se pudo cargar la emisora.\n"
+"\n"
+"Asegúrese de que tiene conexión a internet.\n"
+"\n"
+"Otros motivos pueden ser que la emisora tenga problemas en estos momentos.\n"
+"\n"
+"Inténtelo más tarde."
+msgstr ""
+"Stationen kunne ikke indlæses.\n"
+"\n"
+"Vær sikker på, at du har forbindelse til internettet.\n"
+"\n"
+"Enn anden årsag kan være, at stationen har problemer i øjeblikket.\n"
+"\n"
+"Prøv igen senere."
+
+#. Translators: Description for Input Gestures dialog for zRadio
+#: addon\globalPlugins\zRadio\__init__.py:166
+msgid "Poner y quitar silencio"
+msgstr "Slå lyden til og fra"
+
+#. Translators: Information message
+#: addon\globalPlugins\zRadio\__init__.py:171
+msgid "No hay nada para silenciar"
+msgstr "Der er intet at dæmpe"
+
+#. Translators: Description for Input Gestures dialog for zRadio
+#: addon\globalPlugins\zRadio\__init__.py:184
+msgid "Saber emisora en reproducción"
+msgstr "Oplys station der afspilles"
+
+#. Translators: Information message with the name of the station loaded in memory
+#: addon\globalPlugins\zRadio\__init__.py:191
+#, python-format
+msgid "Emisora en memoria: %s"
+msgstr "Station på hukommelsesplads: %s"
+
+#. Translators: Message without stations
+#. Translators: Message there are no stations
+#. Translators: Message without stations
+#: addon\globalPlugins\zRadio\__init__.py:202
+#: addon\globalPlugins\zRadio\__init__.py:546
+#: addon\globalPlugins\zRadio\__init__.py:961
+#: addon\globalPlugins\zRadio\__init__.py:1415
+#: addon\globalPlugins\zRadio\variables.py:129
+msgid "Sin emisoras."
+msgstr "Ingen radiostationer."
+
+#. Translators: Information message
+#: addon\globalPlugins\zRadio\__init__.py:286
+msgid "No tiene ninguna emisora en Favoritos en la posición 1"
+msgstr "Der findes ingen station i Favoritter på plads 1"
+
+#. Translators: Information message
+#: addon\globalPlugins\zRadio\__init__.py:289
+msgid "No tiene ninguna emisora en Favoritos en la posición 2"
+msgstr "Der findes ingen station i Favoritter på plads 2"
+
+#. Translators: Information message
+#: addon\globalPlugins\zRadio\__init__.py:292
+msgid "No tiene ninguna emisora en Favoritos en la posición 3"
+msgstr "Der findes ingen station i Favoritter på plads 3"
+
+#. Translators: Information message
+#: addon\globalPlugins\zRadio\__init__.py:295
+msgid "No tiene ninguna emisora en Favoritos en la posición 4"
+msgstr "Der findes ingen station i Favoritter på plads 4"
+
+#. Translators: Information message
+#: addon\globalPlugins\zRadio\__init__.py:298
+msgid "No tiene ninguna emisora en Favoritos en la posición 5"
+msgstr "Der findes ingen station i Favoritter på plads 5"
+
+#. Translators: Description for Input Gestures dialog for zRadio
+#: addon\globalPlugins\zRadio\__init__.py:301
+msgid "Reproducir emisora rápidamente 1"
+msgstr "Direkte afspilning af station 1"
+
+#. Translators: Description for Input Gestures dialog for zRadio
+#: addon\globalPlugins\zRadio\__init__.py:306
+msgid "Reproducir emisora rápidamente 2"
+msgstr "Direkte afspilning af station 2"
+
+#. Translators: Description for Input Gestures dialog for zRadio
+#: addon\globalPlugins\zRadio\__init__.py:311
+msgid "Reproducir emisora rápidamente 3"
+msgstr "Direkte afspilning af station 3"
+
+#. Translators: Description for Input Gestures dialog for zRadio
+#: addon\globalPlugins\zRadio\__init__.py:316
+msgid "Reproducir emisora rápidamente 4"
+msgstr "Direkte afspilning af station 4"
+
+#. Translators: Description for Input Gestures dialog for zRadio
+#: addon\globalPlugins\zRadio\__init__.py:321
+msgid "Reproducir emisora rápidamente 5"
+msgstr "Direkte afspilning af station 5"
+
+#. Translators: Change button name to Remove Mute
+#: addon\globalPlugins\zRadio\__init__.py:391
+#: addon\globalPlugins\zRadio\__init__.py:1403
+msgid "Quitar &Silencio"
+msgstr "Slå &dæmpning fra"
+
+#. Translators: Search button name
+#. me da el indice de la seleccion
+#. Translators: Search button name
+#: addon\globalPlugins\zRadio\__init__.py:410
+#: addon\globalPlugins\zRadio\__init__.py:426
+#: addon\globalPlugins\zRadio\__init__.py:443
+#: addon\globalPlugins\zRadio\__init__.py:456
+#: addon\globalPlugins\zRadio\__init__.py:466
+#: addon\globalPlugins\zRadio\__init__.py:480
+#: addon\globalPlugins\zRadio\__init__.py:492
+#: addon\globalPlugins\zRadio\__init__.py:505
+#: addon\globalPlugins\zRadio\__init__.py:516
+#: addon\globalPlugins\zRadio\__init__.py:529
+#: addon\globalPlugins\zRadio\__init__.py:544
+#: addon\globalPlugins\zRadio\__init__.py:585
+#: addon\globalPlugins\zRadio\__init__.py:600
+#: addon\globalPlugins\zRadio\__init__.py:612
+#: addon\globalPlugins\zRadio\__init__.py:642
+#: addon\globalPlugins\zRadio\__init__.py:656
+#: addon\globalPlugins\zRadio\__init__.py:667
+#: addon\globalPlugins\zRadio\__init__.py:695
+#: addon\globalPlugins\zRadio\__init__.py:725
+#: addon\globalPlugins\zRadio\__init__.py:756
+#: addon\globalPlugins\zRadio\__init__.py:787
+#: addon\globalPlugins\zRadio\__init__.py:801
+#: addon\globalPlugins\zRadio\__init__.py:810
+#: addon\globalPlugins\zRadio\__init__.py:820
+#: addon\globalPlugins\zRadio\__init__.py:831
+#: addon\globalPlugins\zRadio\__init__.py:868
+#: addon\globalPlugins\zRadio\__init__.py:876
+#: addon\globalPlugins\zRadio\__init__.py:895
+#: addon\globalPlugins\zRadio\__init__.py:903
+#: addon\globalPlugins\zRadio\__init__.py:976
+#: addon\globalPlugins\zRadio\__init__.py:1013
+#: addon\globalPlugins\zRadio\__init__.py:1024
+#: addon\globalPlugins\zRadio\__init__.py:1046
+#: addon\globalPlugins\zRadio\__init__.py:1094
+#: addon\globalPlugins\zRadio\__init__.py:1120
+#: addon\globalPlugins\zRadio\__init__.py:1161
+#: addon\globalPlugins\zRadio\__init__.py:1182
+#: addon\globalPlugins\zRadio\__init__.py:1203
+#: addon\globalPlugins\zRadio\xgui.py:95 addon\globalPlugins\zRadio\xgui.py:125
+#: addon\globalPlugins\zRadio\xgui.py:160
+msgid "&Buscar"
+msgstr "&Søg"
+
+#. Translators: Message in listbox favorites, no favorites
+#. Translators: Message no favorites
+#: addon\globalPlugins\zRadio\__init__.py:421
+#: addon\globalPlugins\zRadio\__init__.py:872
+#: addon\globalPlugins\zRadio\__init__.py:899
+#: addon\globalPlugins\zRadio\__init__.py:911
+#: addon\globalPlugins\zRadio\__init__.py:972
+#: addon\globalPlugins\zRadio\__init__.py:1080
+#: addon\globalPlugins\zRadio\__init__.py:1425
+msgid "No hay favoritos."
+msgstr "Der findes ingen favoritter."
+
+#. Translators: Searchable tag name
+#: addon\globalPlugins\zRadio\__init__.py:445
+#: addon\globalPlugins\zRadio\__init__.py:454
+msgid "Búsqueda general:"
+msgstr "Generel søgning:"
+
+#. Translators: Message in the search listbox, Waiting for a search
+#. Translators: Message waiting for a search
+#: addon\globalPlugins\zRadio\__init__.py:449
+#: addon\globalPlugins\zRadio\__init__.py:460
+#: addon\globalPlugins\zRadio\__init__.py:522
+#: addon\globalPlugins\zRadio\__init__.py:533
+#: addon\globalPlugins\zRadio\__init__.py:700
+#: addon\globalPlugins\zRadio\__init__.py:792
+#: addon\globalPlugins\zRadio\__init__.py:806
+#: addon\globalPlugins\zRadio\__init__.py:836
+#: addon\globalPlugins\zRadio\xgui.py:163
+msgid "Esperando una búsqueda."
+msgstr "Afventer en søgning."
+
+#. Translators: Searchable tag name
+#: addon\globalPlugins\zRadio\__init__.py:468
+#: addon\globalPlugins\zRadio\__init__.py:478
+msgid "Buscar pais:"
+msgstr "Søg efter land:"
+
+#. Translators: Warning do not change the content of what is between the keys. Message with the number of stations
+#: addon\globalPlugins\zRadio\__init__.py:474
+#: addon\globalPlugins\zRadio\__init__.py:487
+#: addon\globalPlugins\zRadio\__init__.py:499
+#: addon\globalPlugins\zRadio\__init__.py:511
+#: addon\globalPlugins\zRadio\__init__.py:714
+#: addon\globalPlugins\zRadio\__init__.py:731
+#: addon\globalPlugins\zRadio\__init__.py:745
+#: addon\globalPlugins\zRadio\__init__.py:762
+#: addon\globalPlugins\zRadio\__init__.py:776
+#: addon\globalPlugins\zRadio\__init__.py:816
+#: addon\globalPlugins\zRadio\__init__.py:826
+msgid "{} número de emisoras: {}"
+msgstr "{} antal stationer: {}"
+
+#. Translators: Searchable tag name
+#: addon\globalPlugins\zRadio\__init__.py:494
+#: addon\globalPlugins\zRadio\__init__.py:503
+msgid "Buscar idioma:"
+msgstr "Søg efter sprog:"
+
+#. Translators: Searchable tag name
+#: addon\globalPlugins\zRadio\__init__.py:518
+#: addon\globalPlugins\zRadio\__init__.py:527
+msgid "Buscar etiqueta:"
+msgstr "Søg efter etiket:"
+
+#. Translators: Message there are no stations
+#: addon\globalPlugins\zRadio\__init__.py:549
+msgid "No hay emisoras para buscar."
+msgstr "Ingen stationer at søge."
+
+#. Translators: Blank search message
+#: addon\globalPlugins\zRadio\__init__.py:559
+#: addon\globalPlugins\zRadio\__init__.py:616
+#: addon\globalPlugins\zRadio\__init__.py:671
+msgid ""
+"El campo de búsqueda esta vacío, escriba algo antes para poder realizar la "
+"búsqueda."
+msgstr ""
+"Søgefeltet er tomt. Du skal skrive noget, før du kan foretage en søgning."
+
+#. Translators: Message not found results
+#: addon\globalPlugins\zRadio\__init__.py:579
+#: addon\globalPlugins\zRadio\__init__.py:636
+#: addon\globalPlugins\zRadio\__init__.py:689
+#: addon\globalPlugins\zRadio\__init__.py:719
+#: addon\globalPlugins\zRadio\__init__.py:750
+#: addon\globalPlugins\zRadio\__init__.py:781
+msgid ""
+"No se encontraron resultados.\n"
+"Haga una búsqueda más específica."
+msgstr ""
+"Ingen resultater fundet.\n"
+"Lav en mere specifik søgning."
+
+#. Translators: Clean button name
+#: addon\globalPlugins\zRadio\__init__.py:590
+#: addon\globalPlugins\zRadio\__init__.py:647
+#: addon\globalPlugins\zRadio\__init__.py:679
+#: addon\globalPlugins\zRadio\__init__.py:708
+#: addon\globalPlugins\zRadio\__init__.py:739
+#: addon\globalPlugins\zRadio\__init__.py:770
+msgid "&Limpiar"
+msgstr "&Ryd"
+
+#. Translators: context menu item
+#: addon\globalPlugins\zRadio\__init__.py:843
+msgid "&Nueva emisora"
+msgstr "&Ny station"
+
+#. Translators: context menu item
+#: addon\globalPlugins\zRadio\__init__.py:846
+msgid "&Editar emisora"
+msgstr "&Redigér station"
+
+#. Translators: context menu item
+#: addon\globalPlugins\zRadio\__init__.py:849
+msgid "&Quitar de favoritos"
+msgstr "&Fjern fra favoritter"
+
+#. Translators: title of dialog
+#: addon\globalPlugins\zRadio\__init__.py:860
+msgid "Añadir nueva emisora"
+msgstr "Tilføj ny station"
+
+#. Translators: title of dialog
+#: addon\globalPlugins\zRadio\__init__.py:887
+msgid "Editar emisora"
+msgstr "Redigér station"
+
+#. Translators: context menu item
+#: addon\globalPlugins\zRadio\__init__.py:919
+#: addon\globalPlugins\zRadio\__init__.py:935
+#: addon\globalPlugins\zRadio\__init__.py:946
+msgid "Reproducir"
+msgstr "Afspil"
+
+#. Translators: context menu item
+#: addon\globalPlugins\zRadio\__init__.py:922
+msgid "Agregar a favoritos"
+msgstr "Føj til favoritter"
+
+#. Translators: context menu item
+#: addon\globalPlugins\zRadio\__init__.py:925
+#: addon\globalPlugins\zRadio\__init__.py:941
+#: addon\globalPlugins\zRadio\__init__.py:949
+msgid "Copiar URL"
+msgstr "Kopiér adresse"
+
+#. Translators: context menu item
+#: addon\globalPlugins\zRadio\__init__.py:930
+msgid "Poner por defecto en General"
+msgstr "Indstil som standard i Generel"
+
+#. Translators: context menu item
+#: addon\globalPlugins\zRadio\__init__.py:938
+msgid "Quitar de favoritos"
+msgstr "Fjern fra favoritter"
+
+#. Translators: Title of the notification
+#: addon\globalPlugins\zRadio\__init__.py:1054
+#: addon\globalPlugins\zRadio\__init__.py:1066
+#: addon\globalPlugins\zRadio\__init__.py:1101
+#: addon\globalPlugins\zRadio\__init__.py:1111
+#: addon\globalPlugins\zRadio\__init__.py:1126
+#: addon\globalPlugins\zRadio\__init__.py:1136
+#: addon\globalPlugins\zRadio\__init__.py:1149
+msgid "Información"
+msgstr "Information"
+
+#. Translators: Notification message
+#: addon\globalPlugins\zRadio\__init__.py:1056
+#: addon\globalPlugins\zRadio\__init__.py:1068
+msgid "Se agrego la emisora {} a favoritos."
+msgstr "Stationen {} blev føjet til favoritter."
+
+#. Translators: Notification message
+#: addon\globalPlugins\zRadio\__init__.py:1103
+#: addon\globalPlugins\zRadio\__init__.py:1113
+#: addon\globalPlugins\zRadio\__init__.py:1128
+#: addon\globalPlugins\zRadio\__init__.py:1138
+#: addon\globalPlugins\zRadio\__init__.py:1151
+msgid ""
+"Se a copiado la URL de la emisora {} al portapapeles. Ya puede compartirla."
+msgstr ""
+"Adressen på stationen {} er nu kopieret til udklipsholderen. Du kan nu dele "
+"den."
+
+#. Translators: Silence button name
+#: addon\globalPlugins\zRadio\__init__.py:1256
+#: addon\globalPlugins\zRadio\__init__.py:1297
+#: addon\globalPlugins\zRadio\__init__.py:1333
+#: addon\globalPlugins\zRadio\__init__.py:1374
+#: addon\globalPlugins\zRadio\__init__.py:1388
+#: addon\globalPlugins\zRadio\__init__.py:1400
+#: addon\globalPlugins\zRadio\__init__.py:1408
+#: addon\globalPlugins\zRadio\xgui.py:49
+msgid "&Silenciar"
+msgstr "&Dæmp"
+
+#. Translators: error message, you cannot leave the field
+#: addon\globalPlugins\zRadio\__init__.py:1523
+msgid ""
+"No puede dejar el campo Nombre de la emisora en blanco.\n"
+"Asegúrese de introducir un nombre correcto."
+msgstr ""
+"Kan ikke lade skrivefeltet til navnet på stationen være tomt.\n"
+"Kontrollér at der er skrevet et korrekt navn."
+
+#. Translators: error message, you cannot leave the field
+#: addon\globalPlugins\zRadio\__init__.py:1533
+msgid ""
+"No puede dejar el campo de la URL de la emisora en blanco.\n"
+"Asegúrese de introducir una dirección correcta."
+msgstr ""
+"Kan ikke lade skrivefeltet til stationens adresse være tomt.\n"
+"Kontrollér venligst, at der er skrevet en korrekt adresse."
+
+#. Translators: Options for the search category combobox
+#: addon\globalPlugins\zRadio\variables.py:103
+msgid "Búsqueda general de radios"
+msgstr "Generel søgning efter radiostationer"
+
+#. Translators: Options for the search category combobox
+#: addon\globalPlugins\zRadio\variables.py:105
+msgid "Búsqueda por países"
+msgstr "Søgning opdelt efter lande"
+
+#. Translators: Options for the search category combobox
+#: addon\globalPlugins\zRadio\variables.py:107
+msgid "Búsqueda por idioma"
+msgstr "Søgning opdelt efter sprog"
+
+#. Translators: Options for the search category combobox
+#: addon\globalPlugins\zRadio\variables.py:109
+msgid "Búsqueda por etiqueta"
+msgstr "Søgning opdelt efter etiket"
+
+#. Translators: Main category name
+#: addon\globalPlugins\zRadio\xgui.py:35
+msgid "General"
+msgstr "Generel"
+
+#. Translators: Main category name
+#: addon\globalPlugins\zRadio\xgui.py:37
+msgid "Favoritos"
+msgstr "Favoritter"
+
+#. Translators: Main category name
+#: addon\globalPlugins\zRadio\xgui.py:39
+msgid "Buscador"
+msgstr "Søgning"
+
+#. ######### Botones Multimedia
+#. Translators: Stop button name
+#: addon\globalPlugins\zRadio\xgui.py:43
+msgid "&Detener"
+msgstr "Sto&p"
+
+#. Translators: Reload button name
+#: addon\globalPlugins\zRadio\xgui.py:46
+msgid "&Recargar"
+msgstr "&Genindlæs"
+
+#. ######### Botones generales
+#. Translators: Action button name
+#: addon\globalPlugins\zRadio\xgui.py:55
+msgid "&Acción"
+msgstr "&Handling"
+
+#. Translators: Exit button name
+#: addon\globalPlugins\zRadio\xgui.py:62
+msgid "Salir Alt + F4"
+msgstr "Forlad Alt + F4"
+
+#. Translators: name of a label
+#: addon\globalPlugins\zRadio\xgui.py:92
+msgid "Busqueda emisoras:"
+msgstr "Søg stationer:"
+
+#. Translators: name of a label
+#: addon\globalPlugins\zRadio\xgui.py:97
+msgid "Listado de emisoras:"
+msgstr "Liste med stationer:"
+
+#. Translators: name of a label
+#: addon\globalPlugins\zRadio\xgui.py:122
+msgid "Busqueda emisoras favoritas:"
+msgstr "Søgning i favoritstationer:"
+
+#. Translators: name of a label
+#: addon\globalPlugins\zRadio\xgui.py:127
+msgid "Listado de emisoras favoritas:"
+msgstr "Liste med favoritstationer:"
+
+#. Translators: name of a label
+#: addon\globalPlugins\zRadio\xgui.py:152
+msgid "Seleccione una categoría:"
+msgstr "Vælg en kategori:"
+
+#. Translators: name of a label
+#: addon\globalPlugins\zRadio\xgui.py:157
+msgid "Búsqueda general de radios:"
+msgstr "Generel søgning efter radiostationer:"
+
+#. Translators: name of a label
+#: addon\globalPlugins\zRadio\xgui.py:165
+msgid "Resultado:"
+msgstr "Resultat:"
+
+#. Translators: label name for station name
+#: addon\globalPlugins\zRadio\xgui.py:194
+msgid "Nombre de la emisora:"
+msgstr "Navn på station:"
+
+#. Translators: label name for station url
+#: addon\globalPlugins\zRadio\xgui.py:198
+msgid "Dirección URL de la emisora:"
+msgstr "Adresse på station:"
+
+#. Translators: acept button name
+#. Translators: Acept button name
+#: addon\globalPlugins\zRadio\xgui.py:202
+#: addon\globalPlugins\zRadio\xgui.py:235
+msgid "&Aceptar"
+msgstr "&Godkend"
+
+#. Translators: Cancel button name
+#: addon\globalPlugins\zRadio\xgui.py:204
+msgid "&Cancelar"
+msgstr "&Annuller"
