@@ -33,6 +33,8 @@ elif idioma[:2] == "pt":
 	diccionario = dict_portugues
 elif idioma[:2] == "da":
 	diccionario = dict_danes
+elif idioma[:2] == "tr":
+	diccionario = dict_turco
 else:
 	diccionario = dict_español
 
