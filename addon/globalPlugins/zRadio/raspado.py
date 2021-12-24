@@ -13,8 +13,10 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from pyradios import RadioBrowser
 from requests_cache import CachedSession
 from diccionarios import *
-
-idioma = languageHandler.curLang
+try:
+	idioma = languageHandler.curLang
+except:
+	idioma = languageHandler.getLanguage()
 if idioma[:2] == "es":
 	diccionario = dict_español
 elif idioma[:2] == "fr":

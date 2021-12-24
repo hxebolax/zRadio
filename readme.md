@@ -226,6 +226,16 @@ zRadio proporciona las siguientes órdenes para que el usuario pueda añadir un 
 * Turco: : umut korkmaz
 
 # Registro de cambios.
+## Versión 0.5.4.
+
+* Corregido error al detectar idiomas.
+
+* Preparado para versión de NVDA 2022.1.0.
+
+## Versión 0.5.3.
+
+* Agregados nuevos idiomas.
+
 ## Versión 0.5.2.
 
 * Solucionado la carga lenta al iniciar NVDA.
