@@ -224,8 +224,15 @@ zRadio proporciona las siguientes órdenes para que el usuario pueda añadir un 
 * Árabe: Wafiq Taher
 * danés: Daniel Gartmann
 * Turco: : umut korkmaz
+* Ruso: Valentin Kupriyanov
 
 # Registro de cambios.
+## Versión 0.5.5.
+
+* Agregado idioma Ruso.
+
+* Corregido error con rutas internas de NVDA.
+
 ## Versión 0.5.4.
 
 * Corregido error al detectar idiomas.

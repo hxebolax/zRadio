@@ -10,6 +10,7 @@ import ctypes
 import globalVars
 import addonHandler
 from .reproductor import *
+
 # For translation
 addonHandler.initTranslation()
 

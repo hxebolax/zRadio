@@ -200,9 +200,19 @@ zRadio, kullanıcının bir girdi hareketi eklemesi için aşağıdaki komutlar�
 * İngilizce: slanovani  
 * İtalyanca: Simone Dal Maso  
 * Arapça: Wafiq Taher  
+* Danimarka: Daniel Gartmann.  
 * Turkçe: Umut KORKMAZ  
 
 # Sürüm Geçmişi:  
+## Sürüm 0.5.4:  
+
+* Dilleri algılarken oluşan hata düzeltildi.  
+* NVDA 2022.1.0 sürümü için hazırlanmıştır.  
+
+## Sürüm 0.5.3:  
+
+* Yeni diller eklendi.  
+
 ## Sürüm 0.5.2.
 
 * NVDA'yı başlatırken yavaş yükleme düzeltildi.  

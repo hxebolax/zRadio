@@ -59,6 +59,10 @@ try:
     registry['dynamodb'] = DynamoDbCache
 except ImportError:
     DynamoDbCache = None
+if sys.version[2] == "7":
+	sys.path.remove(os.path.join(os.path.abspath(os.path.dirname(__file__)), 'modules', '3.7'))
+else:
+	sys.path.remove(os.path.join(os.path.abspath(os.path.dirname(__file__)), 'modules', '3.8'))
 
 def create_backend(backend_name, cache_name, options):
     if isinstance(backend_name, BaseCache):
