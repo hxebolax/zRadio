@@ -227,6 +227,12 @@ zRadio proporciona las siguientes órdenes para que el usuario pueda añadir un 
 * Ruso: Valentin Kupriyanov
 
 # Registro de cambios.
+## Versión 0.5.6.
+
+* Solucionado un fallo de seguridad en pantallas seguras.
+
+* Solucionado un problema con la recarga de complementos en NVDA.
+
 ## Versión 0.5.5.
 
 * Agregado idioma Ruso.

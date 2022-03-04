@@ -34,10 +34,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 		self._MainWindows = None
 
-		if globalVars.appArgs.secure:
-			return
-
-
 		# Creation of our menu.
 		self.toolsMenu = gui.mainFrame.sysTrayIcon.toolsMenu
 		# Translators: Name of the item in the tools menu
@@ -46,10 +42,15 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def terminate(self):
 		try:
+			self.toolsMenu .Remove(self.menuItem)
+		except Exception:
+			pass
+		try:
 			if not self._MainWindows:
 				self._MainWindows.Destroy()
 		except (AttributeError, RuntimeError):
 			pass
+		super().terminate()
 
 	def dlgPrincipal(self, event):
 		if chkInternet.test_internet("https://www.google.es") == False:
@@ -322,6 +323,8 @@ Inténtelo más tarde.""")
 	def script_Rapida5(self, gesture):
 		self.runAction(5)
 
+if globalVars.appArgs.secure:
+	GlobalPlugin = globalPluginHandler.GlobalPlugin # noqa: F811 
 
 class MainWindows(wx.Dialog):
 	def __init__(self, parent):
