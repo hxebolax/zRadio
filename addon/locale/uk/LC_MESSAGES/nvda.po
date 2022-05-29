@@ -1,0 +1,567 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: zRadio for NVDA\n"
+"POT-Creation-Date: 2022-05-29 23:59+0300\n"
+"PO-Revision-Date: 2022-05-29 23:59+0300\n"
+"Last-Translator: Volodymyr Pyrih <vp88.mobile@gmail.com>\n"
+"Language-Team: NVDA Ukrainian Community\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ../../..\n"
+"X-Poedit-SearchPath-0: globalPlugins/zRadio/certifi/__init__.py\n"
+"X-Poedit-SearchPath-1: globalPlugins/zRadio/certifi/__main__.py\n"
+"X-Poedit-SearchPath-2: globalPlugins/zRadio/certifi/core.py\n"
+"X-Poedit-SearchPath-3: globalPlugins/zRadio\n"
+"X-Poedit-SearchPath-4: globalPlugins/zRadio/chardet/cli/__init__.py\n"
+"X-Poedit-SearchPath-5: globalPlugins/zRadio/chardet/cli/chardetect.py\n"
+"X-Poedit-SearchPath-6: globalPlugins/zRadio/chardet/__init__.py\n"
+"X-Poedit-SearchPath-7: globalPlugins/zRadio/chardet/big5freq.py\n"
+"X-Poedit-SearchPath-8: globalPlugins/zRadio/chardet/big5prober.py\n"
+"X-Poedit-SearchPath-9: globalPlugins/zRadio/chardet/chardistribution.py\n"
+"X-Poedit-SearchPath-10: globalPlugins/zRadio/chardet/charsetgroupprober.py\n"
+"X-Poedit-SearchPath-11: globalPlugins/zRadio/chardet/charsetprober.py\n"
+"X-Poedit-SearchPath-12: globalPlugins/zRadio/chardet/codingstatemachine.py\n"
+"X-Poedit-SearchPath-13: globalPlugins/zRadio/chardet/compat.py\n"
+"X-Poedit-SearchPath-14: globalPlugins/zRadio/chardet/cp949prober.py\n"
+"X-Poedit-SearchPath-15: globalPlugins/zRadio/chardet/enums.py\n"
+"X-Poedit-SearchPath-16: globalPlugins/zRadio/chardet/escprober.py\n"
+"X-Poedit-SearchPath-17: globalPlugins/zRadio/chardet/escsm.py\n"
+"X-Poedit-SearchPath-18: globalPlugins/zRadio/chardet/eucjpprober.py\n"
+"X-Poedit-SearchPath-19: globalPlugins/zRadio/chardet/euckrfreq.py\n"
+"X-Poedit-SearchPath-20: globalPlugins/zRadio/chardet/euckrprober.py\n"
+"X-Poedit-SearchPath-21: globalPlugins/zRadio/chardet/euctwfreq.py\n"
+"X-Poedit-SearchPath-22: globalPlugins/zRadio/chardet/euctwprober.py\n"
+"X-Poedit-SearchPath-23: globalPlugins/zRadio/chardet/gb2312freq.py\n"
+"X-Poedit-SearchPath-24: globalPlugins/zRadio/chardet/gb2312prober.py\n"
+"X-Poedit-SearchPath-25: globalPlugins/zRadio/chardet/hebrewprober.py\n"
+"X-Poedit-SearchPath-26: globalPlugins/zRadio/chardet/jisfreq.py\n"
+"X-Poedit-SearchPath-27: globalPlugins/zRadio/chardet/jpcntx.py\n"
+"X-Poedit-SearchPath-28: globalPlugins/zRadio/chardet/langbulgarianmodel.py\n"
+"X-Poedit-SearchPath-29: globalPlugins/zRadio/chardet/langcyrillicmodel.py\n"
+"X-Poedit-SearchPath-30: globalPlugins/zRadio/chardet/langgreekmodel.py\n"
+"X-Poedit-SearchPath-31: globalPlugins/zRadio/chardet/langhebrewmodel.py\n"
+"X-Poedit-SearchPath-32: globalPlugins/zRadio/chardet/langhungarianmodel.py\n"
+"X-Poedit-SearchPath-33: globalPlugins/zRadio/chardet/langthaimodel.py\n"
+"X-Poedit-SearchPath-34: globalPlugins/zRadio/chardet/langturkishmodel.py\n"
+"X-Poedit-SearchPath-35: globalPlugins/zRadio/chardet/latin1prober.py\n"
+"X-Poedit-SearchPath-36: globalPlugins/zRadio/chardet/mbcharsetprober.py\n"
+"X-Poedit-SearchPath-37: globalPlugins/zRadio/chardet/mbcsgroupprober.py\n"
+"X-Poedit-SearchPath-38: globalPlugins/zRadio/chardet/mbcssm.py\n"
+"X-Poedit-SearchPath-39: globalPlugins/zRadio/chardet/sbcharsetprober.py\n"
+"X-Poedit-SearchPath-40: globalPlugins/zRadio/chardet/sbcsgroupprober.py\n"
+"X-Poedit-SearchPath-41: globalPlugins/zRadio/chardet/sjisprober.py\n"
+"X-Poedit-SearchPath-42: globalPlugins/zRadio/chardet/universaldetector.py\n"
+"X-Poedit-SearchPath-43: globalPlugins/zRadio/chardet/utf8prober.py\n"
+"X-Poedit-SearchPath-44: globalPlugins/zRadio/chardet/version.py\n"
+"X-Poedit-SearchPath-45: globalPlugins/zRadio/idna/__init__.py\n"
+"X-Poedit-SearchPath-46: globalPlugins/zRadio/idna/codec.py\n"
+"X-Poedit-SearchPath-47: globalPlugins/zRadio/idna/compat.py\n"
+"X-Poedit-SearchPath-48: globalPlugins/zRadio/idna/core.py\n"
+"X-Poedit-SearchPath-49: globalPlugins/zRadio/idna/idnadata.py\n"
+"X-Poedit-SearchPath-50: globalPlugins/zRadio/idna/intranges.py\n"
+"X-Poedit-SearchPath-51: globalPlugins/zRadio/idna/package_data.py\n"
+"X-Poedit-SearchPath-52: globalPlugins/zRadio/idna/uts46data.py\n"
+"X-Poedit-SearchPath-53: globalPlugins/zRadio/lib/mpv.py\n"
+"X-Poedit-SearchPath-54: globalPlugins/zRadio/pubsub/__init__.py\n"
+"X-Poedit-SearchPath-55: globalPlugins/zRadio/pubsub/pub.py\n"
+"X-Poedit-SearchPath-56: globalPlugins/zRadio/pubsub/core/__init__.py\n"
+"X-Poedit-SearchPath-57: globalPlugins/zRadio/pubsub/core/annotations.py\n"
+"X-Poedit-SearchPath-58: globalPlugins/zRadio/pubsub/core/callables.py\n"
+"X-Poedit-SearchPath-59: globalPlugins/zRadio/pubsub/core/listener.py\n"
+"X-Poedit-SearchPath-60: globalPlugins/zRadio/pubsub/core/notificationmgr.py\n"
+"X-Poedit-SearchPath-61: globalPlugins/zRadio/pubsub/core/publisher.py\n"
+"X-Poedit-SearchPath-62: globalPlugins/zRadio/pubsub/core/topicargspec.py\n"
+"X-Poedit-SearchPath-63: globalPlugins/zRadio/pubsub/core/topicdefnprovider."
+"py\n"
+"X-Poedit-SearchPath-64: globalPlugins/zRadio/pubsub/core/topicexc.py\n"
+"X-Poedit-SearchPath-65: globalPlugins/zRadio/pubsub/core/topicmgr.py\n"
+"X-Poedit-SearchPath-66: globalPlugins/zRadio/pubsub/core/topicobj.py\n"
+"X-Poedit-SearchPath-67: globalPlugins/zRadio/pubsub/core/topictreetraverser."
+"py\n"
+"X-Poedit-SearchPath-68: globalPlugins/zRadio/pubsub/core/topicutils.py\n"
+"X-Poedit-SearchPath-69: globalPlugins/zRadio/pubsub/core/weakmethod.py\n"
+"X-Poedit-SearchPath-70: globalPlugins/zRadio/pubsub/utils/__init__.py\n"
+"X-Poedit-SearchPath-71: globalPlugins/zRadio/pubsub/utils/exchandling.py\n"
+"X-Poedit-SearchPath-72: globalPlugins/zRadio/pubsub/utils/misc.py\n"
+"X-Poedit-SearchPath-73: globalPlugins/zRadio/pubsub/utils/notification.py\n"
+"X-Poedit-SearchPath-74: globalPlugins/zRadio/pubsub/utils/topictreeprinter."
+"py\n"
+"X-Poedit-SearchPath-75: globalPlugins/zRadio/pubsub/utils/"
+"xmltopicdefnprovider.py\n"
+"X-Poedit-SearchPath-76: globalPlugins/zRadio/pyradios/__init__.py\n"
+"X-Poedit-SearchPath-77: globalPlugins/zRadio/pyradios/base_url.py\n"
+"X-Poedit-SearchPath-78: globalPlugins/zRadio/pyradios/config.py\n"
+"X-Poedit-SearchPath-79: globalPlugins/zRadio/pyradios/log.py\n"
+"X-Poedit-SearchPath-80: globalPlugins/zRadio/pyradios/radios.py\n"
+"X-Poedit-SearchPath-81: globalPlugins/zRadio/pyradios/utils.py\n"
+"X-Poedit-SearchPath-82: globalPlugins/zRadio/requests/http/__init__.py\n"
+"X-Poedit-SearchPath-83: globalPlugins/zRadio/requests/http/client.py\n"
+"X-Poedit-SearchPath-84: globalPlugins/zRadio/requests/http/cookiejar.py\n"
+"X-Poedit-SearchPath-85: globalPlugins/zRadio/requests/http/cookies.py\n"
+"X-Poedit-SearchPath-86: globalPlugins/zRadio/requests/http/server.py\n"
+"X-Poedit-SearchPath-87: globalPlugins/zRadio/requests/__init__.py\n"
+"X-Poedit-SearchPath-88: globalPlugins/zRadio/requests/__version__.py\n"
+"X-Poedit-SearchPath-89: globalPlugins/zRadio/requests/_internal_utils.py\n"
+"X-Poedit-SearchPath-90: globalPlugins/zRadio/requests/adapters.py\n"
+"X-Poedit-SearchPath-91: globalPlugins/zRadio/requests/api.py\n"
+"X-Poedit-SearchPath-92: globalPlugins/zRadio/requests/auth.py\n"
+"X-Poedit-SearchPath-93: globalPlugins/zRadio/requests/certs.py\n"
+"X-Poedit-SearchPath-94: globalPlugins/zRadio/requests/compat.py\n"
+"X-Poedit-SearchPath-95: globalPlugins/zRadio/requests/cookies.py\n"
+"X-Poedit-SearchPath-96: globalPlugins/zRadio/requests/exceptions.py\n"
+"X-Poedit-SearchPath-97: globalPlugins/zRadio/requests/help.py\n"
+"X-Poedit-SearchPath-98: globalPlugins/zRadio/requests/hooks.py\n"
+"X-Poedit-SearchPath-99: globalPlugins/zRadio/requests/models.py\n"
+"X-Poedit-SearchPath-100: globalPlugins/zRadio/requests/packages.py\n"
+"X-Poedit-SearchPath-101: globalPlugins/zRadio/requests/sessions.py\n"
+"X-Poedit-SearchPath-102: globalPlugins/zRadio/requests/status_codes.py\n"
+"X-Poedit-SearchPath-103: globalPlugins/zRadio/requests/structures.py\n"
+"X-Poedit-SearchPath-104: globalPlugins/zRadio/requests/utils.py\n"
+"X-Poedit-SearchPath-105: globalPlugins/zRadio/requests_cache/__init__.py\n"
+"X-Poedit-SearchPath-106: globalPlugins/zRadio/requests_cache/compat.py\n"
+"X-Poedit-SearchPath-107: globalPlugins/zRadio/requests_cache/core.py\n"
+"X-Poedit-SearchPath-108: globalPlugins/zRadio/requests_cache/backends/"
+"__init__.py\n"
+"X-Poedit-SearchPath-109: globalPlugins/zRadio/requests_cache/backends/base."
+"py\n"
+"X-Poedit-SearchPath-110: globalPlugins/zRadio/requests_cache/backends/"
+"dynamodb.py\n"
+"X-Poedit-SearchPath-111: globalPlugins/zRadio/requests_cache/backends/gridfs."
+"py\n"
+"X-Poedit-SearchPath-112: globalPlugins/zRadio/requests_cache/backends/mongo."
+"py\n"
+"X-Poedit-SearchPath-113: globalPlugins/zRadio/requests_cache/backends/redis."
+"py\n"
+"X-Poedit-SearchPath-114: globalPlugins/zRadio/requests_cache/backends/sqlite."
+"py\n"
+"X-Poedit-SearchPath-115: globalPlugins/zRadio/__init__.py\n"
+"X-Poedit-SearchPath-116: globalPlugins/zRadio/appdirs.py\n"
+"X-Poedit-SearchPath-117: globalPlugins/zRadio/chkConexion.py\n"
+"X-Poedit-SearchPath-118: globalPlugins/zRadio/diccionarios.py\n"
+"X-Poedit-SearchPath-119: globalPlugins/zRadio/hmac.py\n"
+"X-Poedit-SearchPath-120: globalPlugins/zRadio/pathlib.py\n"
+"X-Poedit-SearchPath-121: globalPlugins/zRadio/raspado.py\n"
+"X-Poedit-SearchPath-122: globalPlugins/zRadio/reproductor.py\n"
+"X-Poedit-SearchPath-123: globalPlugins/zRadio/variables.py\n"
+"X-Poedit-SearchPath-124: globalPlugins/zRadio/xgui.py\n"
+"X-Poedit-SearchPath-125: installTasks.py\n"
+
+#: globalPlugins/zRadio/__init__.py:40
+msgid "&zRadio para NVDA"
+msgstr "& zRadio для NVDA"
+
+#: globalPlugins/zRadio/__init__.py:59
+msgid ""
+"zRadio necesita internet para ser ejecutado.\n"
+"Asegurese de que tiene todo correcto."
+msgstr ""
+"Для роботи zRadio потрібен Інтернет.\n"
+"Переконайтеся, що у вас все правильно працює."
+
+#: globalPlugins/zRadio/__init__.py:63 globalPlugins/zRadio/__init__.py:150
+#: globalPlugins/zRadio/__init__.py:555 globalPlugins/zRadio/__init__.py:565
+#: globalPlugins/zRadio/__init__.py:586 globalPlugins/zRadio/__init__.py:622
+#: globalPlugins/zRadio/__init__.py:643 globalPlugins/zRadio/__init__.py:677
+#: globalPlugins/zRadio/__init__.py:696 globalPlugins/zRadio/__init__.py:726
+#: globalPlugins/zRadio/__init__.py:757 globalPlugins/zRadio/__init__.py:788
+#: globalPlugins/zRadio/__init__.py:1244 globalPlugins/zRadio/__init__.py:1287
+#: globalPlugins/zRadio/__init__.py:1370 globalPlugins/zRadio/__init__.py:1530
+#: globalPlugins/zRadio/__init__.py:1540
+msgid "Error"
+msgstr "Помилка"
+
+#: globalPlugins/zRadio/__init__.py:77
+msgid "Muestra la ventana principal de zRadio"
+msgstr "Показує головне вікно zRadio"
+
+#: globalPlugins/zRadio/__init__.py:82
+msgid "Bajar volumen"
+msgstr "Зменшити гучність"
+
+#: globalPlugins/zRadio/__init__.py:87
+msgid "No se puede bajar más el volumen ya se encuentra al 0%"
+msgstr "Ви не можете зменшити гучність, гучність вже на 0%"
+
+#: globalPlugins/zRadio/__init__.py:97
+msgid "Subir volumen"
+msgstr "Збільшити гучність"
+
+#: globalPlugins/zRadio/__init__.py:102
+msgid "No se puede subir más el volumen ya se encuentra al 100%"
+msgstr "Ви не можете збільшити гучність, гучність вже на 100%"
+
+#: globalPlugins/zRadio/__init__.py:112
+msgid "Detener reproducción"
+msgstr "Зупинити відтворення"
+
+#: globalPlugins/zRadio/__init__.py:117
+msgid "No hay nada reproduciéndose"
+msgstr "Нічого не відтворюється"
+
+#: globalPlugins/zRadio/__init__.py:130
+msgid "Recargar reproducción"
+msgstr "Перезавантажити відтворення"
+
+#: globalPlugins/zRadio/__init__.py:135
+msgid "No hay nada para recargar"
+msgstr "Нічого немає, щоб перезапустити"
+
+#: globalPlugins/zRadio/__init__.py:141 globalPlugins/zRadio/__init__.py:246
+#: globalPlugins/zRadio/__init__.py:1235 globalPlugins/zRadio/__init__.py:1278
+#: globalPlugins/zRadio/__init__.py:1361
+msgid ""
+"No se pudo cargar la emisora.\n"
+"\n"
+"Asegúrese de que tiene conexión a internet.\n"
+"\n"
+"Otros motivos pueden ser que la emisora tenga problemas en estos momentos.\n"
+"\n"
+"Inténtelo más tarde."
+msgstr ""
+"Не вдалося завантажити станцію.\n"
+"\n"
+"Переконайтеся, що у вас є інтернет-з’єднання.\n"
+"\n"
+"Іншою причиною може бути проблема зі станцією.\n"
+"\n"
+"Будь ласка, спробуйте пізніше."
+
+#: globalPlugins/zRadio/__init__.py:167
+msgid "Poner y quitar silencio"
+msgstr "Вимкнути й увімкнути звук"
+
+#: globalPlugins/zRadio/__init__.py:172
+msgid "No hay nada para silenciar"
+msgstr "Нічого не відтворюється"
+
+#: globalPlugins/zRadio/__init__.py:185
+msgid "Saber emisora en reproducción"
+msgstr "Проговорити станцію під час відтворення"
+
+#: globalPlugins/zRadio/__init__.py:192
+#, python-format
+msgid "Emisora en memoria: %s"
+msgstr "Станція в пам'яті: %s"
+
+#: globalPlugins/zRadio/__init__.py:203 globalPlugins/zRadio/__init__.py:549
+#: globalPlugins/zRadio/__init__.py:964 globalPlugins/zRadio/__init__.py:1418
+#: globalPlugins/zRadio/variables.py:130
+msgid "Sin emisoras."
+msgstr "Немає станцій."
+
+#: globalPlugins/zRadio/__init__.py:287
+msgid "No tiene ninguna emisora en Favoritos en la posición 1"
+msgstr "У вас немає станції в обраному на позиції 1"
+
+#: globalPlugins/zRadio/__init__.py:290
+msgid "No tiene ninguna emisora en Favoritos en la posición 2"
+msgstr "У вас немає станції в обраному на позиції 2"
+
+#: globalPlugins/zRadio/__init__.py:293
+msgid "No tiene ninguna emisora en Favoritos en la posición 3"
+msgstr "У вас немає станції в обраному на позиції 3"
+
+#: globalPlugins/zRadio/__init__.py:296
+msgid "No tiene ninguna emisora en Favoritos en la posición 4"
+msgstr "У вас немає станції в обраному на позиції 4"
+
+#: globalPlugins/zRadio/__init__.py:299
+msgid "No tiene ninguna emisora en Favoritos en la posición 5"
+msgstr "У вас немає станції в обраному на позиції 5"
+
+#: globalPlugins/zRadio/__init__.py:302
+msgid "Reproducir emisora rápidamente 1"
+msgstr "Швидко відтворити станцію 1"
+
+#: globalPlugins/zRadio/__init__.py:307
+msgid "Reproducir emisora rápidamente 2"
+msgstr "Швидко відтворити станцію 2"
+
+#: globalPlugins/zRadio/__init__.py:312
+msgid "Reproducir emisora rápidamente 3"
+msgstr "Швидко відтворити станцію 3"
+
+#: globalPlugins/zRadio/__init__.py:317
+msgid "Reproducir emisora rápidamente 4"
+msgstr "Швидко відтворити станцію 4"
+
+#: globalPlugins/zRadio/__init__.py:322
+msgid "Reproducir emisora rápidamente 5"
+msgstr "Швидко відтворити станцію 5"
+
+#: globalPlugins/zRadio/__init__.py:336
+msgid "zRadio para NVDA"
+msgstr "zRadio для NVDA"
+
+#: globalPlugins/zRadio/__init__.py:394 globalPlugins/zRadio/__init__.py:1406
+msgid "Quitar &Silencio"
+msgstr "&Увімкнути звук"
+
+#: globalPlugins/zRadio/__init__.py:413 globalPlugins/zRadio/__init__.py:429
+#: globalPlugins/zRadio/__init__.py:446 globalPlugins/zRadio/__init__.py:459
+#: globalPlugins/zRadio/__init__.py:469 globalPlugins/zRadio/__init__.py:483
+#: globalPlugins/zRadio/__init__.py:495 globalPlugins/zRadio/__init__.py:508
+#: globalPlugins/zRadio/__init__.py:519 globalPlugins/zRadio/__init__.py:532
+#: globalPlugins/zRadio/__init__.py:547 globalPlugins/zRadio/__init__.py:588
+#: globalPlugins/zRadio/__init__.py:603 globalPlugins/zRadio/__init__.py:615
+#: globalPlugins/zRadio/__init__.py:645 globalPlugins/zRadio/__init__.py:659
+#: globalPlugins/zRadio/__init__.py:670 globalPlugins/zRadio/__init__.py:698
+#: globalPlugins/zRadio/__init__.py:728 globalPlugins/zRadio/__init__.py:759
+#: globalPlugins/zRadio/__init__.py:790 globalPlugins/zRadio/__init__.py:804
+#: globalPlugins/zRadio/__init__.py:813 globalPlugins/zRadio/__init__.py:823
+#: globalPlugins/zRadio/__init__.py:834 globalPlugins/zRadio/__init__.py:871
+#: globalPlugins/zRadio/__init__.py:879 globalPlugins/zRadio/__init__.py:898
+#: globalPlugins/zRadio/__init__.py:906 globalPlugins/zRadio/__init__.py:979
+#: globalPlugins/zRadio/__init__.py:1016 globalPlugins/zRadio/__init__.py:1027
+#: globalPlugins/zRadio/__init__.py:1049 globalPlugins/zRadio/__init__.py:1097
+#: globalPlugins/zRadio/__init__.py:1123 globalPlugins/zRadio/__init__.py:1164
+#: globalPlugins/zRadio/__init__.py:1185 globalPlugins/zRadio/__init__.py:1206
+#: globalPlugins/zRadio/xgui.py:95 globalPlugins/zRadio/xgui.py:125
+#: globalPlugins/zRadio/xgui.py:160
+msgid "&Buscar"
+msgstr "&Пошук"
+
+#: globalPlugins/zRadio/__init__.py:424 globalPlugins/zRadio/__init__.py:875
+#: globalPlugins/zRadio/__init__.py:902 globalPlugins/zRadio/__init__.py:914
+#: globalPlugins/zRadio/__init__.py:975 globalPlugins/zRadio/__init__.py:1083
+#: globalPlugins/zRadio/__init__.py:1428
+msgid "No hay favoritos."
+msgstr "Немає обраних."
+
+#: globalPlugins/zRadio/__init__.py:448 globalPlugins/zRadio/__init__.py:457
+msgid "Búsqueda general:"
+msgstr "Загальний пошук:"
+
+#: globalPlugins/zRadio/__init__.py:452 globalPlugins/zRadio/__init__.py:463
+#: globalPlugins/zRadio/__init__.py:525 globalPlugins/zRadio/__init__.py:536
+#: globalPlugins/zRadio/__init__.py:703 globalPlugins/zRadio/__init__.py:795
+#: globalPlugins/zRadio/__init__.py:809 globalPlugins/zRadio/__init__.py:839
+#: globalPlugins/zRadio/xgui.py:163
+msgid "Esperando una búsqueda."
+msgstr "Список порожній."
+
+#: globalPlugins/zRadio/__init__.py:471 globalPlugins/zRadio/__init__.py:481
+msgid "Buscar pais:"
+msgstr "Пошук країни:"
+
+#: globalPlugins/zRadio/__init__.py:477 globalPlugins/zRadio/__init__.py:490
+#: globalPlugins/zRadio/__init__.py:502 globalPlugins/zRadio/__init__.py:514
+#: globalPlugins/zRadio/__init__.py:717 globalPlugins/zRadio/__init__.py:734
+#: globalPlugins/zRadio/__init__.py:748 globalPlugins/zRadio/__init__.py:765
+#: globalPlugins/zRadio/__init__.py:779 globalPlugins/zRadio/__init__.py:819
+#: globalPlugins/zRadio/__init__.py:829
+msgid "{} número de emisoras: {}"
+msgstr "{} Кількість станцій: {}"
+
+#: globalPlugins/zRadio/__init__.py:497 globalPlugins/zRadio/__init__.py:506
+msgid "Buscar idioma:"
+msgstr "Мова пошуку:"
+
+#: globalPlugins/zRadio/__init__.py:521 globalPlugins/zRadio/__init__.py:530
+msgid "Buscar etiqueta:"
+msgstr "Знайти тег:"
+
+#: globalPlugins/zRadio/__init__.py:552
+msgid "No hay emisoras para buscar."
+msgstr "Немає станцій для пошуку."
+
+#: globalPlugins/zRadio/__init__.py:562 globalPlugins/zRadio/__init__.py:619
+#: globalPlugins/zRadio/__init__.py:674
+msgid ""
+"El campo de búsqueda esta vacío, escriba algo antes para poder realizar la "
+"búsqueda."
+msgstr "Поле пошуку порожнє, напишіть щось перед тим, як шукати."
+
+#: globalPlugins/zRadio/__init__.py:582 globalPlugins/zRadio/__init__.py:639
+#: globalPlugins/zRadio/__init__.py:692 globalPlugins/zRadio/__init__.py:722
+#: globalPlugins/zRadio/__init__.py:753 globalPlugins/zRadio/__init__.py:784
+msgid ""
+"No se encontraron resultados.\n"
+"Haga una búsqueda más específica."
+msgstr ""
+"Результатів не знайдено.\n"
+"Вкажіть точніший запит пошуку."
+
+#: globalPlugins/zRadio/__init__.py:593 globalPlugins/zRadio/__init__.py:650
+#: globalPlugins/zRadio/__init__.py:682 globalPlugins/zRadio/__init__.py:711
+#: globalPlugins/zRadio/__init__.py:742 globalPlugins/zRadio/__init__.py:773
+msgid "&Limpiar"
+msgstr "&Очистити"
+
+#: globalPlugins/zRadio/__init__.py:846
+msgid "&Nueva emisora"
+msgstr "&Нова станція"
+
+#: globalPlugins/zRadio/__init__.py:849
+msgid "&Editar emisora"
+msgstr "&Редагувати станцію"
+
+#: globalPlugins/zRadio/__init__.py:852
+msgid "&Quitar de favoritos"
+msgstr "&Видалити з обраного"
+
+#: globalPlugins/zRadio/__init__.py:863
+msgid "Añadir nueva emisora"
+msgstr "Додати нову станцію"
+
+#: globalPlugins/zRadio/__init__.py:890
+msgid "Editar emisora"
+msgstr "Редагувати станцію"
+
+#: globalPlugins/zRadio/__init__.py:922 globalPlugins/zRadio/__init__.py:938
+#: globalPlugins/zRadio/__init__.py:949
+msgid "Reproducir"
+msgstr "Відтворити"
+
+#: globalPlugins/zRadio/__init__.py:925
+msgid "Agregar a favoritos"
+msgstr "Додати в обране"
+
+#: globalPlugins/zRadio/__init__.py:928 globalPlugins/zRadio/__init__.py:944
+#: globalPlugins/zRadio/__init__.py:952
+msgid "Copiar URL"
+msgstr "Копіювати URL-адресу"
+
+#: globalPlugins/zRadio/__init__.py:933
+msgid "Poner por defecto en General"
+msgstr "За замовчуванням Загальне"
+
+#: globalPlugins/zRadio/__init__.py:941
+msgid "Quitar de favoritos"
+msgstr "Видалити з обраного"
+
+#: globalPlugins/zRadio/__init__.py:1057 globalPlugins/zRadio/__init__.py:1069
+#: globalPlugins/zRadio/__init__.py:1104 globalPlugins/zRadio/__init__.py:1114
+#: globalPlugins/zRadio/__init__.py:1129 globalPlugins/zRadio/__init__.py:1139
+#: globalPlugins/zRadio/__init__.py:1152
+msgid "Información"
+msgstr "Інформація"
+
+#: globalPlugins/zRadio/__init__.py:1059 globalPlugins/zRadio/__init__.py:1071
+msgid "Se agrego la emisora {} a favoritos."
+msgstr "Станцію {} додано до обраного."
+
+#: globalPlugins/zRadio/__init__.py:1106 globalPlugins/zRadio/__init__.py:1116
+#: globalPlugins/zRadio/__init__.py:1131 globalPlugins/zRadio/__init__.py:1141
+#: globalPlugins/zRadio/__init__.py:1154
+msgid ""
+"Se a copiado la URL de la emisora {} al portapapeles. Ya puede compartirla."
+msgstr ""
+"URL-адресу станції {} скопійовано в буфер обміну. Тепер ви можете поділитися "
+"нею."
+
+#: globalPlugins/zRadio/__init__.py:1259 globalPlugins/zRadio/__init__.py:1300
+#: globalPlugins/zRadio/__init__.py:1336 globalPlugins/zRadio/__init__.py:1377
+#: globalPlugins/zRadio/__init__.py:1391 globalPlugins/zRadio/__init__.py:1403
+#: globalPlugins/zRadio/__init__.py:1411 globalPlugins/zRadio/xgui.py:49
+msgid "&Silenciar"
+msgstr "&Вимкнути звук"
+
+#: globalPlugins/zRadio/__init__.py:1526
+msgid ""
+"No puede dejar el campo Nombre de la emisora en blanco.\n"
+"Asegúrese de introducir un nombre correcto."
+msgstr ""
+"Поле Назва станції не може бути порожнім.\n"
+"Переконайтеся, що ви ввели правильну назву."
+
+#: globalPlugins/zRadio/__init__.py:1536
+msgid ""
+"No puede dejar el campo de la URL de la emisora en blanco.\n"
+"Asegúrese de introducir una dirección correcta."
+msgstr ""
+"Поле URL-адреси станції не може бути порожнім.\n"
+"Переконайтеся, що ви ввели правильну адресу."
+
+#: globalPlugins/zRadio/variables.py:104
+msgid "Búsqueda general de radios"
+msgstr "Загальний пошук радіо"
+
+#: globalPlugins/zRadio/variables.py:106
+msgid "Búsqueda por países"
+msgstr "Пошук за країною"
+
+#: globalPlugins/zRadio/variables.py:108
+msgid "Búsqueda por idioma"
+msgstr "Пошук за мовою"
+
+#: globalPlugins/zRadio/variables.py:110
+msgid "Búsqueda por etiqueta"
+msgstr "Пошук за тегом"
+
+#: globalPlugins/zRadio/xgui.py:35
+msgid "General"
+msgstr "Загальні"
+
+#: globalPlugins/zRadio/xgui.py:37
+msgid "Favoritos"
+msgstr "Обране"
+
+#: globalPlugins/zRadio/xgui.py:39
+msgid "Buscador"
+msgstr "Пошук"
+
+#: globalPlugins/zRadio/xgui.py:43
+msgid "&Detener"
+msgstr "&Зупинити"
+
+#: globalPlugins/zRadio/xgui.py:46
+msgid "&Recargar"
+msgstr "&Перезапустити"
+
+#: globalPlugins/zRadio/xgui.py:55
+msgid "&Acción"
+msgstr "&Дія"
+
+#: globalPlugins/zRadio/xgui.py:62
+msgid "Salir Alt + F4"
+msgstr "Вихід Alt + F4"
+
+#: globalPlugins/zRadio/xgui.py:92
+msgid "Busqueda emisoras:"
+msgstr "Пошук станції:"
+
+#: globalPlugins/zRadio/xgui.py:97
+msgid "Listado de emisoras:"
+msgstr "Список станцій:"
+
+#: globalPlugins/zRadio/xgui.py:122
+msgid "Busqueda emisoras favoritas:"
+msgstr "Пошук обраних станцій:"
+
+#: globalPlugins/zRadio/xgui.py:127
+msgid "Listado de emisoras favoritas:"
+msgstr "Список улюблених станцій:"
+
+#: globalPlugins/zRadio/xgui.py:152
+msgid "Seleccione una categoría:"
+msgstr "Виберіть категорію:"
+
+#: globalPlugins/zRadio/xgui.py:157
+msgid "Búsqueda general de radios:"
+msgstr "Загальний пошук по радіо:"
+
+#: globalPlugins/zRadio/xgui.py:165
+msgid "Resultado:"
+msgstr "Результат:"
+
+#: globalPlugins/zRadio/xgui.py:194
+msgid "Nombre de la emisora:"
+msgstr "Назва станції:"
+
+#: globalPlugins/zRadio/xgui.py:198
+msgid "Dirección URL de la emisora:"
+msgstr "URL-адреса станції:"
+
+#: globalPlugins/zRadio/xgui.py:202 globalPlugins/zRadio/xgui.py:235
+msgid "&Aceptar"
+msgstr "&Гаразд"
+
+#: globalPlugins/zRadio/xgui.py:204
+msgid "&Cancelar"
+msgstr "&Скасувати"
