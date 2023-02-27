@@ -42,7 +42,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def terminate(self):
 		try:
-			self.toolsMenu .Remove(self.menuItem)
+			self.toolsMenu.Remove(self.menuItem)
 		except Exception:
 			pass
 		try:

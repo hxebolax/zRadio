@@ -225,8 +225,17 @@ zRadio proporciona las siguientes órdenes para que el usuario pueda añadir un 
 * danés: Daniel Gartmann
 * Turco: : umut korkmaz
 * Ruso: Valentin Kupriyanov
+* Ucraniano: VovaMobile
 
 # Registro de cambios.
+## Versión 0.6.
+
+*Añadida compatibilidad con NVDA 2023.1
+
+## Versión 0.5.7.
+
+* Añadido idioma Ucraniano.
+
 ## Versión 0.5.6.
 
 * Solucionado un fallo de seguridad en pantallas seguras.

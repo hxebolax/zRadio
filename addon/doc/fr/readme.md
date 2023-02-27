@@ -220,8 +220,33 @@ zRadio fournit les commandes suivantes pour permettre à l'utilisateur d'ajouter
 * Anglais: slanovani
 * Italien: Simone Dal Maso
 * Arabe: Wafiq Taher
+* Danois: Daniel Gartmann
+* Turc: : umut korkmaz
+* Russe: Valentin Kupriyanov
 
 # Journal des changements.
+## Version 0.5.6.
+
+* Résolu une erreur de sécurité sur les écrans sécurisés.
+
+* Résolu un problème avec la recharge des extensions dans NVDA.
+
+## Version 0.5.5.
+
+* Ajout de la langue Russe.
+
+* Corrigé erreur avec les chemins internes de NVDA.
+
+## Version 0.5.4.
+
+* Corrigé erreur lors de la détection des langues.
+
+* Préparé pour la version de NVDA 2022.1.0.
+
+## Version 0.5.3.
+
+* Ajout de nouvelles langues.
+
 ## Version 0.5.2.
 
 * Résolu la charge lente lors du démarrage de NVDA.

@@ -42,6 +42,8 @@ elif idioma[:2] == "tr":
 	diccionario = dict_turco
 elif idioma[:2] == "ru":
 	diccionario = dict_ruso
+elif idioma[:2] == "uk":
+	diccionario = dict_ucraniano
 else:
 	diccionario = dict_español
 
